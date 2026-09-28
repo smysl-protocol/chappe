@@ -1,0 +1,109 @@
+{
+  "spec": "haversine, sphere R=6371000 m; initial bearing 0..360, 0=N, clockwise",
+  "vectors": [
+    {
+      "name": "same_point",
+      "from": {
+        "lat": 33.5731,
+        "lon": -7.5898
+      },
+      "to": {
+        "lat": 33.5731,
+        "lon": -7.5898
+      },
+      "distance_m": 0.0,
+      "bearing_deg": 0.0
+    },
+    {
+      "name": "one_degree_lon_equator",
+      "from": {
+        "lat": 0.0,
+        "lon": 0.0
+      },
+      "to": {
+        "lat": 0.0,
+        "lon": 1.0
+      },
+      "distance_m": 111194.92664455874,
+      "bearing_deg": 90.0
+    },
+    {
+      "name": "one_degree_lat",
+      "from": {
+        "lat": 0.0,
+        "lon": 0.0
+      },
+      "to": {
+        "lat": 1.0,
+        "lon": 0.0
+      },
+      "distance_m": 111194.92664455874,
+      "bearing_deg": 0.0
+    },
+    {
+      "name": "casablanca_gibraltar",
+      "from": {
+        "lat": 33.5731,
+        "lon": -7.5898
+      },
+      "to": {
+        "lat": 36.1408,
+        "lon": -5.3536
+      },
+      "distance_m": 350902.8541148397,
+      "bearing_deg": 34.91763250249335
+    },
+    {
+      "name": "bali_hcmc",
+      "from": {
+        "lat": -8.65,
+        "lon": 115.2167
+      },
+      "to": {
+        "lat": 10.7626,
+        "lon": 106.6602
+      },
+      "distance_m": 2357057.951419731,
+      "bearing_deg": 336.1563989932738
+    },
+    {
+      "name": "across_antimeridian",
+      "from": {
+        "lat": 10.0,
+        "lon": 179.5
+      },
+      "to": {
+        "lat": 10.0,
+        "lon": -179.5
+      },
+      "distance_m": 109505.5839436892,
+      "bearing_deg": 89.91317377355267
+    },
+    {
+      "name": "to_north_pole",
+      "from": {
+        "lat": 45.0,
+        "lon": 30.0
+      },
+      "to": {
+        "lat": 90.0,
+        "lon": 30.0
+      },
+      "distance_m": 5003771.699005143,
+      "bearing_deg": 0.0
+    },
+    {
+      "name": "short_100m_scale",
+      "from": {
+        "lat": 36.1408,
+        "lon": -5.3536
+      },
+      "to": {
+        "lat": 36.1417,
+        "lon": -5.3536
+      },
+      "distance_m": 100.07543398026468,
+      "bearing_deg": 0.0
+    }
+  ]
+}

@@ -1,0 +1,1398 @@
+[
+ {
+  "file": "golos000.wav",
+  "sim": 0.737,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos001.wav",
+  "sim": 0.956,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos002.wav",
+  "sim": 0.957,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 13
+ },
+ {
+  "file": "golos003.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos004.wav",
+  "sim": 0.903,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos005.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos006.wav",
+  "sim": 0.617,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 14
+ },
+ {
+  "file": "golos007.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 9
+ },
+ {
+  "file": "golos008.wav",
+  "sim": 0.933,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 15
+ },
+ {
+  "file": "golos009.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 22
+ },
+ {
+  "file": "golos010.wav",
+  "sim": 0.909,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos011.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos012.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos013.wav",
+  "sim": 0.939,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 8
+ },
+ {
+  "file": "golos014.wav",
+  "sim": 0.867,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 12
+ },
+ {
+  "file": "golos015.wav",
+  "sim": 0.966,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 3
+ },
+ {
+  "file": "golos016.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos017.wav",
+  "sim": 0.84,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos018.wav",
+  "sim": 0.906,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos019.wav",
+  "sim": 0.93,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos020.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos021.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 20
+ },
+ {
+  "file": "golos022.wav",
+  "sim": 0.838,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 26
+ },
+ {
+  "file": "golos023.wav",
+  "sim": 0.833,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos024.wav",
+  "sim": 0.979,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 14
+ },
+ {
+  "file": "golos025.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos026.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos027.wav",
+  "sim": 0.246,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos028.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 19
+ },
+ {
+  "file": "golos029.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 12
+ },
+ {
+  "file": "golos030.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos031.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 12
+ },
+ {
+  "file": "golos032.wav",
+  "sim": 0.929,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos033.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos034.wav",
+  "sim": 0.971,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos035.wav",
+  "sim": 0.816,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos036.wav",
+  "sim": 0.929,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos037.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 7
+ },
+ {
+  "file": "golos038.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos039.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos040.wav",
+  "sim": 0.938,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos041.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos042.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos043.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 14
+ },
+ {
+  "file": "golos044.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos045.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos046.wav",
+  "sim": 0.754,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 18
+ },
+ {
+  "file": "golos047.wav",
+  "sim": 0.78,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos048.wav",
+  "sim": 0.957,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos049.wav",
+  "sim": 0.946,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos050.wav",
+  "sim": 0.6,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos051.wav",
+  "sim": 0.824,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 22
+ },
+ {
+  "file": "golos052.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 3
+ },
+ {
+  "file": "golos053.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 5
+ },
+ {
+  "file": "golos054.wav",
+  "sim": 0.625,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 5
+ },
+ {
+  "file": "golos055.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 5
+ },
+ {
+  "file": "golos056.wav",
+  "sim": 0.634,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 10
+ },
+ {
+  "file": "golos057.wav",
+  "sim": 0.444,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 27
+ },
+ {
+  "file": "golos058.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 7
+ },
+ {
+  "file": "golos059.wav",
+  "sim": 0.609,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos060.wav",
+  "sim": 0.083,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos061.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos062.wav",
+  "sim": 0.989,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos063.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 23
+ },
+ {
+  "file": "golos064.wav",
+  "sim": 0.847,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos065.wav",
+  "sim": 0.979,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos066.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos067.wav",
+  "sim": 0.667,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 4
+ },
+ {
+  "file": "golos068.wav",
+  "sim": 0.806,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos069.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 13
+ },
+ {
+  "file": "golos070.wav",
+  "sim": 0.889,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 8
+ },
+ {
+  "file": "golos071.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos072.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 23
+ },
+ {
+  "file": "golos073.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos074.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 8
+ },
+ {
+  "file": "golos075.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 3
+ },
+ {
+  "file": "golos076.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 19
+ },
+ {
+  "file": "golos077.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 22
+ },
+ {
+  "file": "golos078.wav",
+  "sim": 0.974,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 5
+ },
+ {
+  "file": "golos079.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos080.wav",
+  "sim": 0.837,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 26
+ },
+ {
+  "file": "golos081.wav",
+  "sim": 0.105,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos082.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos083.wav",
+  "sim": 0.714,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos084.wav",
+  "sim": 0.872,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 19
+ },
+ {
+  "file": "golos085.wav",
+  "sim": 0.784,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 21
+ },
+ {
+  "file": "golos086.wav",
+  "sim": 0.593,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 15
+ },
+ {
+  "file": "golos087.wav",
+  "sim": 0.885,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos088.wav",
+  "sim": 0.833,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 20
+ },
+ {
+  "file": "golos089.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 5
+ },
+ {
+  "file": "golos090.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos091.wav",
+  "sim": 0.976,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 7
+ },
+ {
+  "file": "golos092.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos093.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos094.wav",
+  "sim": 0.821,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos095.wav",
+  "sim": 0.606,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 11
+ },
+ {
+  "file": "golos096.wav",
+  "sim": 0.8,
+  "outcome": "text",
+  "reason": "латиница >25%",
+  "blob": null
+ },
+ {
+  "file": "golos097.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos098.wav",
+  "sim": 0.975,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos099.wav",
+  "sim": 0.458,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos100.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 14
+ },
+ {
+  "file": "golos101.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 12
+ },
+ {
+  "file": "golos102.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos103.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos104.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos105.wav",
+  "sim": 0.773,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 21
+ },
+ {
+  "file": "golos106.wav",
+  "sim": 0.968,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 8
+ },
+ {
+  "file": "golos107.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 15
+ },
+ {
+  "file": "golos108.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 22
+ },
+ {
+  "file": "golos109.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos110.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos111.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 16
+ },
+ {
+  "file": "golos112.wav",
+  "sim": 0.977,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos113.wav",
+  "sim": 0.889,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 12
+ },
+ {
+  "file": "golos114.wav",
+  "sim": 0.984,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos115.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos116.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos117.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 19
+ },
+ {
+  "file": "golos118.wav",
+  "sim": 0.889,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 8
+ },
+ {
+  "file": "golos119.wav",
+  "sim": 0.828,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos120.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos121.wav",
+  "sim": 0.627,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 8
+ },
+ {
+  "file": "golos122.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos123.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos124.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "латиница >25%",
+  "blob": null
+ },
+ {
+  "file": "golos125.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 8
+ },
+ {
+  "file": "golos126.wav",
+  "sim": 0.686,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 5
+ },
+ {
+  "file": "golos127.wav",
+  "sim": 0.667,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos128.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 29
+ },
+ {
+  "file": "golos129.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 3
+ },
+ {
+  "file": "golos130.wav",
+  "sim": 0.8,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos131.wav",
+  "sim": 0.811,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 3
+ },
+ {
+  "file": "golos132.wav",
+  "sim": 0.973,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 19
+ },
+ {
+  "file": "golos133.wav",
+  "sim": 0.916,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos134.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 13
+ },
+ {
+  "file": "golos135.wav",
+  "sim": 0.885,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos136.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 12
+ },
+ {
+  "file": "golos137.wav",
+  "sim": 0.987,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos138.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos139.wav",
+  "sim": 0.923,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 11
+ },
+ {
+  "file": "golos140.wav",
+  "sim": 0.99,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos141.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 3
+ },
+ {
+  "file": "golos142.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 5
+ },
+ {
+  "file": "golos143.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 7
+ },
+ {
+  "file": "golos144.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 4
+ },
+ {
+  "file": "golos145.wav",
+  "sim": 0.878,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 26
+ },
+ {
+  "file": "golos146.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos147.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos148.wav",
+  "sim": 0.889,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos149.wav",
+  "sim": 0.973,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos150.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 15
+ },
+ {
+  "file": "golos151.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos152.wav",
+  "sim": 0.933,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 11
+ },
+ {
+  "file": "golos153.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos154.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos155.wav",
+  "sim": 0.987,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos156.wav",
+  "sim": 0.85,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos157.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos158.wav",
+  "sim": 0.19,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 7
+ },
+ {
+  "file": "golos159.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 3
+ },
+ {
+  "file": "golos160.wav",
+  "sim": 0.956,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 3
+ },
+ {
+  "file": "golos161.wav",
+  "sim": 0.857,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 11
+ },
+ {
+  "file": "golos162.wav",
+  "sim": 0.815,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos163.wav",
+  "sim": 0.895,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 23
+ },
+ {
+  "file": "golos164.wav",
+  "sim": 0.973,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 24
+ },
+ {
+  "file": "golos165.wav",
+  "sim": 0.853,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 23
+ },
+ {
+  "file": "golos166.wav",
+  "sim": 1.0,
+  "outcome": "отказ"
+ },
+ {
+  "file": "golos167.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos168.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 21
+ },
+ {
+  "file": "golos169.wav",
+  "sim": 0.944,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 7
+ },
+ {
+  "file": "golos170.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos171.wav",
+  "sim": 0.709,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos172.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 13
+ },
+ {
+  "file": "golos173.wav",
+  "sim": 0.718,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 25
+ },
+ {
+  "file": "golos174.wav",
+  "sim": 0.975,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos175.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 13
+ },
+ {
+  "file": "golos176.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos177.wav",
+  "sim": 0.981,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos178.wav",
+  "sim": 0.914,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos179.wav",
+  "sim": 0.985,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos180.wav",
+  "sim": 0.938,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos181.wav",
+  "sim": 1.0,
+  "outcome": "отказ"
+ },
+ {
+  "file": "golos182.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos183.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos184.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 13
+ },
+ {
+  "file": "golos185.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos186.wav",
+  "sim": 0.914,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 19
+ },
+ {
+  "file": "golos187.wav",
+  "sim": 0.069,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos188.wav",
+  "sim": 0.962,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos189.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos190.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 5
+ },
+ {
+  "file": "golos191.wav",
+  "sim": 0.895,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 21
+ },
+ {
+  "file": "golos192.wav",
+  "sim": 0.966,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos193.wav",
+  "sim": 0.968,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 23
+ },
+ {
+  "file": "golos194.wav",
+  "sim": 1.0,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos195.wav",
+  "sim": 0.985,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos196.wav",
+  "sim": 0.909,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos197.wav",
+  "sim": 1.0,
+  "outcome": "semantic",
+  "reason": null,
+  "blob": 3
+ },
+ {
+  "file": "golos198.wav",
+  "sim": 0.102,
+  "outcome": "text",
+  "reason": "конвейер/gate",
+  "blob": null
+ },
+ {
+  "file": "golos199.wav",
+  "sim": 0.889,
+  "outcome": "text",
+  "reason": "латиница >25%",
+  "blob": null
+ }
+]

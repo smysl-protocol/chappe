@@ -1,0 +1,21 @@
+{
+  "type": "object",
+  "properties": {
+    "facts": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "properties": {
+          "subject": {"type": "string"},
+          "content": {"type": "string"}
+        },
+        "required": ["subject", "content"],
+        "additionalProperties": false
+      }
+    },
+    "episode": {"type": "string"}
+  },
+  "required": ["facts", "episode"],
+  "additionalProperties": false
+}

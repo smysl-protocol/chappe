@@ -1,0 +1,40 @@
+{
+ "cases": [
+  {
+   "input": "EN: be there in twenty five minutes",
+   "output": "be there in 25 minutes"
+  },
+  {
+   "input": "NAME:Mark brings 2 kg and 3 km at 5 pm",
+   "output": "name_Mark brings 2 kilogram and 3 kilometer at 5 pm_marker"
+  },
+  {
+   "input": "sos_active hazard_fall need_doctor boat_service reschedule",
+   "output": "sos active hazard fall need doctor boat service reschedule"
+  },
+  {
+   "input": "Pivot: waves are big, boats do not go!",
+   "output": "waves are big boats do not go !"
+  },
+  {
+   "input": "state_battery_low i will be on the radio at eight",
+   "output": "state battery low i will be on the radio at 8"
+  },
+  {
+   "input": "buy five bottles and twenty one liters",
+   "output": "buy 5 bottles and 21 liters"
+  },
+  {
+   "input": "take cash 1000 rur approximately",
+   "output": "take cash 1000 approximately"
+  },
+  {
+   "input": "sos_active help me need_rescue now",
+   "output": "sos active help me need rescue now"
+  },
+  {
+   "input": "we are not going there. take water! will you come?",
+   "output": "we are not going there . take water ! will you come ?"
+  }
+ ]
+}

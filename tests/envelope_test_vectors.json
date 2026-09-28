@@ -1,0 +1,256 @@
+{
+ "title": "R+M Envelope v0 — общие тест-векторы",
+ "spec": "docs/RM_Envelope_v0.md",
+ "format_version": 1,
+ "comment": [
+  "Этот файл — общий для всех реализаций кодека (Python в sim/, Swift в ios/).",
+  "Каждая реализация обязана пройти все векторы ПОБАЙТОВО.",
+  "Если два кодека проходят этот файл — они совместимы.",
+  "Правило округления координат: floor(x + 0.5), половина всегда вверх (§5 спеки).",
+  "Все многобайтовые числа — little-endian. Идентификаторы записаны шестнадцатерично.",
+  "У векторов с direction=decode проверяется только разбор байтов.",
+  "v1 (29.07.2026): версия конверта 1; классы TEXT несут 4 байта unix-минут отправки (LE) сразу после заголовка (0 = метка неизвестна). Санкционированное изменение конверта (Ф5 v1.1)."
+ ],
+ "packets": [
+  {
+   "name": "тв1_минимальный_sos",
+   "description": "ТВ-1 из спеки: SOS без координат и хвоста, 12 байт",
+   "class": "SOS",
+   "fields": {
+    "msg_id_hex": "3BA7",
+    "severity": 3,
+    "people_count": 3,
+    "injury": 1,
+    "hops_left": 3,
+    "needs": [
+     0,
+     3
+    ]
+   },
+   "bytes_hex": "11 00 A7 3B C3 13 FF FF FF FF 09 00"
+  },
+  {
+   "name": "тв2_sos_с_грубыми_координатами",
+   "description": "ТВ-2 из спеки: тот же SOS с координатами Бали",
+   "class": "SOS",
+   "fields": {
+    "msg_id_hex": "3BA7",
+    "severity": 3,
+    "people_count": 3,
+    "injury": 1,
+    "hops_left": 3,
+    "needs": [
+     0,
+     3
+    ],
+    "lat": 8.71,
+    "lon": 115.17
+   },
+   "bytes_hex": "11 08 A7 3B C3 13 63 8C E5 D1 09 00"
+  },
+  {
+   "name": "sos_с_текстовым_хвостом",
+   "description": "SOS с хвостом «SOS» без сжатия: [кодек 0][длина 3][байты]",
+   "class": "SOS",
+   "fields": {
+    "msg_id_hex": "0001",
+    "severity": 2,
+    "people_count": 1,
+    "injury": 2,
+    "hops_left": 3,
+    "needs": [
+     5
+    ],
+    "text_tail": "SOS",
+    "tail_codec": 0
+   },
+   "bytes_hex": "11 04 01 00 81 23 FF FF FF FF 20 00 00 03 53 4F 53"
+  },
+  {
+   "name": "ack",
+   "description": "ACK (§5а): подтверждает сообщение 0x3BA7, свой msg_id 0x1111",
+   "class": "ACK",
+   "fields": {
+    "msg_id_hex": "1111",
+    "ack_msg_id_hex": "3BA7"
+   },
+   "bytes_hex": "14 00 11 11 A7 3B"
+  },
+  {
+   "name": "beacon_без_координат",
+   "description": "BEACON (§5б): статус «помощь идёт», 2 откликнувшихся",
+   "class": "BEACON",
+   "fields": {
+    "msg_id_hex": "2222",
+    "sos_msg_id_hex": "3BA7",
+    "status": 1,
+    "responders": 2
+   },
+   "bytes_hex": "12 00 22 22 A7 3B 42"
+  },
+  {
+   "name": "beacon_с_координатами",
+   "description": "BEACON: «нужна помощь», откликнувшихся «много» (63), человек переместился",
+   "class": "BEACON",
+   "fields": {
+    "msg_id_hex": "2223",
+    "sos_msg_id_hex": "3BA7",
+    "status": 0,
+    "responders": 63,
+    "lat": 8.71,
+    "lon": 115.17
+   },
+   "bytes_hex": "12 08 23 22 A7 3B 3F 63 8C E5 D1"
+  },
+  {
+   "name": "location_с_подтверждением",
+   "description": "LOCATION: точные координаты + флаг «требуется подтверждение»",
+   "class": "LOCATION",
+   "fields": {
+    "msg_id_hex": "3333",
+    "lat": 8.71,
+    "lon": 115.17,
+    "want_ack": true
+   },
+   "bytes_hex": "15 0A 33 33 36 63 8C 0E E6 D1"
+  },
+  {
+   "name": "location_без_фикса",
+   "description": "LOCATION без GPS-фикса: поля-единицы, флага координат нет",
+   "class": "LOCATION",
+   "fields": {
+    "msg_id_hex": "3334"
+   },
+   "bytes_hex": "15 00 34 33 FF FF FF FF FF FF"
+  },
+  {
+   "name": "text_один_пакет",
+   "description": "TEXT «Привет» без сжатия, с запросом подтверждения, в одном пакете (+4Б метка v1)",
+   "class": "TEXT",
+   "fields": {
+    "msg_id_hex": "4444",
+    "text": "Привет",
+    "codec": 0,
+    "want_ack": true
+   },
+   "bytes_hex": "13 02 44 44 00 00 00 00 00 D0 9F D1 80 D0 B8 D0 B2 D0 B5 D1 82"
+  },
+  {
+   "name": "text_фрагмент",
+   "description": "Один фрагмент TEXT: номер 1 из 3, кусок нагрузки «AB» (v1: метка — в начале потока, фрагмент-пакет без неё)",
+   "class": "TEXT_FRAGMENT",
+   "direction": "decode",
+   "fields": {
+    "msg_id_hex": "5555",
+    "index": 1,
+    "total": 3,
+    "chunk_hex": "4142"
+   },
+   "bytes_hex": "13 01 55 55 01 03 41 42"
+  }
+ ],
+ "coarse_coords": [
+  {
+   "name": "бали_из_тв2",
+   "lat": 8.71,
+   "lon": 115.17,
+   "bytes_hex": "63 8C E5 D1",
+   "decoded_lat": 8.7109,
+   "decoded_lon": 115.1687,
+   "tolerance": 0.0005
+  },
+  {
+   "name": "нулевая_точка",
+   "comment": "Проверяет правило округления: 32767.5 обязано стать 32768",
+   "lat": 0.0,
+   "lon": 0.0,
+   "bytes_hex": "00 80 00 80",
+   "decoded_lat": 0.00137,
+   "decoded_lon": 0.00275,
+   "tolerance": 0.0005
+  },
+  {
+   "name": "юго_западный_угол",
+   "lat": -90.0,
+   "lon": -180.0,
+   "bytes_hex": "00 00 00 00",
+   "decoded_lat": -90.0,
+   "decoded_lon": -180.0,
+   "tolerance": 1e-06
+  }
+ ],
+ "fine_coords": [
+  {
+   "name": "бали_из_тв2б",
+   "lat": 8.71,
+   "lon": 115.17,
+   "bytes_hex": "36 63 8C 0E E6 D1",
+   "decoded_lat": 8.71,
+   "decoded_lon": 115.17,
+   "tolerance": 1e-05
+  },
+  {
+   "name": "нулевая_точка",
+   "comment": "Проверяет правило округления: 8388607.5 обязано стать 8388608",
+   "lat": 0.0,
+   "lon": 0.0,
+   "bytes_hex": "00 00 80 00 00 80",
+   "decoded_lat": 5.4e-06,
+   "decoded_lon": 1.07e-05,
+   "tolerance": 1e-05
+  },
+  {
+   "name": "юго_западный_угол",
+   "lat": -90.0,
+   "lon": -180.0,
+   "bytes_hex": "00 00 00 00 00 00",
+   "decoded_lat": -90.0,
+   "decoded_lon": -180.0,
+   "tolerance": 1e-06
+  }
+ ],
+ "needs_masks": [
+  {
+   "name": "бинты_и_лодка_из_тв1",
+   "needs": [
+    0,
+    3
+   ],
+   "bytes_hex": "0900"
+  },
+  {
+   "name": "пусто",
+   "needs": [],
+   "bytes_hex": "0000"
+  },
+  {
+   "name": "все_16_позиций",
+   "needs": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+   ],
+   "bytes_hex": "FFFF"
+  },
+  {
+   "name": "только_другое_бит_15",
+   "needs": [
+    15
+   ],
+   "bytes_hex": "0080"
+  }
+ ]
+}

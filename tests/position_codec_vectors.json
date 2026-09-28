@@ -1,0 +1,123 @@
+{
+  "spec": "Envelope v0 §5 fine coords: u24 = floor((lat+90)/180*16777215 + 0.5); u24 = floor((lon+180)/360*16777215 + 0.5); bytes = lat LE24 + lon LE24; вход вне диапазона — ошибка",
+  "vectors": [
+    {
+      "name": "origin",
+      "lat": 0.0,
+      "lon": 0.0,
+      "bytes_hex": "000080000080",
+      "decoded_lat": 5.36441834242396e-06,
+      "decoded_lon": 1.072883668484792e-05
+    },
+    {
+      "name": "north_pole",
+      "lat": 90.0,
+      "lon": 0.0,
+      "bytes_hex": "ffffff000080",
+      "decoded_lat": 90.0,
+      "decoded_lon": 1.072883668484792e-05
+    },
+    {
+      "name": "south_pole",
+      "lat": -90.0,
+      "lon": 0.0,
+      "bytes_hex": "000000000080",
+      "decoded_lat": -90.0,
+      "decoded_lon": 1.072883668484792e-05
+    },
+    {
+      "name": "antimeridian_neg",
+      "lat": 0.0,
+      "lon": -180.0,
+      "bytes_hex": "000080000000",
+      "decoded_lat": 5.36441834242396e-06,
+      "decoded_lon": -180.0
+    },
+    {
+      "name": "antimeridian_pos",
+      "lat": 0.0,
+      "lon": 180.0,
+      "bytes_hex": "000080ffffff",
+      "decoded_lat": 5.36441834242396e-06,
+      "decoded_lon": 180.0
+    },
+    {
+      "name": "casablanca",
+      "lat": 33.5731,
+      "lon": -7.5898,
+      "bytes_hex": "97bfaf519a7a",
+      "decoded_lat": 33.57309958774445,
+      "decoded_lon": -7.589804386484872
+    },
+    {
+      "name": "gibraltar",
+      "lat": 36.1408,
+      "lon": -5.3536,
+      "bytes_hex": "7666b368317c",
+      "decoded_lat": 36.14079988842009,
+      "decoded_lon": -5.353592953300051
+    },
+    {
+      "name": "bali_denpasar",
+      "lat": -8.65,
+      "lon": 115.2167,
+      "bytes_hex": "a1b2738feed1",
+      "decoded_lat": -8.650001206994133,
+      "decoded_lon": 115.21670909027512
+    },
+    {
+      "name": "hcmc",
+      "lat": 10.7626,
+      "lon": 106.6602,
+      "bytes_hex": "8a4e8fe5d8cb",
+      "decoded_lat": 10.762594983732399,
+      "decoded_lon": 106.66020433069491
+    },
+    {
+      "name": "one_step_lat",
+      "lat": -89.9999892711633,
+      "lon": 0.0,
+      "bytes_hex": "010000000080",
+      "decoded_lat": -89.9999892711633,
+      "decoded_lon": 1.072883668484792e-05
+    },
+    {
+      "name": "one_step_lon",
+      "lat": 0.0,
+      "lon": -179.9999785423266,
+      "bytes_hex": "000080010000",
+      "decoded_lat": 5.36441834242396e-06,
+      "decoded_lon": -179.9999785423266
+    },
+    {
+      "name": "half_step_rounds_up",
+      "lat": -89.99999463558164,
+      "lon": 0.0,
+      "bytes_hex": "010000000080",
+      "decoded_lat": -89.9999892711633,
+      "decoded_lon": 1.072883668484792e-05
+    }
+  ],
+  "reject": [
+    {
+      "name": "lat_over",
+      "lat": 90.0001,
+      "lon": 0.0
+    },
+    {
+      "name": "lat_under",
+      "lat": -90.0001,
+      "lon": 0.0
+    },
+    {
+      "name": "lon_over",
+      "lat": 0.0,
+      "lon": 180.0001
+    },
+    {
+      "name": "lon_under",
+      "lat": 0.0,
+      "lon": -180.0001
+    }
+  ]
+}

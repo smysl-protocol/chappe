@@ -1,0 +1,48 @@
+# Служебные файлы, которым не место в git
+
+# Кэш Python (создаётся автоматически при запуске .py-файлов)
+__pycache__/
+*.pyc
+
+# Личные настройки Xcode (у каждого разработчика свои)
+xcuserdata/
+*.xcuserstate
+
+# Служебные файлы macOS
+.DS_Store
+
+# Большие бинарные артефакты — качаются скриптами, в git не живут
+ios/LlamaKit/llama.xcframework/
+models/
+ios/LlamaKit/.build/
+ios/Chappe/build-device/
+
+# Аудио фермы диктовок и любые звуковые артефакты
+*.wav
+*.aiff
+*.m4a
+*.caf
+
+# Сборочные каталоги
+build/
+DerivedData/
+
+# Большие входы сборки словаря НЕ игнорируются (en_50k, concepticon):
+# нужны для воспроизводимой пересборки rm_dict
+ios/Chappe/build-sim/
+
+# Выгрузки контейнера приложения (Xcode → Devices): данные пользователя,
+# в репозиторий не попадают
+*.xcappdata/
+
+# WP4 (05.08): криптоматериал и артефакты, которым в git не место никогда
+*.p12
+*.mobileprovision
+*.pem
+*.key
+.env
+.env.*
+*.xcresult/
+# идентичности dev-машин (визитки relay-теста живут в $HOME, не тут)
+*identity*.json
+design/

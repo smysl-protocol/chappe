@@ -1,0 +1,62 @@
+{
+  "title": "R+M SOS-извлечение — общие тест-векторы",
+  "format_version": 0,
+  "comment": [
+    "Общий файл для всех реализаций SOS-извлечения (Python tools/bench_http.py,",
+    "Swift ios/RM/RM/LLM/SOSExtraction.swift). Защита от регресса при смене модели:",
+    "любая модель-кандидат обязана пройти оба вектора.",
+    "Режим: жёсткая JSON-схема (как в векторе), температура 0, top-k 1 (правило №8).",
+    "Промпт обязан перечислять допустимые значения ВСЕХ enum-полей.",
+    "",
+    "ВАЖНО (ограничение схемы): needs имеет minItems=1 — схема ПРИНУЖДАЕТ выдать",
+    "хотя бы одну потребность даже для мирного текста (вектор не_sos_поход даёт",
+    "needs=[bandages] на Qwen3-4B). Поэтому результат извлечения — всегда только",
+    "черновик формы: модель не решает, SOS это или нет (правило №9 CLAUDE.md)."
+  ],
+
+  "schema": {
+    "type": "object",
+    "properties": {
+      "type":         {"type": "string", "enum": ["sos", "medical", "info"]},
+      "severity":     {"type": "string", "enum": ["low", "medium", "high", "critical"]},
+      "people_count": {"type": "integer", "minimum": 0, "maximum": 31},
+      "injury":       {"type": "string", "enum": ["none", "bleeding", "fracture",
+                                                  "burn", "head", "unconscious", "other"]},
+      "needs": {
+        "type": "array",
+        "minItems": 1,
+        "maxItems": 4,
+        "items": {"type": "string",
+                  "enum": ["bandages", "water", "food", "boat", "vehicle",
+                           "doctor", "medicine", "evacuation", "fuel", "shelter"]}
+      }
+    },
+    "required": ["type", "severity", "people_count", "injury", "needs"],
+    "additionalProperties": false
+  },
+
+  "cases": [
+    {
+      "name": "sos_пляж_кровотечение",
+      "role": "позитивный контроль: настоящий сигнал бедствия",
+      "message": "Мы на северном пляже за третьим пирсом, у моего друга сильно порезана нога, кровь не останавливается уже минут двадцать, нас тут трое, аптечки нет, телефон почти сел, нужен кто-то с бинтами и лодка чтобы вывезти.",
+      "expect": {
+        "type": "sos",
+        "severity": "critical",
+        "people_count": 3,
+        "injury": "bleeding",
+        "needs_must_include": ["bandages", "boat"]
+      }
+    },
+    {
+      "name": "не_sos_поход",
+      "role": "негативный контроль: рассказ про поход — нарочно содержит «тревожные» слова (кровь, нога, трое), но по смыслу всё в порядке; модель НЕ должна увидеть здесь бедствие",
+      "message": "Ходили вчера в поход через хребет: тропу после ливня размыло, пришлось идти в обход, устали страшно. Друг поцарапал ногу о камни, немного крови было, но заклеили пластырем и дошли. Нас было трое, к закату вернулись в лагерь, поужинали и легли спать — всё отлично, планируем следующий маршрут.",
+      "expect": {
+        "type_not": "sos",
+        "severity_not": "critical",
+        "comment": "поля injury/needs не проверяются: схема принуждает их заполнить (см. comment выше)"
+      }
+    }
+  ]
+}

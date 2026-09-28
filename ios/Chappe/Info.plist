@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>meshtastic</string>
+	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsLocalNetworking</key>
+		<true/>
+	</dict>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+		<string>bluetooth-central</string>
+	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>WiFiAwareServices</key>
+	<dict>
+		<key>_chappe-near._tcp</key>
+		<dict>
+			<!-- ПУСТЫЕ СЛОВАРИ, не булевы: <true/> — malformed, и
+			     WiFiAware роняет процесс на первом касании allServices
+			     (полевой краш «Мой QR» 08.08; ассерт пойман стендом
+			     11.08, формат сверен с Adopting Wi-Fi Aware) -->
+			<key>Publishable</key>
+			<dict/>
+			<key>Subscribable</key>
+			<dict/>
+		</dict>
+	</dict>
+</dict>
+</plist>

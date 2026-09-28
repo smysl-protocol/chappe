@@ -1,0 +1,1935 @@
+{
+ "voice": {
+  "n": 162,
+  "semantic": 42,
+  "text": 120,
+  "facts_ok": 78,
+  "facts_all": 174,
+  "bytes": 702,
+  "utf8": 10255,
+  "packets": 42,
+  "latin_tokens": 45,
+  "tokens": 186,
+  "by_cat": {
+   "numbers": [
+    7,
+    7
+   ],
+   "entities": [
+    59,
+    138
+   ],
+   "names": [
+    6,
+    20
+   ],
+   "negations": [
+    0,
+    2
+   ],
+   "places": [
+    6,
+    7
+   ]
+  },
+  "text_reasons": {
+   "прегейт: много цифр": 8,
+   "гейт: литность >=50%": 55,
+   "прегейт: вне лексикона >37%": 57
+  },
+  "lost_artifact": 32,
+  "lost_by_cat": {
+   "entities": [
+    22,
+    57
+   ],
+   "names": [
+    9,
+    5
+   ],
+   "negations": [
+    1,
+    1
+   ],
+   "places": [
+    0,
+    1
+   ]
+  },
+  "lost_real": 64
+ },
+ "residual_top100": [
+  [
+   "sberbank",
+   2
+  ],
+  [
+   "sber",
+   2
+  ],
+  [
+   "getta",
+   1
+  ],
+  [
+   "rostov",
+   1
+  ],
+  [
+   "kaij",
+   1
+  ],
+  [
+   "account",
+   1
+  ],
+  [
+   "pedicure",
+   1
+  ],
+  [
+   "cheat",
+   1
+  ],
+  [
+   "episode",
+   1
+  ],
+  [
+   "pop",
+   1
+  ],
+  [
+   "football",
+   1
+  ],
+  [
+   "fee",
+   1
+  ],
+  [
+   "hotel",
+   1
+  ],
+  [
+   "swift",
+   1
+  ],
+  [
+   "assistant",
+   1
+  ],
+  [
+   "flowers",
+   1
+  ],
+  [
+   "invisible",
+   1
+  ],
+  [
+   "krampus",
+   1
+  ],
+  [
+   "orlova",
+   1
+  ],
+  [
+   "incredible",
+   1
+  ],
+  [
+   "twitter",
+   1
+  ],
+  [
+   "chekhov",
+   1
+  ],
+  [
+   "tnt",
+   1
+  ],
+  [
+   "edik",
+   1
+  ],
+  [
+   "payment",
+   1
+  ],
+  [
+   "spiral",
+   1
+  ],
+  [
+   "map",
+   1
+  ]
+ ],
+ "fixtures": [
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Гетта сезон три",
+   "pivot": "getta season 3",
+   "units": [
+    [
+     "lit",
+     "getta"
+    ],
+    [
+     "code",
+     1240
+    ],
+    [
+     "num",
+     3
+    ]
+   ],
+   "blob_hex": "03ec9005d4fcd33decdec603",
+   "rendered": "Getta сезон 3",
+   "lost": [
+    [
+     "entities",
+     "гетт"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Хочу посмотреть Ростов папа на телевизоре",
+   "pivot": "i want to watch rostov on tv dad .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     344
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     700
+    ],
+    [
+     "lit",
+     "rostov"
+    ],
+    [
+     "code",
+     306
+    ],
+    [
+     "lit",
+     "tv"
+    ],
+    [
+     "code",
+     525
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "091c91770bb240069239668fe1876480029be31d88",
+   "rendered": "Я хотеть смотреть rostov на tv папа.",
+   "lost": [
+    [
+     "names",
+     "ростов"
+    ],
+    [
+     "entities",
+     "посм"
+    ],
+    [
+     "entities",
+     "теле"
+    ],
+    [
+     "entities",
+     "хочу"
+    ],
+    [
+     "entities",
+     "рост"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "У тебя найдётся лю Кейдж",
+   "pivot": "do you have a guy named kaij ?",
+   "units": [
+    [
+     "code",
+     545
+    ],
+    [
+     "code",
+     292
+    ],
+    [
+     "code",
+     488
+    ],
+    [
+     "code",
+     481
+    ],
+    [
+     "lit",
+     "kaij"
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "06c9e6c2d83fb24004f77a1f6500",
+   "rendered": "У тебя есть? Парень имя kaij?",
+   "lost": [
+    [
+     "names",
+     "кейдж"
+    ],
+    [
+     "entities",
+     "найд"
+    ],
+    [
+     "entities",
+     "кейд"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Пожалуйста пополните мне счёт",
+   "pivot": "please top up my account .",
+   "units": [
+    [
+     "code",
+     399
+    ],
+    [
+     "code",
+     991
+    ],
+    [
+     "code",
+     333
+    ],
+    [
+     "code",
+     305
+    ],
+    [
+     "lit",
+     "account"
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "06ad7ba90ebfb240077b3e78f7453080",
+   "rendered": "Пожалуйста наверху вверх мой account.",
+   "lost": [
+    [
+     "entities",
+     "попо"
+    ],
+    [
+     "entities",
+     "счёт"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Мне нужен педикюр забей мне место",
+   "pivot": "i need a pedicure . book me a spot .",
+   "units": [
+    [
+     "code",
+     439
+    ],
+    [
+     "code",
+     292
+    ],
+    [
+     "lit",
+     "pedicure"
+    ],
+    [
+     "code",
+     280
+    ],
+    [
+     "code",
+     962
+    ],
+    [
+     "code",
+     301
+    ],
+    [
+     "code",
+     292
+    ],
+    [
+     "code",
+     1471
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "09b74dd92008dafe8873ee91f176dd59bf1010",
+   "rendered": "Мне нужно pedicure. Книга меня место (точка).",
+   "lost": [
+    [
+     "entities",
+     "педи"
+    ],
+    [
+     "entities",
+     "нуже"
+    ],
+    [
+     "entities",
+     "забе"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Обмани меня сезон восемь часть 13",
+   "pivot": "cheat me season 8 episode 13 .",
+   "units": [
+    [
+     "lit",
+     "cheat"
+    ],
+    [
+     "code",
+     301
+    ],
+    [
+     "code",
+     1240
+    ],
+    [
+     "num",
+     8
+    ],
+    [
+     "lit",
+     "episode"
+    ],
+    [
+     "num",
+     13
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "07ec9005cf03ef4cafd9bd8c08ec90077f6c32c7a1fec60d10",
+   "rendered": "Cheat меня сезон 8 episode 13.",
+   "lost": [
+    [
+     "entities",
+     "обма"
+    ],
+    [
+     "entities",
+     "част"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Поп звезда не переставая не останавливайся найти",
+   "pivot": "pop star never stop find .",
+   "units": [
+    [
+     "lit",
+     "pop"
+    ],
+    [
+     "code",
+     1293
+    ],
+    [
+     "code",
+     391
+    ],
+    [
+     "code",
+     447
+    ],
+    [
+     "code",
+     428
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "06ec9003db1edf8155ae5b4840",
+   "rendered": "Pop звезда никогда остановить найти.",
+   "lost": [
+    [
+     "negations",
+     "('neg', 'пере')"
+    ],
+    [
+     "negations",
+     "('neg', 'оста')"
+    ],
+    [
+     "entities",
+     "пере"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Джой посмотреть Восток тв",
+   "pivot": "joy watch east tv .",
+   "units": [
+    [
+     "code",
+     1644
+    ],
+    [
+     "code",
+     700
+    ],
+    [
+     "code",
+     1577
+    ],
+    [
+     "lit",
+     "tv"
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "05ff61b85fbd7648029be040",
+   "rendered": "Радость смотреть восток tv.",
+   "lost": [
+    [
+     "names",
+     "восток"
+    ],
+    [
+     "entities",
+     "посм"
+    ],
+    [
+     "entities",
+     "джой"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Футбольный матч Челси Браен",
+   "pivot": "football match between name_Chelsea and name_Braen",
+   "units": [
+    [
+     "lit",
+     "football"
+    ],
+    [
+     "code",
+     1461
+    ],
+    [
+     "code",
+     820
+    ],
+    [
+     "name",
+     "Chelsea"
+    ],
+    [
+     "code",
+     294
+    ],
+    [
+     "name",
+     "Braen"
+    ]
+   ],
+   "blob_hex": "06ec9008d31c73667b5ebfc1b8ebb28007fe00008703fae57de3fb2805fe00008523cfc4",
+   "rendered": "Football спички (матч) между Chelsea и Braen",
+   "lost": [
+    [
+     "entities",
+     "брае"
+    ],
+    [
+     "entities",
+     "челс"
+    ],
+    [
+     "entities",
+     "футб"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Какая комиссия за перевод Сбербанк",
+   "pivot": "what is the fee for transfer from sberbank",
+   "units": [
+    [
+     "code",
+     299
+    ],
+    [
+     "code",
+     297
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "lit",
+     "fee"
+    ],
+    [
+     "code",
+     304
+    ],
+    [
+     "code",
+     1348
+    ],
+    [
+     "code",
+     352
+    ],
+    [
+     "lit",
+     "sberbank"
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "0952913b2403d2fbebbe732fec90089733f2667a2f7500",
+   "rendered": "Что fee для перевод (денег) от sberbank?",
+   "lost": [
+    [
+     "names",
+     "сберба"
+    ],
+    [
+     "entities",
+     "коми"
+    ],
+    [
+     "entities",
+     "сбер"
+    ],
+    [
+     "entities",
+     "кака"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Вовой и Шутовым",
+   "pivot": "name_Vovoy and name_Shutovom",
+   "units": [
+    [
+     "name",
+     "Vovoy"
+    ],
+    [
+     "code",
+     294
+    ],
+    [
+     "name",
+     "Shutovom"
+    ]
+   ],
+   "blob_hex": "03eca005fe0000ad1fc47c0feca008fe0000a706e9a3f88f60",
+   "rendered": "Vovoy и Shutovom",
+   "lost": [
+    [
+     "entities",
+     "вово"
+    ],
+    [
+     "entities",
+     "шуто"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Есть ли велопрогулки в отеле",
+   "pivot": "are there bike walks at the hotel ?",
+   "units": [
+    [
+     "code",
+     314
+    ],
+    [
+     "code",
+     322
+    ],
+    [
+     "code",
+     1089
+    ],
+    [
+     "code",
+     866
+    ],
+    [
+     "code",
+     334
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "lit",
+     "hotel"
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "0870f9e36e68882764800582399fd6a0",
+   "rendered": "Там байк идти пешком у hotel?",
+   "lost": [
+    [
+     "places",
+     "отел"
+    ],
+    [
+     "entities",
+     "вело"
+    ],
+    [
+     "entities",
+     "отел"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Когда был основан Сбербанк",
+   "pivot": "sberbank was founded in 1987 .",
+   "units": [
+    [
+     "lit",
+     "sberbank"
+    ],
+    [
+     "code",
+     310
+    ],
+    [
+     "code",
+     552
+    ],
+    [
+     "code",
+     298
+    ],
+    [
+     "num",
+     1987
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "06ec90089733f2667a2f7699593ec6c30f10",
+   "rendered": "Sberbank нашёл в 1987.",
+   "lost": [
+    [
+     "names",
+     "сберба"
+    ],
+    [
+     "entities",
+     "сбер"
+    ],
+    [
+     "entities",
+     "осно"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Джой поставь Swift Hits",
+   "pivot": "joy play swift hits",
+   "units": [
+    [
+     "code",
+     1644
+    ],
+    [
+     "code",
+     674
+    ],
+    [
+     "lit",
+     "swift"
+    ],
+    [
+     "code",
+     763
+    ]
+   ],
+   "blob_hex": "04ff61b43b2405977c3a66e010",
+   "rendered": "Радость играть swift ударить",
+   "lost": [
+    [
+     "names",
+     "hits"
+    ],
+    [
+     "names",
+     "swift"
+    ],
+    [
+     "entities",
+     "пост"
+    ],
+    [
+     "entities",
+     "джой"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Привет ассистент закажи мне пятилитровую бутылку воды Шишкин лес",
+   "pivot": "hi assistant order me a 5 liter bottle of water from name_Shishkin forest",
+   "units": [
+    [
+     "code",
+     562
+    ],
+    [
+     "lit",
+     "assistant"
+    ],
+    [
+     "code",
+     1103
+    ],
+    [
+     "code",
+     301
+    ],
+    [
+     "code",
+     292
+    ],
+    [
+     "num",
+     5
+    ],
+    [
+     "code",
+     1183
+    ],
+    [
+     "code",
+     1556
+    ],
+    [
+     "code",
+     296
+    ],
+    [
+     "code",
+     737
+    ],
+    [
+     "code",
+     352
+    ],
+    [
+     "name",
+     "Shishkin"
+    ],
+    [
+     "code",
+     1698
+    ]
+   ],
+   "blob_hex": "0dcc1d92097a59619667a29bc88acdd8c005f4a7eca8ef3cbfb28008fe0000a70432c1ef0c5ff980",
+   "rendered": "Привет assistant заказ меня 5 литр бутылка вода от Shishkin лес",
+   "lost": [
+    [
+     "entities",
+     "пяти"
+    ],
+    [
+     "entities",
+     "асси"
+    ],
+    [
+     "entities",
+     "шишк"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Добрый день подскажите а можно будет заказать цветы в номер",
+   "pivot": "good day can you order flowers to the room ?",
+   "units": [
+    [
+     "code",
+     349
+    ],
+    [
+     "code",
+     432
+    ],
+    [
+     "code",
+     316
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     1103
+    ],
+    [
+     "lit",
+     "flowers"
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     604
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "0a965ace83c89d9207d3ae3defc92949a29400",
+   "rendered": "Хорошо день можно ты заказ flowers комната?",
+   "lost": [
+    [
+     "entities",
+     "добр"
+    ],
+    [
+     "entities",
+     "номе"
+    ],
+    [
+     "entities",
+     "подс"
+    ],
+    [
+     "entities",
+     "цвет"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Слушай я хочу посмотреть невидимая женщина включи мне",
+   "pivot": "listen i want to watch invisible woman turn on for me",
+   "units": [
+    [
+     "code",
+     537
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     344
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     700
+    ],
+    [
+     "lit",
+     "invisible"
+    ],
+    [
+     "code",
+     560
+    ],
+    [
+     "code",
+     719
+    ],
+    [
+     "code",
+     304
+    ],
+    [
+     "code",
+     301
+    ]
+   ],
+   "blob_hex": "0ac8e3922ee1764809862f88658736b7f2f6eaae56",
+   "rendered": "Слушать я хотеть смотреть invisible женщина включи для меня",
+   "lost": [
+    [
+     "entities",
+     "посм"
+    ],
+    [
+     "entities",
+     "хочу"
+    ],
+    [
+     "entities",
+     "неви"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Киноха Крампус найди",
+   "pivot": "find name_Kinozha krampus",
+   "units": [
+    [
+     "code",
+     428
+    ],
+    [
+     "name",
+     "Kinozha"
+    ],
+    [
+     "lit",
+     "krampus"
+    ]
+   ],
+   "blob_hex": "03b4bb2807fe0000970c51fee07bb24007f791ed9b774a",
+   "rendered": "Найти Kinozha krampus",
+   "lost": [
+    [
+     "names",
+     "крампу"
+    ],
+    [
+     "entities",
+     "кино"
+    ],
+    [
+     "entities",
+     "крам"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Сбер включи Алина Орлова",
+   "pivot": "sber turn on name_Alice orlova",
+   "units": [
+    [
+     "lit",
+     "sber"
+    ],
+    [
+     "code",
+     719
+    ],
+    [
+     "name",
+     "Alice"
+    ],
+    [
+     "lit",
+     "orlova"
+    ]
+   ],
+   "blob_hex": "04ec90049733f26eaf650005fe000083ae1ceff648068e4d71fc3c",
+   "rendered": "Sber включи Alice orlova",
+   "lost": [
+    [
+     "names",
+     "орлова"
+    ],
+    [
+     "entities",
+     "орло"
+    ],
+    [
+     "entities",
+     "алин"
+    ],
+    [
+     "entities",
+     "сбер"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Часть 13 первый сезон невероятная",
+   "pivot": "part 13 season 1 incredible",
+   "units": [
+    [
+     "code",
+     739
+    ],
+    [
+     "num",
+     13
+    ],
+    [
+     "code",
+     1240
+    ],
+    [
+     "num",
+     1
+    ],
+    [
+     "lit",
+     "incredible"
+    ]
+   ],
+   "blob_hex": "05de9ec60df66f630001ec900a862cf23fa21cdadf",
+   "rendered": "Часть 13 сезон 1 incredible",
+   "lost": [
+    [
+     "entities",
+     "перв"
+    ],
+    [
+     "entities",
+     "неве"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Что в Twitter интересно",
+   "pivot": "what's interesting on twitter",
+   "units": [
+    [
+     "code",
+     299
+    ],
+    [
+     "code",
+     297
+    ],
+    [
+     "code",
+     1549
+    ],
+    [
+     "code",
+     306
+    ],
+    [
+     "lit",
+     "twitter"
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "065297ebcc3b24079b7c334cfc8a00",
+   "rendered": "Что интерес на twitter?",
+   "lost": [
+    [
+     "names",
+     "twitte"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Перейди в игра в путь",
+   "pivot": "go into the game path .",
+   "units": [
+    [
+     "code",
+     328
+    ],
+    [
+     "code",
+     425
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     834
+    ],
+    [
+     "code",
+     1338
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0682b3c9c91f2f10",
+   "rendered": "Идти в игра тропа.",
+   "lost": [
+    [
+     "entities",
+     "пере"
+    ],
+    [
+     "entities",
+     "путь"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "В каком году был написан рассказ Чехова мальчики",
+   "pivot": "the story by chekhov boys was written in 1886 .",
+   "units": [
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     794
+    ],
+    [
+     "code",
+     381
+    ],
+    [
+     "lit",
+     "chekhov"
+    ],
+    [
+     "code",
+     889
+    ],
+    [
+     "code",
+     310
+    ],
+    [
+     "code",
+     1049
+    ],
+    [
+     "code",
+     298
+    ],
+    [
+     "num",
+     1886
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0a2710533b2407cf03fef047f1cfed3c1c9f6300de0e10",
+   "rendered": "История у chekhov парни писать в 1886.",
+   "lost": [
+    [
+     "names",
+     "чехова"
+    ],
+    [
+     "entities",
+     "како"
+    ],
+    [
+     "entities",
+     "расс"
+    ],
+    [
+     "entities",
+     "маль"
+    ],
+    [
+     "entities",
+     "напи"
+    ],
+    [
+     "entities",
+     "чехо"
+    ],
+    [
+     "entities",
+     "году"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Найти новый на ТНТ",
+   "pivot": "find new show on tnt",
+   "units": [
+    [
+     "code",
+     428
+    ],
+    [
+     "code",
+     463
+    ],
+    [
+     "code",
+     548
+    ],
+    [
+     "code",
+     306
+    ],
+    [
+     "lit",
+     "tnt"
+    ]
+   ],
+   "blob_hex": "05b4af5ca4c3b240039a2980",
+   "rendered": "Найти новый показать на tnt",
+   "lost": [
+    [
+     "names",
+     "тнт"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Сезон один навание",
+   "pivot": "season 1 only .",
+   "units": [
+    [
+     "code",
+     1240
+    ],
+    [
+     "num",
+     1
+    ],
+    [
+     "code",
+     394
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "04f66f630001ac04",
+   "rendered": "Сезон 1 только.",
+   "lost": [
+    [
+     "entities",
+     "нава"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Джой найди Кристина",
+   "pivot": "find name_Kristina .",
+   "units": [
+    [
+     "code",
+     428
+    ],
+    [
+     "name",
+     "Kristina"
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "03b4bb2808fe0000972432cd0c4f08",
+   "rendered": "Найти Kristina.",
+   "lost": [
+    [
+     "entities",
+     "крис"
+    ],
+    [
+     "entities",
+     "джой"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Поставь причал HD",
+   "pivot": "put the hd dock .",
+   "units": [
+    [
+     "code",
+     456
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "lit",
+     "hd"
+    ],
+    [
+     "code",
+     1413
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "05bb89d920028347dac2",
+   "rendered": "Положить hd причал.",
+   "lost": [
+    [
+     "entities",
+     "пост"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Афина дай номер банка",
+   "pivot": "give me the bank number name_Afina",
+   "units": [
+    [
+     "code",
+     405
+    ],
+    [
+     "code",
+     301
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1106
+    ],
+    [
+     "code",
+     795
+    ],
+    [
+     "name",
+     "Afina"
+    ]
+   ],
+   "blob_hex": "06aed593c8fc43d94005fe000083a6189e",
+   "rendered": "Дать меня банк номер Afina",
+   "lost": [
+    [
+     "entities",
+     "афин"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Набери сериал Купидон",
+   "pivot": "call the show name_Cupid",
+   "units": [
+    [
+     "code",
+     448
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     548
+    ],
+    [
+     "name",
+     "Cupid"
+    ]
+   ],
+   "blob_hex": "04b98994bb2805fe000087bb6c3a00",
+   "rendered": "Звонить показать Cupid",
+   "lost": [
+    [
+     "names",
+     "купидо"
+    ],
+    [
+     "entities",
+     "сери"
+    ],
+    [
+     "entities",
+     "купи"
+    ],
+    [
+     "entities",
+     "набе"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Эдик на курсов",
+   "pivot": "edik on courses .",
+   "units": [
+    [
+     "lit",
+     "edik"
+    ],
+    [
+     "code",
+     306
+    ],
+    [
+     "code",
+     522
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "04ec90047f443eec31c080",
+   "rendered": "Edik на конечно.",
+   "lost": [
+    [
+     "entities",
+     "курс"
+    ],
+    [
+     "entities",
+     "эдик"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "У тебя есть час расплаты",
+   "pivot": "do you have an hour for payment ?",
+   "units": [
+    [
+     "code",
+     545
+    ],
+    [
+     "code",
+     360
+    ],
+    [
+     "code",
+     965
+    ],
+    [
+     "code",
+     304
+    ],
+    [
+     "lit",
+     "payment"
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "06c9f37edd2eec9007daf70d8fc53280",
+   "rendered": "У тебя есть? Час для payment?",
+   "lost": [
+    [
+     "entities",
+     "расп"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Поставь обратно на землю",
+   "pivot": "put it back on the ground .",
+   "units": [
+    [
+     "code",
+     456
+    ],
+    [
+     "code",
+     293
+    ],
+    [
+     "code",
+     362
+    ],
+    [
+     "code",
+     306
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1276
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "07bb8e9cb027bc44",
+   "rendered": "Положить обратно на земля (грунт).",
+   "lost": [
+    [
+     "entities",
+     "пост"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Большие неприятности четыре K",
+   "pivot": "big problems 4 k",
+   "units": [
+    [
+     "code",
+     492
+    ],
+    [
+     "code",
+     677
+    ],
+    [
+     "num",
+     4
+    ],
+    [
+     "lit",
+     "k"
+    ]
+   ],
+   "blob_hex": "04c35b4fb18004ec9001f7",
+   "rendered": "Большой проблема 4 k",
+   "lost": [
+    [
+     "entities",
+     "непр"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Сбер оплати телефонной связи другого человека",
+   "pivot": "sber pay another person's phone bill .",
+   "units": [
+    [
+     "lit",
+     "sber"
+    ],
+    [
+     "code",
+     747
+    ],
+    [
+     "code",
+     538
+    ],
+    [
+     "code",
+     738
+    ],
+    [
+     "code",
+     673
+    ],
+    [
+     "code",
+     1263
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "07ec90049733f26f8e48de8d9fee4100",
+   "rendered": "Sber заплатить другой человек телефон счёт (к оплате).",
+   "lost": [
+    [
+     "entities",
+     "сбер"
+    ],
+    [
+     "entities",
+     "связ"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Спираль второй сезон",
+   "pivot": "spiral season 2",
+   "units": [
+    [
+     "lit",
+     "spiral"
+    ],
+    [
+     "code",
+     1240
+    ],
+    [
+     "num",
+     2
+    ]
+   ],
+   "blob_hex": "03ec9006976c323dafd9bd8c02",
+   "rendered": "Spiral сезон 2",
+   "lost": [
+    [
+     "entities",
+     "втор"
+    ],
+    [
+     "entities",
+     "спир"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Надо завершить мой видеовызов прямо сейчас",
+   "pivot": "i need to end my video call right now .",
+   "units": [
+    [
+     "code",
+     439
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     671
+    ],
+    [
+     "code",
+     305
+    ],
+    [
+     "code",
+     929
+    ],
+    [
+     "code",
+     448
+    ],
+    [
+     "code",
+     471
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "08b74bb357f53dcd7e88",
+   "rendered": "Мне нужно конец мой видео звонить прямо сейчас.",
+   "lost": [
+    [
+     "entities",
+     "заве"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Передача про животных найти",
+   "pivot": "find the animal show .",
+   "units": [
+    [
+     "code",
+     428
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1558
+    ],
+    [
+     "code",
+     548
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "05b489fb3e5210",
+   "rendered": "Найти животное показать.",
+   "lost": [
+    [
+     "entities",
+     "пере"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Версаль на карте",
+   "pivot": "name_Versailles on the map .",
+   "units": [
+    [
+     "name",
+     "Versailles"
+    ],
+    [
+     "code",
+     306
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "lit",
+     "map"
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "05eca00afe0000acfc92bd0ebd6fcac09d9203d8f6d100",
+   "rendered": "Versailles на map.",
+   "lost": [
+    [
+     "entities",
+     "карт"
+    ],
+    [
+     "entities",
+     "верс"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Запусти на Смотрёшку передача кухни тв",
+   "pivot": "start kitchen show on watch party .",
+   "units": [
+    [
+     "code",
+     634
+    ],
+    [
+     "code",
+     1455
+    ],
+    [
+     "code",
+     548
+    ],
+    [
+     "code",
+     306
+    ],
+    [
+     "code",
+     700
+    ],
+    [
+     "code",
+     787
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "07d51f8065261b85c322",
+   "rendered": "Начать кухня показать на смотреть вечеринка.",
+   "lost": [
+    [
+     "names",
+     "смотрё"
+    ],
+    [
+     "entities",
+     "пере"
+    ],
+    [
+     "entities",
+     "запу"
+    ]
+   ]
+  }
+ ],
+ "n_input_files": 162
+}

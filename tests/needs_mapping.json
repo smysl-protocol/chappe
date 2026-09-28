@@ -1,0 +1,33 @@
+{
+  "title": "R+M — соответствие enum-строк модели и битов needs-маски envelope (§6)",
+  "format_version": 0,
+  "comment": [
+    "ЕДИНСТВЕННЫЙ источник истины для соответствия «enum-строка модели ↔ номер",
+    "бита в маске needs». Обе реализации (Python sim/envelope.py MODEL_NEED_BITS,",
+    "Swift ios/RM/RM/Envelope/NeedsMapping.swift) обязаны совпадать с этим файлом —",
+    "проверяется тестами обеих сторон.",
+    "Каждое значение enum из схемы SOS-извлечения (tests/sos_extraction_vectors.json)",
+    "обязано иметь бит. fuel и shelter добавлены 25.07.2026 в резервные биты 12 и 13",
+    "(обновление §6 спеки docs/RM_Envelope_v0.md)."
+  ],
+  "model_to_bit": {
+    "bandages":   0,
+    "water":      1,
+    "food":       2,
+    "boat":       3,
+    "vehicle":    4,
+    "doctor":     5,
+    "medicine":   6,
+    "evacuation": 7,
+    "fuel":       12,
+    "shelter":    13
+  },
+  "envelope_only_bits": {
+    "8":  "связь",
+    "9":  "тепло / одежда",
+    "10": "инструмент",
+    "11": "помощь в переноске",
+    "15": "другое (см. хвост)"
+  },
+  "reserved_bits": [14]
+}

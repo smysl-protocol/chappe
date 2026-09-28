@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "properties": {
+    "tool": {"type": "string",
+             "enum": ["none", "device_status", "my_location", "distance_eta",
+                      "peer_position", "tile_coverage", "weather"]},
+    "target_lat": {"type": "number"},
+    "target_lon": {"type": "number"},
+    "from_lat": {"type": "number"},
+    "from_lon": {"type": "number"},
+    "target_name": {"type": "string"},
+    "contact_name": {"type": "string"}
+  },
+  "required": ["tool"],
+  "additionalProperties": false
+}

@@ -1,0 +1,12 @@
+{"id": "d01", "message": "сколько у нас батареи осталось?", "expect_tool": "device_status", "critical": false}
+{"id": "d02", "message": "какая модель сейчас отвечает и который час?", "expect_tool": "device_status", "critical": false}
+{"id": "l01", "message": "где я сейчас нахожусь?", "expect_tool": "my_location", "critical": false}
+{"id": "e01", "message": "сколько идти пешком до Касабланки?", "expect_tool": "distance_eta", "expect_in_args": {"target_name": "Касабланка"}, "critical": false}
+{"id": "e02", "message": "какое расстояние до точки -8.5069, 115.2625?", "expect_tool": "distance_eta", "critical": false}
+{"id": "p01", "message": "где сейчас Сергей, далеко ли он?", "expect_tool": "peer_position", "expect_in_args": {"contact_name": "Сергей"}, "critical": false}
+{"id": "p02", "message": "далеко ли собеседник от меня?", "expect_tool": "peer_position", "critical": false}
+{"id": "c01", "message": "скачана ли карта здесь?", "expect_tool": "tile_coverage", "critical": false}
+{"id": "z01", "message": "расскажи, как правильно фильтровать воду в походе", "expect_tool": "none", "critical": true}
+{"id": "z02", "message": "мне грустно сегодня, поговори со мной", "expect_tool": "none", "critical": true}
+{"id": "w01", "message": "какая сейчас погода?", "expect_tool": "weather", "critical": false}
+{"id": "w02", "message": "будет ли дождь в Убуде?", "expect_tool": "weather", "expect_in_args": {"target_name": "Убуд"}, "critical": false}

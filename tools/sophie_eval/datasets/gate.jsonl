@@ -1,0 +1,37 @@
+{"id": "g01", "category": "greeting", "message": "привет", "expected_route": "heuristic", "should_retrieve": false, "typical": true}
+{"id": "g02", "category": "greeting", "message": "Добрый вечер", "expected_route": "heuristic", "should_retrieve": false}
+{"id": "g03", "category": "greeting", "message": "спасибо!", "expected_route": "heuristic", "should_retrieve": false, "typical": true}
+{"id": "g04", "category": "greeting", "message": "ок", "expected_route": "heuristic", "should_retrieve": false}
+{"id": "g05", "category": "greeting", "message": "пока", "expected_route": "heuristic", "should_retrieve": false, "typical": true}
+{"id": "m01", "category": "marker", "message": "помнишь, что я говорил про лодку?", "expected_route": "heuristic", "should_retrieve": true, "typical": true}
+{"id": "m02", "category": "marker", "message": "запомни: аптечка лежит в синем рюкзаке", "expected_route": "heuristic", "should_retrieve": true, "typical": true}
+{"id": "m03", "category": "marker", "message": "как меня зовут?", "expected_route": "heuristic", "should_retrieve": true, "typical": true}
+{"id": "m04", "category": "marker", "message": "моя жена выходит на связь вечером", "expected_route": "heuristic", "should_retrieve": true, "typical": true}
+{"id": "m05", "category": "marker", "message": "у меня завтра перелёт, что не забыть из техники?", "expected_route": "heuristic", "should_retrieve": true, "typical": true}
+{"id": "m06", "category": "marker", "message": "мы обсуждали маршрут — какой в итоге выбрали?", "expected_route": "heuristic", "should_retrieve": true, "typical": true}
+{"id": "m07", "category": "marker", "message": "в прошлый раз ты советовала другой канал", "expected_route": "heuristic", "should_retrieve": true}
+{"id": "m08", "category": "marker", "message": "я тебе рассказывал про Убуд", "expected_route": "heuristic", "should_retrieve": true}
+{"id": "m09", "category": "marker", "message": "не забудь, что вода у нас на исходе", "expected_route": "heuristic", "should_retrieve": true}
+{"id": "n01", "category": "general", "message": "сколько будет 7 на 8?", "expected_route": "model", "should_retrieve": false}
+{"id": "n02", "category": "general", "message": "расскажи анекдот про пингвина", "expected_route": "model", "should_retrieve": false, "typical": true}
+{"id": "n03", "category": "general", "message": "что такое LoRa и почему она дальнобойная?", "expected_route": "model", "should_retrieve": false, "typical": true}
+{"id": "n04", "category": "general", "message": "переведи «до встречи» на английский", "expected_route": "model", "should_retrieve": false}
+{"id": "n05", "category": "general", "message": "составь список вещей для похода в горы", "expected_route": "model", "should_retrieve": false}
+{"id": "n06", "category": "general", "message": "как развести костёр под дождём?", "expected_route": "model", "should_retrieve": false}
+{"id": "p01", "category": "personal", "message": "когда у Лены день рождения?", "expected_route": "model", "should_retrieve": true}
+{"id": "p02", "category": "personal", "message": "что мы решили насчёт субботы?", "expected_route": "model", "should_retrieve": true}
+{"id": "p03", "category": "personal", "message": "как зовут мою собаку?", "expected_route": "heuristic", "should_retrieve": true}
+{"id": "p04", "category": "personal", "message": "куда положили запасные батарейки?", "expected_route": "heuristic", "should_retrieve": true}
+{"id": "p05", "category": "personal", "message": "какой у нас план на завтра?", "expected_route": "model", "should_retrieve": true, "typical": true}
+{"id": "t01", "category": "tool_question", "message": "сколько батареи осталось?", "expected_route": "heuristic", "should_retrieve": false, "typical": true}
+{"id": "t02", "category": "tool_question", "message": "далеко ли до Убуда пешком?", "expected_route": "model", "should_retrieve": false}
+{"id": "n07", "category": "general", "message": "почему небо красное на закате?", "expected_route": "model", "should_retrieve": false}
+{"id": "p06", "category": "personal", "message": "когда день рождения у брата?", "expected_route": "heuristic", "should_retrieve": true}
+{"id": "p07", "category": "personal", "message": "что подарить жене на годовщину?", "expected_route": "heuristic", "should_retrieve": true}
+{"id": "n08", "category": "general", "message": "сколько километров в одной миле?", "expected_route": "model", "should_retrieve": false}
+{"id": "m10", "category": "marker", "message": "где лежит аптечка, не помню?", "expected_route": "heuristic", "should_retrieve": true}
+{"id": "t03", "category": "tool_question", "message": "телефон на зарядке сейчас?", "expected_route": "heuristic", "should_retrieve": false}
+{"id": "t04", "category": "tool_question", "message": "какая погода сейчас?", "expected_route": "heuristic", "should_retrieve": false, "typical": true}
+{"id": "p08", "category": "personal", "message": "во сколько завтра встреча?", "expected_route": "model", "should_retrieve": true}
+{"id": "p09", "category": "personal", "message": "что было в списке покупок?", "expected_route": "model", "should_retrieve": true}
+{"id": "m11", "category": "marker", "message": "мама просила позвонить — напомни вечером", "expected_route": "heuristic", "should_retrieve": true}

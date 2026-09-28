@@ -1,0 +1,3146 @@
+{
+ "corpora": {
+  "tatoeba_ru": {
+   "n": 100,
+   "semantic": 57,
+   "text": 43,
+   "facts_ok": 100,
+   "facts_all": 235,
+   "bytes": 797,
+   "utf8": 8601,
+   "packets": 57,
+   "latin_tokens": 30,
+   "tokens": 360,
+   "by_cat": {
+    "negations": [
+     7,
+     21
+    ],
+    "entities": [
+     84,
+     191
+    ],
+    "time": [
+     1,
+     4
+    ],
+    "names": [
+     1,
+     11
+    ],
+    "places": [
+     3,
+     4
+    ],
+    "numbers": [
+     4,
+     4
+    ]
+   },
+   "text_reasons": {
+    "прегейт: вне лексикона >37%": 32,
+    "гейт: литность >=50%": 11
+   },
+   "lost_real": 89,
+   "lost_by_cat": {
+    "entities": [
+     29,
+     78
+    ],
+    "time": [
+     0,
+     3
+    ],
+    "names": [
+     5,
+     5
+    ],
+    "negations": [
+     12,
+     2
+    ],
+    "places": [
+     0,
+     1
+    ]
+   },
+   "lost_artifact": 46
+  }
+ },
+ "residual_top100": [
+  [
+   "tom",
+   8
+  ],
+  [
+   "minus",
+   2
+  ],
+  [
+   "mariya",
+   2
+  ],
+  [
+   "emi",
+   1
+  ],
+  [
+   "situation",
+   1
+  ],
+  [
+   "wrongly",
+   1
+  ],
+  [
+   "familiar",
+   1
+  ],
+  [
+   "forma",
+   1
+  ],
+  [
+   "article",
+   1
+  ],
+  [
+   "he'd",
+   1
+  ],
+  [
+   "ladder",
+   1
+  ],
+  [
+   "mary",
+   1
+  ],
+  [
+   "silly",
+   1
+  ],
+  [
+   "email",
+   1
+  ],
+  [
+   "interfere",
+   1
+  ],
+  [
+   "australia",
+   1
+  ],
+  [
+   "french",
+   1
+  ],
+  [
+   "frost",
+   1
+  ],
+  [
+   "ashamed",
+   1
+  ]
+ ],
+ "fixtures": [
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я тогда об этом не подумал.",
+   "pivot": "i didn't think about that then .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     348
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     345
+    ],
+    [
+     "code",
+     332
+    ],
+    [
+     "code",
+     295
+    ],
+    [
+     "code",
+     370
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "081cadb49c32141100",
+   "rendered": "Я не думать про то потом.",
+   "lost": [
+    [
+     "entities",
+     "этом"
+    ],
+    [
+     "entities",
+     "тогд"
+    ],
+    [
+     "entities",
+     "поду"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Она всё время про вас говорит.",
+   "pivot": "she always talks about you .",
+   "units": [
+    [
+     "code",
+     327
+    ],
+    [
+     "code",
+     465
+    ],
+    [
+     "code",
+     450
+    ],
+    [
+     "code",
+     332
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0681bdee886010",
+   "rendered": "Она всегда говорить про ты.",
+   "lost": [
+    [
+     "entities",
+     "врем"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Пожалуйста, сделай это завтра или послезавтра.",
+   "pivot": "please do this tomorrow or the day after .",
+   "units": [
+    [
+     "code",
+     399
+    ],
+    [
+     "code",
+     309
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     661
+    ],
+    [
+     "code",
+     372
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     432
+    ],
+    [
+     "code",
+     449
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "09ad59acd874325ad73880",
+   "rendered": "Пожалуйста это завтра или день после.",
+   "lost": [
+    [
+     "time",
+     "('relday', 'aftertomorrow')"
+    ],
+    [
+     "entities",
+     "сдел"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Это то, что врезалось мне в память.",
+   "pivot": "this is what hit me in memory .",
+   "units": [
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     297
+    ],
+    [
+     "code",
+     299
+    ],
+    [
+     "code",
+     763
+    ],
+    [
+     "code",
+     301
+    ],
+    [
+     "code",
+     298
+    ],
+    [
+     "code",
+     1548
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0858929e01569feba2",
+   "rendered": "Это что ударить меня в память.",
+   "lost": [
+    [
+     "entities",
+     "врез"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я попросил Тома съездить со мной в Бостон.",
+   "pivot": "i asked tom to go with me to name_Boston .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     774
+    ],
+    [
+     "lit",
+     "tom"
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     328
+    ],
+    [
+     "code",
+     317
+    ],
+    [
+     "code",
+     301
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "name",
+     "Boston"
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0a1f067648039a3d858276acbd9406fe0000851cb3471080",
+   "rendered": "Я спросил tom идти с меня Boston.",
+   "lost": [
+    [
+     "names",
+     "тома"
+    ],
+    [
+     "entities",
+     "мной"
+    ],
+    [
+     "entities",
+     "съез"
+    ],
+    [
+     "entities",
+     "попр"
+    ],
+    [
+     "entities",
+     "тома"
+    ],
+    [
+     "entities",
+     "бост"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Думаю, твоей сестре понравится эта книга.",
+   "pivot": "i think your sister will like this book .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     345
+    ],
+    [
+     "code",
+     308
+    ],
+    [
+     "code",
+     818
+    ],
+    [
+     "code",
+     342
+    ],
+    [
+     "code",
+     325
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     962
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "091c9b2e38907f59db7100",
+   "rendered": "Я думать твой сестра нравится это книга.",
+   "lost": [
+    [
+     "entities",
+     "понр"
+    ],
+    [
+     "entities",
+     "твое"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Надеюсь, что Эми скоро появится. Я уже устал её ждать.",
+   "pivot": "i hope emi appears soon . i am_marker already tired waiting for her .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     682
+    ],
+    [
+     "lit",
+     "emi"
+    ],
+    [
+     "code",
+     1085
+    ],
+    [
+     "code",
+     696
+    ],
+    [
+     "code",
+     280
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     934
+    ],
+    [
+     "code",
+     605
+    ],
+    [
+     "code",
+     933
+    ],
+    [
+     "code",
+     798
+    ],
+    [
+     "code",
+     304
+    ],
+    [
+     "code",
+     339
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0e1ed87648037f643e32dbe10fab345f55f122e8d100",
+   "rendered": "Я надеюсь emi появиться скоро. Я до полудня уже устал жду для её.",
+   "lost": [
+    [
+     "names",
+     "эми"
+    ],
+    [
+     "entities",
+     "ждат"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "На твоём месте в такой трудной ситуации я сделал бы то же самое.",
+   "pivot": "on my place in such a hard situation i would do the same .",
+   "units": [
+    [
+     "code",
+     306
+    ],
+    [
+     "code",
+     305
+    ],
+    [
+     "code",
+     483
+    ],
+    [
+     "code",
+     298
+    ],
+    [
+     "code",
+     625
+    ],
+    [
+     "code",
+     292
+    ],
+    [
+     "code",
+     666
+    ],
+    [
+     "lit",
+     "situation"
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     365
+    ],
+    [
+     "code",
+     309
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     547
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0e60bf08a7a7cdb23b24099619b73d3431c439e332651100",
+   "rendered": "На мой место в такой трудно situation я тот же.",
+   "lost": [
+    [
+     "entities",
+     "ситу"
+    ],
+    [
+     "entities",
+     "твоё"
+    ],
+    [
+     "entities",
+     "само"
+    ],
+    [
+     "entities",
+     "сдел"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Ты прекрасно знаешь, как много ты для меня значишь.",
+   "pivot": "you are wonderful you mean so much to me .",
+   "units": [
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     314
+    ],
+    [
+     "code",
+     1129
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     402
+    ],
+    [
+     "code",
+     320
+    ],
+    [
+     "code",
+     415
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     301
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0a071e5e0ae1eac52ab100",
+   "rendered": "Ты чудесно ты иметь в виду так много меня.",
+   "lost": [
+    [
+     "entities",
+     "прек"
+    ],
+    [
+     "entities",
+     "знач"
+    ],
+    [
+     "entities",
+     "знае"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Сделайте это если не ради меня, то ради него.",
+   "pivot": "do this not for me but for him .",
+   "units": [
+    [
+     "code",
+     309
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     304
+    ],
+    [
+     "code",
+     301
+    ],
+    [
+     "code",
+     318
+    ],
+    [
+     "code",
+     304
+    ],
+    [
+     "code",
+     335
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0966b1b2e56f0ba244",
+   "rendered": "Это не для меня, но для его.",
+   "lost": [
+    [
+     "negations",
+     "('neg', 'ради')"
+    ],
+    [
+     "entities",
+     "ради"
+    ],
+    [
+     "entities",
+     "сдел"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я бы никогда на это не пошёл.",
+   "pivot": "i would never go on this .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     365
+    ],
+    [
+     "code",
+     391
+    ],
+    [
+     "code",
+     328
+    ],
+    [
+     "code",
+     306
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "071cf2ad04c16080",
+   "rendered": "Я никогда идти на это.",
+   "lost": [
+    [
+     "negations",
+     "('neg', 'пошё')"
+    ],
+    [
+     "entities",
+     "пошё"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Зря я сказал Тому, что сделаю это.",
+   "pivot": "i wrongly told tom that i'll do it .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "lit",
+     "wrongly"
+    ],
+    [
+     "code",
+     462
+    ],
+    [
+     "lit",
+     "tom"
+    ],
+    [
+     "code",
+     295
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     342
+    ],
+    [
+     "code",
+     309
+    ],
+    [
+     "code",
+     293
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0a1f648007df24716ad7c2f4ec90039a3d880e4199c2",
+   "rendered": "Я wrongly сказал tom то я.",
+   "lost": [
+    [
+     "names",
+     "тому"
+    ],
+    [
+     "entities",
+     "сдел"
+    ],
+    [
+     "entities",
+     "тому"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Не думаю, что я смогу помочь ей это сделать.",
+   "pivot": "i don't think i can help her do this .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     309
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     345
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     316
+    ],
+    [
+     "code",
+     423
+    ],
+    [
+     "code",
+     339
+    ],
+    [
+     "code",
+     309
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0b1b36d2637566c6b35820",
+   "rendered": "Я не думать я можно помощь её это.",
+   "lost": [
+    [
+     "entities",
+     "сдел"
+    ],
+    [
+     "entities",
+     "смог"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Ну, выкладывай, что ты хотел мне сказать.",
+   "pivot": "ok what did you want to tell me",
+   "units": [
+    [
+     "code",
+     519
+    ],
+    [
+     "code",
+     299
+    ],
+    [
+     "code",
+     348
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     344
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     375
+    ],
+    [
+     "code",
+     301
+    ]
+   ],
+   "blob_hex": "08c6aa6561245a32b0",
+   "rendered": "Ок что ты хотеть сказать меня",
+   "lost": [
+    [
+     "entities",
+     "выкл"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Прямо сейчас я ничего не делаю.",
+   "pivot": "right now i am_marker not doing anything .",
+   "units": [
+    [
+     "code",
+     471
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     934
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     416
+    ],
+    [
+     "code",
+     426
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "07bf47d58dac6b4040",
+   "rendered": "Прямо сейчас я до полудня не делаю что-нибудь.",
+   "lost": [
+    [
+     "entities",
+     "ниче"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я ни с тем ни с другим не знаком.",
+   "pivot": "i am_marker not familiar with either .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     934
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "lit",
+     "familiar"
+    ],
+    [
+     "code",
+     317
+    ],
+    [
+     "code",
+     878
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "071f5636ec9008d2f6c875c2f48ef9d040",
+   "rendered": "Я до полудня не familiar с либо.",
+   "lost": [
+    [
+     "negations",
+     "('neg', 'знак')"
+    ],
+    [
+     "entities",
+     "друг"
+    ],
+    [
+     "entities",
+     "знак"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Фома безуспешно прилагал усилия, чтобы улыбнуться.",
+   "pivot": "forma tried but could not smile .",
+   "units": [
+    [
+     "lit",
+     "forma"
+    ],
+    [
+     "code",
+     884
+    ],
+    [
+     "code",
+     318
+    ],
+    [
+     "code",
+     380
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     1075
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "07ec9005d31c9b1ee7a78a5b6f1408",
+   "rendered": "Forma пытался, но мог бы не улыбка.",
+   "lost": [
+    [
+     "entities",
+     "безу"
+    ],
+    [
+     "entities",
+     "усил"
+    ],
+    [
+     "entities",
+     "прил"
+    ],
+    [
+     "entities",
+     "фома"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Сложно найти человека, который был бы в этом лучше тебя.",
+   "pivot": "hard to find someone who is better at this than you .",
+   "units": [
+    [
+     "code",
+     666
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     428
+    ],
+    [
+     "code",
+     657
+    ],
+    [
+     "code",
+     350
+    ],
+    [
+     "code",
+     297
+    ],
+    [
+     "code",
+     460
+    ],
+    [
+     "code",
+     334
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     452
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0cd905b4b5fcb52bca2165d402",
+   "rendered": "Трудно найти кто-то кто лучше у это чем ты.",
+   "lost": [
+    [
+     "entities",
+     "чело"
+    ],
+    [
+     "entities",
+     "этом"
+    ],
+    [
+     "entities",
+     "слож"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Вы знаете, что это не имеет значения.",
+   "pivot": "you know this does not matter .",
+   "units": [
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     315
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     478
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     662
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "07072b3046db1040",
+   "rendered": "Ты знать это не важно.",
+   "lost": [
+    [
+     "negations",
+     "('neg', 'имее')"
+    ],
+    [
+     "entities",
+     "имее"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Эта книга для тебя слишком сложная.",
+   "pivot": "this book is too hard for you .",
+   "units": [
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     962
+    ],
+    [
+     "code",
+     297
+    ],
+    [
+     "code",
+     385
+    ],
+    [
+     "code",
+     666
+    ],
+    [
+     "code",
+     304
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0859db74aa1b217008",
+   "rendered": "Это книга тоже трудно для ты.",
+   "lost": [
+    [
+     "entities",
+     "слож"
+    ],
+    [
+     "entities",
+     "слиш"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Сообщите мне, пожалуйста, своё мнение о статье.",
+   "pivot": "tell me your opinion about the article .",
+   "units": [
+    [
+     "code",
+     375
+    ],
+    [
+     "code",
+     301
+    ],
+    [
+     "code",
+     308
+    ],
+    [
+     "code",
+     1630
+    ],
+    [
+     "code",
+     332
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "lit",
+     "article"
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "08a32b65fd7c313b24077a49a1cfadf100",
+   "rendered": "Сказать меня твой мнение про article.",
+   "lost": [
+    [
+     "entities",
+     "сооб"
+    ],
+    [
+     "entities",
+     "пожа"
+    ],
+    [
+     "entities",
+     "стат"
+    ],
+    [
+     "entities",
+     "своё"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Вам всегда что-нибудь да не так.",
+   "pivot": "you are always something not right .",
+   "units": [
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     314
+    ],
+    [
+     "code",
+     465
+    ],
+    [
+     "code",
+     383
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     330
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "070717bd39b42080",
+   "rendered": "Ты всегда что-то не направо.",
+   "lost": [
+    [
+     "negations",
+     "('neg', 'так')"
+    ],
+    [
+     "entities",
+     "нибу"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Том и не говорил, что пойдёт с нами.",
+   "pivot": "tom didn't say he'd come with us .",
+   "units": [
+    [
+     "lit",
+     "tom"
+    ],
+    [
+     "code",
+     348
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     379
+    ],
+    [
+     "lit",
+     "he'd"
+    ],
+    [
+     "code",
+     338
+    ],
+    [
+     "code",
+     317
+    ],
+    [
+     "code",
+     364
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "09ec90039a3d92b6d4aec90481ffc688c773b100",
+   "rendered": "Tom не сказать he'd приходить с нас.",
+   "lost": [
+    [
+     "negations",
+     "('neg', 'гово')"
+    ],
+    [
+     "entities",
+     "пойд"
+    ],
+    [
+     "entities",
+     "гово"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я не могу вам рассказать, что мы делали вчера вечером.",
+   "pivot": "i can't tell you what we did last night .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     316
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     375
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     299
+    ],
+    [
+     "code",
+     300
+    ],
+    [
+     "code",
+     348
+    ],
+    [
+     "code",
+     459
+    ],
+    [
+     "code",
+     455
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0b1ba6d46052aa5778dda2",
+   "rendered": "Я можно не сказать ты что мы последний ночь.",
+   "lost": [
+    [
+     "time",
+     "('part', 'evening')"
+    ],
+    [
+     "time",
+     "('relday', 'yesterday')"
+    ],
+    [
+     "negations",
+     "('neg', 'могу')"
+    ],
+    [
+     "entities",
+     "могу"
+    ],
+    [
+     "entities",
+     "вчер"
+    ],
+    [
+     "entities",
+     "дела"
+    ],
+    [
+     "entities",
+     "вече"
+    ],
+    [
+     "entities",
+     "расс"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Вы разве не хотите с ней познакомиться?",
+   "pivot": "do you not want to meet her ?",
+   "units": [
+    [
+     "code",
+     309
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     344
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     663
+    ],
+    [
+     "code",
+     339
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "08660da48bb1635400",
+   "rendered": "Ты не хотеть встретиться её?",
+   "lost": [
+    [
+     "entities",
+     "позн"
+    ],
+    [
+     "entities",
+     "разв"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я покупаю стремянку в строительном магазине.",
+   "pivot": "i buy a ladder at a building store .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     882
+    ],
+    [
+     "code",
+     292
+    ],
+    [
+     "lit",
+     "ladder"
+    ],
+    [
+     "code",
+     334
+    ],
+    [
+     "code",
+     292
+    ],
+    [
+     "code",
+     1197
+    ],
+    [
+     "code",
+     1386
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "091f3c1bb24006d6f68d0fc9106f517d7620",
+   "rendered": "Я купить ladder у здание магазин.",
+   "lost": [
+    [
+     "entities",
+     "стро"
+    ],
+    [
+     "entities",
+     "стре"
+    ],
+    [
+     "entities",
+     "поку"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Сколько месяцев вы можете пробыть здесь?",
+   "pivot": "how many months can you stay here ?",
+   "units": [
+    [
+     "code",
+     587
+    ],
+    [
+     "code",
+     898
+    ],
+    [
+     "code",
+     316
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     523
+    ],
+    [
+     "code",
+     323
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "07cf3d10e831cbea80",
+   "rendered": "Сколько (штук) месяцы можно ты остаться здесь?",
+   "lost": [
+    [
+     "entities",
+     "проб"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Как можно быстрее всего добраться до центра города?",
+   "pivot": "how to get to the city center as fast as possible ?",
+   "units": [
+    [
+     "code",
+     340
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     326
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     865
+    ],
+    [
+     "code",
+     1604
+    ],
+    [
+     "code",
+     346
+    ],
+    [
+     "code",
+     1030
+    ],
+    [
+     "code",
+     346
+    ],
+    [
+     "code",
+     987
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "0c8e2c0149ccffcaca7bf729ee8280",
+   "rendered": "Как получить город центр как быстро как возможно?",
+   "lost": [
+    [
+     "entities",
+     "всег"
+    ],
+    [
+     "entities",
+     "добр"
+    ],
+    [
+     "entities",
+     "можн"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Она разговаривает с ним, как будто он был ребенком.",
+   "pivot": "she talks to him as if he were a child .",
+   "units": [
+    [
+     "code",
+     327
+    ],
+    [
+     "code",
+     450
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     335
+    ],
+    [
+     "code",
+     346
+    ],
+    [
+     "code",
+     329
+    ],
+    [
+     "code",
+     303
+    ],
+    [
+     "code",
+     368
+    ],
+    [
+     "code",
+     292
+    ],
+    [
+     "code",
+     821
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0b81ba0b1329835b3f371d88",
+   "rendered": "Она говорить его как, если он ребёнок.",
+   "lost": [
+    [
+     "entities",
+     "будт"
+    ],
+    [
+     "entities",
+     "разг"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Ты же знаешь, как это работает: надо знать кое-кого, кто знает кое-кого, кто знает кое-кого, кто кое-кого знает. Только так можно раздобыть информацию.",
+   "pivot": "you need to know someone who knows someone who knows someone who knows someone . only then can you get the information .",
+   "units": [
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     382
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     315
+    ],
+    [
+     "code",
+     657
+    ],
+    [
+     "code",
+     350
+    ],
+    [
+     "code",
+     758
+    ],
+    [
+     "code",
+     657
+    ],
+    [
+     "code",
+     350
+    ],
+    [
+     "code",
+     758
+    ],
+    [
+     "code",
+     657
+    ],
+    [
+     "code",
+     350
+    ],
+    [
+     "code",
+     758
+    ],
+    [
+     "code",
+     657
+    ],
+    [
+     "code",
+     280
+    ],
+    [
+     "code",
+     394
+    ],
+    [
+     "code",
+     370
+    ],
+    [
+     "code",
+     316
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     326
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1209
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "170a695cebf96efe6bf96efe6bf96efe6bf156141741004f5708",
+   "rendered": "Ты нужно знать кто-то кто знает кто-то кто знает кто-то кто знает кто-то. Только потом можно ты получить информация.",
+   "lost": [
+    [
+     "entities",
+     "кого"
+    ],
+    [
+     "entities",
+     "рабо"
+    ],
+    [
+     "entities",
+     "разд"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Ей просто нужно делать свою работу.",
+   "pivot": "she just needs to do her work .",
+   "units": [
+    [
+     "code",
+     327
+    ],
+    [
+     "code",
+     321
+    ],
+    [
+     "code",
+     905
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     309
+    ],
+    [
+     "code",
+     339
+    ],
+    [
+     "code",
+     434
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "08817be8f2b38db604",
+   "rendered": "Она просто нужды её работать.",
+   "lost": [
+    [
+     "entities",
+     "свою"
+    ],
+    [
+     "entities",
+     "дела"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Том проводит много времени у Мэри.",
+   "pivot": "tom spends a lot of time with mary .",
+   "units": [
+    [
+     "lit",
+     "tom"
+    ],
+    [
+     "code",
+     1169
+    ],
+    [
+     "code",
+     508
+    ],
+    [
+     "code",
+     359
+    ],
+    [
+     "code",
+     317
+    ],
+    [
+     "lit",
+     "mary"
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "07ec90039a3d9e86c553677d9204d8f49c04",
+   "rendered": "Tom потратить много время с mary.",
+   "lost": [
+    [
+     "names",
+     "мэри"
+    ],
+    [
+     "entities",
+     "мэри"
+    ],
+    [
+     "entities",
+     "пров"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я же тебе говорил, что это дурацкий план.",
+   "pivot": "i told you this is a silly plan .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     462
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     297
+    ],
+    [
+     "code",
+     292
+    ],
+    [
+     "lit",
+     "silly"
+    ],
+    [
+     "code",
+     952
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "091de80b1237648005961d7af875f080",
+   "rendered": "Я сказал ты это silly план.",
+   "lost": [
+    [
+     "entities",
+     "дура"
+    ],
+    [
+     "entities",
+     "тебе"
+    ],
+    [
+     "entities",
+     "гово"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я так устал, что едва могу передвигаться.",
+   "pivot": "i am_marker so tired i can hardly move .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     934
+    ],
+    [
+     "code",
+     320
+    ],
+    [
+     "code",
+     933
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     316
+    ],
+    [
+     "code",
+     1585
+    ],
+    [
+     "code",
+     606
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "091f563d7558dd7f05a304",
+   "rendered": "Я до полудня так устал я можно едва перенести.",
+   "lost": [
+    [
+     "entities",
+     "могу"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я видел, как он шел, держа под мышкой книгу.",
+   "pivot": "i saw him walking holding a book under his arm .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     599
+    ],
+    [
+     "code",
+     335
+    ],
+    [
+     "code",
+     866
+    ],
+    [
+     "code",
+     622
+    ],
+    [
+     "code",
+     292
+    ],
+    [
+     "code",
+     962
+    ],
+    [
+     "code",
+     744
+    ],
+    [
+     "code",
+     354
+    ],
+    [
+     "code",
+     1488
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0b1e8589e68d386edbef74c7f21100",
+   "rendered": "Я видел его идти пешком держать книга под его рука (плечо).",
+   "lost": [
+    [
+     "entities",
+     "мышк"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Это не будет нашей проблемой, не так ли?",
+   "pivot": "this won't be our problem right ?",
+   "units": [
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     342
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     313
+    ],
+    [
+     "code",
+     374
+    ],
+    [
+     "code",
+     677
+    ],
+    [
+     "code",
+     330
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "085920d9bd1769c228",
+   "rendered": "Это не наш проблема направо?",
+   "lost": [
+    [
+     "negations",
+     "('neg', 'буде')"
+    ],
+    [
+     "negations",
+     "('neg', 'так')"
+    ],
+    [
+     "entities",
+     "наше"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Да плевать я на это хотел!",
+   "pivot": "i care nothing about this .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     555
+    ],
+    [
+     "code",
+     430
+    ],
+    [
+     "code",
+     332
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "061e59b5219608",
+   "rendered": "Я забота ничего про это.",
+   "lost": [
+    [
+     "entities",
+     "хоте"
+    ],
+    [
+     "entities",
+     "плев"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я так не запомню. Можешь мне всю информацию на почту прислать?",
+   "pivot": "i will not remember . can you send me all the information to email ?",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     342
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     541
+    ],
+    [
+     "code",
+     280
+    ],
+    [
+     "code",
+     316
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     653
+    ],
+    [
+     "code",
+     319
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1209
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "lit",
+     "email"
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "0e1c836c962741aede49eae2f648057f63d0eb50",
+   "rendered": "Я не помнить. Можно ты пришли мне все информация email?",
+   "lost": [
+    [
+     "negations",
+     "('neg', 'запо')"
+    ],
+    [
+     "entities",
+     "запо"
+    ],
+    [
+     "entities",
+     "почт"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "У Тома никогда раньше не было настоящей работы.",
+   "pivot": "tom never had a real job before .",
+   "units": [
+    [
+     "lit",
+     "tom"
+    ],
+    [
+     "code",
+     391
+    ],
+    [
+     "code",
+     371
+    ],
+    [
+     "code",
+     292
+    ],
+    [
+     "code",
+     601
+    ],
+    [
+     "code",
+     598
+    ],
+    [
+     "code",
+     444
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "08ec90039a3d956a11b43e84b884",
+   "rendered": "Tom никогда имел настоящий работа до.",
+   "lost": [
+    [
+     "names",
+     "тома"
+    ],
+    [
+     "negations",
+     "('neg', 'было')"
+    ],
+    [
+     "entities",
+     "было"
+    ],
+    [
+     "entities",
+     "рань"
+    ],
+    [
+     "entities",
+     "тома"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Не лезьте не в свои дела!",
+   "pivot": "don't interfere in other people's business !",
+   "units": [
+    [
+     "code",
+     309
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "lit",
+     "interfere"
+    ],
+    [
+     "code",
+     298
+    ],
+    [
+     "code",
+     445
+    ],
+    [
+     "code",
+     395
+    ],
+    [
+     "code",
+     689
+    ],
+    [
+     "code",
+     282
+    ]
+   ],
+   "blob_hex": "0866dbb2400986299f934bf23e9dc758edbca0",
+   "rendered": "Не interfere в другой люди дело!",
+   "lost": [
+    [
+     "negations",
+     "('neg', 'лезь')"
+    ],
+    [
+     "entities",
+     "свои"
+    ],
+    [
+     "entities",
+     "лезь"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Смотри внимательно, как я это делаю. Ты видел это?",
+   "pivot": "look carefully at how i do this . did you see this ?",
+   "units": [
+    [
+     "code",
+     363
+    ],
+    [
+     "code",
+     1324
+    ],
+    [
+     "code",
+     334
+    ],
+    [
+     "code",
+     340
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     309
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     280
+    ],
+    [
+     "code",
+     348
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     347
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "0d9d7c8622386cd60a5612a58a00",
+   "rendered": "Смотреть осторожно у как я это. Ты видеть это?",
+   "lost": [
+    [
+     "entities",
+     "вним"
+    ],
+    [
+     "entities",
+     "дела"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Они хотели бы быть на неё похожими.",
+   "pivot": "they wanted to look like her .",
+   "units": [
+    [
+     "code",
+     324
+    ],
+    [
+     "code",
+     514
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     363
+    ],
+    [
+     "code",
+     325
+    ],
+    [
+     "code",
+     339
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "077ec6059d3fc688",
+   "rendered": "Они хотел смотреть нравится её.",
+   "lost": [
+    [
+     "entities",
+     "похо"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Мария не знает, что её удочерили.",
+   "pivot": "mariya doesn't know she was caught .",
+   "units": [
+    [
+     "lit",
+     "mariya"
+    ],
+    [
+     "code",
+     478
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     315
+    ],
+    [
+     "code",
+     327
+    ],
+    [
+     "code",
+     310
+    ],
+    [
+     "code",
+     1040
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "08ec9006d8f490f07b046ce605a78144",
+   "rendered": "Mariya не знать она поймать.",
+   "lost": [
+    [
+     "entities",
+     "мари"
+    ],
+    [
+     "entities",
+     "удоч"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я не знаю, с кем ты хочешь встретиться.",
+   "pivot": "i don't know who you want to meet .",
+   "units": [
+    [
+     "code",
+     393
+    ],
+    [
+     "code",
+     350
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     344
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     663
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "07abe5a1245d8a20",
+   "rendered": "Не знаю кто ты хотеть встретиться.",
+   "lost": [
+    [
+     "entities",
+     "хоче"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я тут единственная, кто не был в Австралии?",
+   "pivot": "i am_marker the only 1 who was not in australia .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     934
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     394
+    ],
+    [
+     "num",
+     1
+    ],
+    [
+     "code",
+     350
+    ],
+    [
+     "code",
+     310
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     298
+    ],
+    [
+     "lit",
+     "australia"
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "0b1f5612b0ec600196b46c9f6480097b74b348f6b85e10",
+   "rendered": "Я до полудня только 1 кто не в australia.",
+   "lost": [
+    [
+     "names",
+     "австра"
+    ],
+    [
+     "negations",
+     "('neg', 'был')"
+    ],
+    [
+     "entities",
+     "един"
+    ],
+    [
+     "entities",
+     "авст"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Марии надо бы поговорить с Томом.",
+   "pivot": "mariya needs to talk to tom .",
+   "units": [
+    [
+     "lit",
+     "mariya"
+    ],
+    [
+     "code",
+     905
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     450
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "lit",
+     "tom"
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "07ec9006d8f490f07ba3cb7417b240039a3d82",
+   "rendered": "Mariya нужды говорить tom.",
+   "lost": [
+    [
+     "names",
+     "томом"
+    ],
+    [
+     "entities",
+     "мари"
+    ],
+    [
+     "entities",
+     "пого"
+    ],
+    [
+     "entities",
+     "томо"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "«Что я тут делаю?» — спросил Том.",
+   "pivot": "what am_marker i doing here ?",
+   "units": [
+    [
+     "code",
+     299
+    ],
+    [
+     "code",
+     934
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     416
+    ],
+    [
+     "code",
+     323
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "0653d583b19f5400",
+   "rendered": "Что до полудня я делаю здесь?",
+   "lost": [
+    [
+     "names",
+     "том"
+    ],
+    [
+     "entities",
+     "спро"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Том сказал мне, чтобы я говорил по-французски.",
+   "pivot": "tom told me to speak french .",
+   "units": [
+    [
+     "lit",
+     "tom"
+    ],
+    [
+     "code",
+     462
+    ],
+    [
+     "code",
+     301
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     823
+    ],
+    [
+     "lit",
+     "french"
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "07ec90039a3d97a2b2f1ef648006d323f1678040",
+   "rendered": "Tom сказал меня говорить french.",
+   "lost": [
+    [
+     "entities",
+     "фран"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Я хочу, чтобы Вы пришли один.",
+   "pivot": "i want you to come alone .",
+   "units": [
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     344
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     338
+    ],
+    [
+     "code",
+     667
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "071c9016336488",
+   "rendered": "Я хотеть ты приходить один.",
+   "lost": [
+    [
+     "entities",
+     "хочу"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Вы уже написали письмо Деду Морозу?",
+   "pivot": "have you already written to name_Grandfather frost ?",
+   "units": [
+    [
+     "code",
+     307
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     605
+    ],
+    [
+     "code",
+     1049
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "name",
+     "Grandfather"
+    ],
+    [
+     "lit",
+     "frost"
+    ],
+    [
+     "code",
+     281
+    ]
+   ],
+   "blob_hex": "08621a2fc1c5eca00bfe00008f23d168d2f4d03f27648005d32472cca0",
+   "rendered": "Иметь ты уже писать Grandfather frost?",
+   "lost": [
+    [
+     "names",
+     "морозу"
+    ],
+    [
+     "names",
+     "деду"
+    ],
+    [
+     "places",
+     "моро"
+    ],
+    [
+     "entities",
+     "моро"
+    ],
+    [
+     "entities",
+     "напи"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "После того, как он это сказал, ему стало стыдно.",
+   "pivot": "after he said that he felt ashamed .",
+   "units": [
+    [
+     "code",
+     449
+    ],
+    [
+     "code",
+     303
+    ],
+    [
+     "code",
+     403
+    ],
+    [
+     "code",
+     295
+    ],
+    [
+     "code",
+     303
+    ],
+    [
+     "code",
+     1054
+    ],
+    [
+     "lit",
+     "ashamed"
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "08b9d6d7282df09f6480077a581ed8fe8100",
+   "rendered": "После он сказал то он чувствовал ashamed.",
+   "lost": [
+    [
+     "entities",
+     "того"
+    ],
+    [
+     "entities",
+     "стал"
+    ],
+    [
+     "entities",
+     "стыд"
+    ]
+   ]
+  },
+  {
+   "corpus": "tatoeba_ru",
+   "input": "Том сказал, что не может в это поверить.",
+   "pivot": "tom said he can't believe this .",
+   "units": [
+    [
+     "lit",
+     "tom"
+    ],
+    [
+     "code",
+     403
+    ],
+    [
+     "code",
+     303
+    ],
+    [
+     "code",
+     316
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     497
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     280
+    ]
+   ],
+   "blob_hex": "08ec90039a3d95cad74db0fac100",
+   "rendered": "Tom сказал он можно не верить это.",
+   "lost": [
+    [
+     "negations",
+     "('neg', 'може')"
+    ],
+    [
+     "entities",
+     "пове"
+    ]
+   ]
+  }
+ ]
+}

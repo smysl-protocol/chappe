@@ -1,0 +1,757 @@
+{
+ "backend": "offline",
+ "aggregate": {
+  "utf8": 1778,
+  "zstd": 1289,
+  "ours": 220,
+  "roundtrip_ok": 12
+ },
+ "facts": {
+  "chat": {
+   "ok": 36,
+   "total": 36
+  },
+  "sos": {
+   "ok": 8,
+   "total": 8
+  }
+ },
+ "rows": [
+  {
+   "path": "chat",
+   "ru_dictation": "ну слушай короче я буду где то через минут двадцать наверное жди меня у пирса да у того же где вчера",
+   "pivot": "be there soon in 20 minutes wait at the pier same place",
+   "pivot_raw": "be there soon in 20 minutes wait at the pier same place",
+   "bytes": 12,
+   "hex": "07c308f66014ad6dbf34f1a8",
+   "rendered_ru": "Скоро буду в 20 минут ждать у пирса там же, где всегда",
+   "roundtrip": true,
+   "utf8": 180,
+   "zstd": 125,
+   "units": [
+    [
+     "code",
+     500
+    ],
+    [
+     "code",
+     298
+    ],
+    [
+     "num",
+     20
+    ],
+    [
+     "code",
+     408
+    ],
+    [
+     "code",
+     446
+    ],
+    [
+     "code",
+     1148
+    ],
+    [
+     "code",
+     827
+    ]
+   ]
+  },
+  {
+   "path": "chat",
+   "ru_dictation": "эээ всё хорошо у нас не волнуйся дети поели свет дали вечером",
+   "pivot": "all good do not worry kids ate power is back in the evening",
+   "pivot_raw": "all good do not worry kids ate power is back in the evening",
+   "bytes": 10,
+   "hex": "06a7e1bddedd6ef06760",
+   "rendered_ru": "Всё хорошо не волнуйся дети есть свет дали вечером",
+   "roundtrip": true,
+   "utf8": 111,
+   "zstd": 90,
+   "units": [
+    [
+     "code",
+     392
+    ],
+    [
+     "code",
+     503
+    ],
+    [
+     "code",
+     740
+    ],
+    [
+     "code",
+     732
+    ],
+    [
+     "code",
+     1011
+    ],
+    [
+     "code",
+     594
+    ]
+   ]
+  },
+  {
+   "path": "chat",
+   "ru_dictation": "так значит купи воды бутылок пять и риса килограмма два на рынке я деньги вечером отдам",
+   "pivot": "buy 5 bottles of water and 2 kilograms of rice at the market i give the money back in the evening",
+   "pivot_raw": "buy 5 bottles of water and 2 kilograms of rice at the market i give the money back in the evening",
+   "bytes": 27,
+   "hex": "13e6cecc05fd80fddb37b30002fb50ff5ec10ff8815643bf2639d8",
+   "rendered_ru": "Купить 5 бутылка вода и 2 килограмм рис у рынок я дать деньги обратно вечером",
+   "roundtrip": true,
+   "utf8": 159,
+   "zstd": 115,
+   "units": [
+    [
+     "code",
+     882
+    ],
+    [
+     "num",
+     5
+    ],
+    [
+     "code",
+     1556
+    ],
+    [
+     "code",
+     296
+    ],
+    [
+     "code",
+     737
+    ],
+    [
+     "code",
+     294
+    ],
+    [
+     "num",
+     2
+    ],
+    [
+     "code",
+     1416
+    ],
+    [
+     "code",
+     296
+    ],
+    [
+     "code",
+     1232
+    ],
+    [
+     "code",
+     334
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1596
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     405
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     479
+    ],
+    [
+     "code",
+     362
+    ],
+    [
+     "code",
+     594
+    ]
+   ]
+  },
+  {
+   "path": "chat",
+   "ru_dictation": "короче лодки сегодня не ходят волны здоровые перенесём на завтра на семь утра",
+   "pivot": "boats do not go today waves are big we move it to tomorrow at 7 in the morning",
+   "pivot_raw": "boats do not go today waves are big we move it to tomorrow at 7 in the morning",
+   "bytes": 21,
+   "hex": "10f782f64f98f3929a6104da08c26b982ecc07c8c0",
+   "rendered_ru": "Лодка не идти сегодня волна большой мы перенести завтра у 7 утром",
+   "roundtrip": true,
+   "utf8": 142,
+   "zstd": 106,
+   "units": [
+    [
+     "code",
+     1283
+    ],
+    [
+     "code",
+     309
+    ],
+    [
+     "code",
+     312
+    ],
+    [
+     "code",
+     328
+    ],
+    [
+     "code",
+     536
+    ],
+    [
+     "code",
+     848
+    ],
+    [
+     "code",
+     314
+    ],
+    [
+     "code",
+     492
+    ],
+    [
+     "code",
+     300
+    ],
+    [
+     "code",
+     606
+    ],
+    [
+     "code",
+     293
+    ],
+    [
+     "code",
+     291
+    ],
+    [
+     "code",
+     661
+    ],
+    [
+     "code",
+     334
+    ],
+    [
+     "num",
+     7
+    ],
+    [
+     "code",
+     546
+    ]
+   ]
+  },
+  {
+   "path": "chat",
+   "ru_dictation": "прием прием проверка связи кто нибудь меня слышит это марк с северного пляжа",
+   "pivot": "radio check can anyone hear me this is name_Mark from the north beach",
+   "pivot_raw": "radio check can anyone hear me this is NAME:Mark from the north beach",
+   "bytes": 23,
+   "hex": "0df7672636dcec809d421da0044d61726b938fee6fda40",
+   "rendered_ru": "Рация проверить can кто-нибудь слышать меня это Mark от север пляж",
+   "roundtrip": true,
+   "utf8": 140,
+   "zstd": 102,
+   "units": [
+    [
+     "code",
+     1279
+    ],
+    [
+     "code",
+     850
+    ],
+    [
+     "code",
+     316
+    ],
+    [
+     "code",
+     724
+    ],
+    [
+     "code",
+     540
+    ],
+    [
+     "code",
+     301
+    ],
+    [
+     "code",
+     302
+    ],
+    [
+     "code",
+     297
+    ],
+    [
+     "name",
+     "Mark"
+    ],
+    [
+     "code",
+     352
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1434
+    ],
+    [
+     "code",
+     1565
+    ]
+   ]
+  },
+  {
+   "path": "chat",
+   "ru_dictation": "да да я тебя понял понял буду ждать дома до шести потом уеду",
+   "pivot": "got it i wait at home until 6 then i leave",
+   "pivot_raw": "got it i wait at home until 6 then i leave",
+   "bytes": 13,
+   "hex": "09acc56ddffb43b300069c8afa",
+   "rendered_ru": "Понял я ждать дома до 6 потом я уехать",
+   "roundtrip": true,
+   "utf8": 108,
+   "zstd": 81,
+   "units": [
+    [
+     "code",
+     406
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     446
+    ],
+    [
+     "code",
+     482
+    ],
+    [
+     "code",
+     684
+    ],
+    [
+     "num",
+     6
+    ],
+    [
+     "code",
+     370
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     477
+    ]
+   ]
+  },
+  {
+   "path": "chat",
+   "ru_dictation": "генератор опять сдох бензин кончился привези литров десять когда поедешь обратно",
+   "pivot": "the generator is broken again no petrol bring 10 liters when you go back",
+   "pivot_raw": "the generator is broken again no petrol bring 10 liters when you go back",
+   "bytes": 20,
+   "hex": "0e1f8e10eadb598fc975e766000af464ac1f2620",
+   "rendered_ru": "Генератор сломан снова нет бензин принести 10 литр когда ты идти обратно",
+   "roundtrip": true,
+   "utf8": 150,
+   "zstd": 108,
+   "units": [
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1099
+    ],
+    [
+     "code",
+     297
+    ],
+    [
+     "code",
+     947
+    ],
+    [
+     "code",
+     441
+    ],
+    [
+     "code",
+     311
+    ],
+    [
+     "code",
+     1336
+    ],
+    [
+     "code",
+     664
+    ],
+    [
+     "num",
+     10
+    ],
+    [
+     "code",
+     1183
+    ],
+    [
+     "code",
+     356
+    ],
+    [
+     "code",
+     288
+    ],
+    [
+     "code",
+     328
+    ],
+    [
+     "code",
+     362
+    ]
+   ]
+  },
+  {
+   "path": "chat",
+   "ru_dictation": "мм ну в общем дорога после моста перекрыта там оползень объезжайте через деревню осторожнее",
+   "pivot": "road is closed after the bridge landslide go around through the village be careful",
+   "pivot_raw": "road is closed after the bridge landslide go around through the village be careful",
+   "bytes": 16,
+   "hex": "0bef0dbc3fe3ffa57cbf7160fbdf9a40",
+   "rendered_ru": "Дорога перекрыта после мост оползень идти вокруг через деревня будь осторожен",
+   "roundtrip": true,
+   "utf8": 169,
+   "zstd": 118,
+   "units": [
+    [
+     "code",
+     1012
+    ],
+    [
+     "code",
+     449
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1603
+    ],
+    [
+     "code",
+     1625
+    ],
+    [
+     "code",
+     328
+    ],
+    [
+     "code",
+     480
+    ],
+    [
+     "code",
+     520
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1026
+    ],
+    [
+     "code",
+     581
+    ]
+   ]
+  },
+  {
+   "path": "chat",
+   "ru_dictation": "встречаемся завтра в пятницу то есть не в пятницу в субботу в девять у кафе",
+   "pivot": "let us meet tomorrow on saturday at 9 at the cafe",
+   "pivot_raw": "let us meet tomorrow on saturday at 9 at the cafe",
+   "bytes": 14,
+   "hex": "09d5dae56731c1766009821f9000",
+   "rendered_ru": "Давай встретимся завтра на суббота у 9 у кафе",
+   "roundtrip": true,
+   "utf8": 136,
+   "zstd": 95,
+   "units": [
+    [
+     "code",
+     650
+    ],
+    [
+     "code",
+     661
+    ],
+    [
+     "code",
+     306
+    ],
+    [
+     "code",
+     873
+    ],
+    [
+     "code",
+     334
+    ],
+    [
+     "num",
+     9
+    ],
+    [
+     "code",
+     334
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1107
+    ]
+   ]
+  },
+  {
+   "path": "chat",
+   "ru_dictation": "блин телефон садится если пропаду не теряйте вечером выйду на связь по рации в восемь",
+   "pivot": "state battery low if i am_marker off do not worry i will be on the radio in the evening at 8",
+   "pivot_raw": "state_battery_low if i am off do not worry i will be on the radio in the evening at 8",
+   "bytes": 29,
+   "hex": "11ecf0057374617465f167e32fa2ea0adb0d8a299ac1fbb33b41766008",
+   "rendered_ru": "State батарея мало (низкий) если я до полудня (am) выключено не волнуйся я на рация вечером у 8",
+   "roundtrip": true,
+   "utf8": 156,
+   "zstd": 115,
+   "units": [
+    [
+     "lit",
+     "state"
+    ],
+    [
+     "code",
+     1087
+    ],
+    [
+     "code",
+     1485
+    ],
+    [
+     "code",
+     329
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     934
+    ],
+    [
+     "code",
+     409
+    ],
+    [
+     "code",
+     503
+    ],
+    [
+     "code",
+     289
+    ],
+    [
+     "code",
+     342
+    ],
+    [
+     "code",
+     313
+    ],
+    [
+     "code",
+     306
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1279
+    ],
+    [
+     "code",
+     594
+    ],
+    [
+     "code",
+     334
+    ],
+    [
+     "num",
+     8
+    ]
+   ]
+  },
+  {
+   "path": "sos",
+   "ru_dictation": "слушай у нас тут беда сосед упал с крыши кровотечение сильное нужен врач и эвакуация мы в деревне у храма",
+   "pivot": "sos_active neighbor fell from the roof injury_bleeding severity_serious need_doctor need_evacuation loc_village near the temple",
+   "pivot_raw": "sos_active neighbor fell from the roof injury_bleeding severity_serious need_doctor need_evacuation loc_village near the temple",
+   "bytes": 23,
+   "hex": "0efa5bc73e4b938fe5ffe0be9afa73fcb7fb7f680fed50",
+   "rendered_ru": "СИГНАЛ БЕДСТВИЯ сосед упасть от крыша кровотечение серьёзно нужен врач нужна эвакуация в деревне близко храм",
+   "roundtrip": true,
+   "utf8": 191,
+   "zstd": 133,
+   "units": [
+    [
+     "code",
+     0
+    ],
+    [
+     "code",
+     1100
+    ],
+    [
+     "code",
+     1118
+    ],
+    [
+     "code",
+     352
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1346
+    ],
+    [
+     "code",
+     8
+    ],
+    [
+     "code",
+     6
+    ],
+    [
+     "code",
+     26
+    ],
+    [
+     "code",
+     34
+    ],
+    [
+     "code",
+     88
+    ],
+    [
+     "code",
+     1251
+    ],
+    [
+     "code",
+     290
+    ],
+    [
+     "code",
+     1417
+    ]
+   ]
+  },
+  {
+   "path": "sos",
+   "ru_dictation": "отбой тревоги все в безопасности раненых нет спасибо всем кто откликнулся",
+   "pivot": "sos_cancel state_safe state_injured_none thank you everyone who replied",
+   "pivot_raw": "sos_cancel state_safe state_injured_none thank you everyone who replied",
+   "bytes": 12,
+   "hex": "07fa63ea3ff592ddcf92f0c8",
+   "rendered_ru": "Отбой тревоги в безопасности раненых нет спасибо все кто ответить",
+   "roundtrip": true,
+   "utf8": 136,
+   "zstd": 101,
+   "units": [
+    [
+     "code",
+     2
+    ],
+    [
+     "code",
+     69
+    ],
+    [
+     "code",
+     72
+    ],
+    [
+     "code",
+     358
+    ],
+    [
+     "code",
+     725
+    ],
+    [
+     "code",
+     350
+    ],
+    [
+     "code",
+     1068
+    ]
+   ]
+  }
+ ]
+}

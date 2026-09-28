@@ -1,0 +1,194 @@
+{
+  "spec": "standard geohash base32; coarse grant = усечение до n символов, в эфир уходит центр ячейки через PositionCodec",
+  "vectors": [
+    {
+      "name": "casablanca",
+      "lat": 33.5731,
+      "lon": -7.5898,
+      "hashes": {
+        "4": {
+          "geohash": "evfw",
+          "cell_center_lat": 33.486328125,
+          "cell_center_lon": -7.55859375
+        },
+        "5": {
+          "geohash": "evfwg",
+          "cell_center_lat": 33.55224609375,
+          "cell_center_lon": -7.58056640625
+        },
+        "6": {
+          "geohash": "evfwgr",
+          "cell_center_lat": 33.57147216796875,
+          "cell_center_lon": -7.5860595703125
+        },
+        "8": {
+          "geohash": "evfwgrc3",
+          "cell_center_lat": 33.573102951049805,
+          "cell_center_lon": -7.589664459228516
+        }
+      }
+    },
+    {
+      "name": "gibraltar",
+      "lat": 36.1408,
+      "lon": -5.3536,
+      "hashes": {
+        "4": {
+          "geohash": "eykj",
+          "cell_center_lat": 36.123046875,
+          "cell_center_lon": -5.44921875
+        },
+        "5": {
+          "geohash": "eykjw",
+          "cell_center_lat": 36.14501953125,
+          "cell_center_lon": -5.33935546875
+        },
+        "6": {
+          "geohash": "eykjw5",
+          "cell_center_lat": 36.14227294921875,
+          "cell_center_lon": -5.3558349609375
+        },
+        "8": {
+          "geohash": "eykjw5jx",
+          "cell_center_lat": 36.14081382751465,
+          "cell_center_lon": -5.353603363037109
+        }
+      }
+    },
+    {
+      "name": "bali_denpasar",
+      "lat": -8.65,
+      "lon": 115.2167,
+      "hashes": {
+        "4": {
+          "geohash": "qw3y",
+          "cell_center_lat": -8.701171875,
+          "cell_center_lon": 115.13671875
+        },
+        "5": {
+          "geohash": "qw3yv",
+          "cell_center_lat": -8.63525390625,
+          "cell_center_lon": 115.20263671875
+        },
+        "6": {
+          "geohash": "qw3yvc",
+          "cell_center_lat": -8.64898681640625,
+          "cell_center_lon": 115.2191162109375
+        },
+        "8": {
+          "geohash": "qw3yvc64",
+          "cell_center_lat": -8.649930953979492,
+          "cell_center_lon": 115.2165412902832
+        }
+      }
+    },
+    {
+      "name": "hcmc",
+      "lat": 10.7626,
+      "lon": 106.6602,
+      "hashes": {
+        "4": {
+          "geohash": "w3gv",
+          "cell_center_lat": 10.810546875,
+          "cell_center_lon": 106.69921875
+        },
+        "5": {
+          "geohash": "w3gv5",
+          "cell_center_lat": 10.74462890625,
+          "cell_center_lon": 106.67724609375
+        },
+        "6": {
+          "geohash": "w3gv5p",
+          "cell_center_lat": 10.76385498046875,
+          "cell_center_lon": 106.6607666015625
+        },
+        "8": {
+          "geohash": "w3gv5p78",
+          "cell_center_lat": 10.762567520141602,
+          "cell_center_lon": 106.66025161743164
+        }
+      }
+    },
+    {
+      "name": "origin",
+      "lat": 0.0,
+      "lon": 0.0,
+      "hashes": {
+        "4": {
+          "geohash": "s000",
+          "cell_center_lat": 0.087890625,
+          "cell_center_lon": 0.17578125
+        },
+        "5": {
+          "geohash": "s0000",
+          "cell_center_lat": 0.02197265625,
+          "cell_center_lon": 0.02197265625
+        },
+        "6": {
+          "geohash": "s00000",
+          "cell_center_lat": 0.00274658203125,
+          "cell_center_lon": 0.0054931640625
+        },
+        "8": {
+          "geohash": "s0000000",
+          "cell_center_lat": 8.58306884765625e-05,
+          "cell_center_lon": 0.000171661376953125
+        }
+      }
+    },
+    {
+      "name": "near_pole",
+      "lat": 89.9,
+      "lon": 0.0,
+      "hashes": {
+        "4": {
+          "geohash": "upbp",
+          "cell_center_lat": 89.912109375,
+          "cell_center_lon": 0.17578125
+        },
+        "5": {
+          "geohash": "upbp2",
+          "cell_center_lat": 89.89013671875,
+          "cell_center_lon": 0.02197265625
+        },
+        "6": {
+          "geohash": "upbp2j",
+          "cell_center_lat": 89.89837646484375,
+          "cell_center_lon": 0.0054931640625
+        },
+        "8": {
+          "geohash": "upbp2jb1",
+          "cell_center_lat": 89.9000072479248,
+          "cell_center_lon": 0.000171661376953125
+        }
+      }
+    },
+    {
+      "name": "near_antimeridian",
+      "lat": 10.0,
+      "lon": 179.99,
+      "hashes": {
+        "4": {
+          "geohash": "xczb",
+          "cell_center_lat": 9.931640625,
+          "cell_center_lon": 179.82421875
+        },
+        "5": {
+          "geohash": "xczbz",
+          "cell_center_lat": 9.99755859375,
+          "cell_center_lon": 179.97802734375
+        },
+        "6": {
+          "geohash": "xczbzu",
+          "cell_center_lat": 10.00030517578125,
+          "cell_center_lon": 179.9945068359375
+        },
+        "8": {
+          "geohash": "xczbzu2w",
+          "cell_center_lat": 10.00004768371582,
+          "cell_center_lon": 179.98987197875977
+        }
+      }
+    }
+  ]
+}

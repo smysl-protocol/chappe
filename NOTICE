@@ -1,0 +1,31 @@
+Chappe
+Copyright 2026 The Chappe Authors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product includes or interoperates with the following third-party
+components:
+
+- Qwen3-4B-Instruct-2507 (downloaded at runtime, not distributed here)
+  Copyright 2024 Alibaba Cloud. Licensed under the Apache License 2.0.
+  The app shows the required attribution screen in Settings.
+
+- llama.cpp / llama.xcframework (fetched by scripts/fetch_llama_xcframework.sh,
+  not distributed here)
+  Copyright (c) 2023-2024 The ggml authors. MIT License.
+
+- Map tiles and data: (c) OpenStreetMap contributors (ODbL),
+  served via OpenFreeMap, styles (c) OpenMapTiles (CC-BY 4.0).
+  Attribution is shown permanently on the map screen.
+
+- Weather data: Open-Meteo.com (CC-BY 4.0), converted on device into
+  Chappe's own offline pack format.
+
+- Geographic gazetteer: derived from GeoNames (geonames.org), CC-BY 4.0.
+
+- Concept list (tools/semdict/concepticon.tsv): derived from Concepticon
+  (concepticon.clld.org), CC-BY 4.0.
+
+- Meshtastic (R) is a registered trademark of Meshtastic LLC. Chappe
+  implements the Meshtastic client wire protocol independently; no
+  Meshtastic source code is included.

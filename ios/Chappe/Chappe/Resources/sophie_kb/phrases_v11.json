@@ -1,0 +1,63 @@
+{
+ "comment": "Фразы-ритуалы v1.1. Таблица Хаффмана v1 ПОЛНАЯ (Крафт=1.0, свободных листьев 0) — расширение живёт в payload esc_local (12 бит): [esc_local][id 1 байт]. id 0x00-0x7F — общие фразы (замораживаются с v1.1), 0x80-0xFF — зарезервировано под локальный словарь пары (personal registry). Каждая фраза — только смысл, НЕ равный сумме существующих кодов; отклонённые кандидаты — в отчёте v1.1. id=3 удалён до заморозки: «задерживаюсь» оказался равен словарному C576 running late/опаздываю.",
+ "phrases": [
+  {
+   "id": 0,
+   "ru": "добрый вечер",
+   "en": "good evening",
+   "match": [
+    "good evening"
+   ]
+  },
+  {
+   "id": 1,
+   "ru": "принял",
+   "en": "roger",
+   "match": [
+    "roger",
+    "copy that",
+    "received your message"
+   ]
+  },
+  {
+   "id": 2,
+   "ru": "перезвоню",
+   "en": "will call back",
+   "match": [
+    "call you back",
+    "call back later",
+    "will call back"
+   ]
+  },
+  {
+   "id": 4,
+   "ru": "уже выхожу",
+   "en": "leaving now",
+   "match": [
+    "leaving now",
+    "heading out now",
+    "just leaving"
+   ]
+  },
+  {
+   "id": 5,
+   "ru": "я на месте",
+   "en": "i am in place",
+   "match": [
+    "i am in place",
+    "i have arrived",
+    "am at the spot"
+   ]
+  },
+  {
+   "id": 6,
+   "ru": "напиши как дойдёшь",
+   "en": "text me when you arrive",
+   "match": [
+    "text me when you arrive",
+    "write when you arrive",
+    "message me when you get there"
+   ]
+  }
+ ]
+}

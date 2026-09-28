@@ -1,0 +1,1020 @@
+{
+ "path_a": {
+  "n": 200,
+  "facts_ok": 962,
+  "facts_all": 1075,
+  "tokens": 2056,
+  "latin": 939,
+  "text": 94
+ },
+ "path_b": {
+  "n": 199,
+  "facts_ok": 847,
+  "facts_all": 1062,
+  "tokens": 1792,
+  "latin": 553,
+  "text": 1
+ },
+ "rows": [
+  {
+   "input": "Bugis oso near wat...",
+   "direct": "Bugis oso близко wat",
+   "piloted": "Bugis osso близко wat"
+  },
+  {
+   "input": "Go until jurong point, crazy.. Available only in bugis n great world la e buffet... Cine there got amore wat...",
+   "direct": "Идти до jurong суть безумный доступно только в bugis n отлично мир la e buffet cine там получил amore wat",
+   "piloted": "Идти до jurong суть только в bugis и отлично мир la e buffet cine там получил amore wat"
+  },
+  {
+   "input": "I dunno until when... Lets go learn pilates...",
+   "direct": "Я dunno до когда давай идти учиться pilates",
+   "piloted": "Не знаю до когда давай нас идти учиться pilates"
+  },
+  {
+   "input": "Den only weekdays got special price... Haiz... Cant eat liao... Cut nails oso muz wait until i finish drivin wat, lunch still muz eat wat...",
+   "direct": "Den только weekdays получил особый цена haiz cant есть liao порезать nails oso muz ждать до я закончить drivin wat обед всё ещё muz есть wat",
+   "piloted": "Den только weekdays иметь особый цена cant есть liao порезать nails oso muz ждать до я закончить ехать обед всё ещё muz есть"
+  },
+  {
+   "input": "Meet after lunch la...",
+   "direct": "Встретиться после обеда la",
+   "piloted": "Встретиться после обеда"
+  },
+  {
+   "input": "m walking in citylink now ü faster come down... Me very hungry...",
+   "direct": "M идти пешком в citylink сейчас быстро приходить вниз меня очень голодный",
+   "piloted": "Я до полудня (am) идти пешком в citylink сейчас иду быстро приходить вниз я до полудня (am) очень голодный"
+  },
+  {
+   "input": "5 nights...We nt staying at port step liao...Too ex",
+   "direct": "5 ночь мы nt остаться у port шаг liao тоже ex",
+   "piloted": "5 ночь мы не остаться у port шаг liao тоже extreme"
+  },
+  {
+   "input": "Hey pple...$700 or $900 for 5 nights...Excellent location wif breakfast hamper!!!",
+   "direct": "Привет pple 700 или 900 для 5 ночь excellent location wif завтрак hamper",
+   "piloted": "Привет pple 700 или 900 для 5 ночь excellent location с завтрак hamper"
+  },
+  {
+   "input": "Yun ah.the ubi one say if ü wan call by tomorrow.call 67441233 look for irene.ere only got bus8,22,65,61,66,382. Ubi cres,ubi tech park.6ph for 1st 5wkg days.èn",
+   "direct": "Yun ah ubi 1 сказать если wan звонить у завтра звонить 67441233 смотреть для irene ere только получил bus 8 22 65 61 66 382 ubi cres ubi tech park 6 ph для 1 st 5 wkg дни n",
+   "piloted": "Yun ah ubi 1 сказать если ты хотеть звонить у завтра звонить 67441233 смотреть для Irene только получил bus 8 22 65 61 66 382 ubi cres ubi tech park 6 ph для 1 st 5 wkg en"
+  },
+  {
+   "input": "Hey tmr maybe can meet you at yck",
+   "direct": "Привет tmr может быть can встретиться ты у yck",
+   "piloted": "Привет завтра может быть встретиться ты у yck"
+  },
+  {
+   "input": "Oh...i asked for fun. Haha...take care. ü",
+   "direct": "Oh я спросил для весело haha береги себя",
+   "piloted": "Береги себя"
+  },
+  {
+   "input": "We are supposed to meet to discuss abt our trip... Thought xuhui told you? In the afternoon. Thought we can go for lesson after that",
+   "direct": "Мы должен был встретиться discuss abt наш trip думал xuhui сказал ты в afternoon думал мы can идти для lesson после то",
+   "piloted": "Встретиться в afternoon discuss trip xuhui сказал ты идти для lesson после то"
+  },
+  {
+   "input": "t finish my film yet...",
+   "direct": "T закончить мой film ещё",
+   "piloted": "У меня есть не закончить мой film ещё"
+  },
+  {
+   "input": "m having dinner with my cousin...",
+   "direct": "M имея ужин с мой cousin",
+   "piloted": "Имея ужин с мой cousin"
+  },
+  {
+   "input": "Oh... Kay... On sat right?",
+   "direct": "Oh kay на сидеть направо",
+   "piloted": "Oh kay на суббота"
+  },
+  {
+   "input": "I need... Coz i never go before",
+   "direct": "Мне нужно coz я никогда идти до",
+   "piloted": "Мне нужно идти потому что я никогда пошёл до"
+  },
+  {
+   "input": "s a basic yoga course... at bugis... We can go for that... Pilates intro next sat.... Tell me what time you r free",
+   "direct": "S basic yoga конечно у bugis мы can идти для то pilates intro следующий сидеть сказать меня во сколько ты r свободен",
+   "piloted": "Basic yoga у bugis pilates intro следующий суббота сказать меня во сколько youre свободен"
+  },
+  {
+   "input": "I am going to sao mu today. Will be done only at 12",
+   "direct": "Я до полудня (am) иду sao mu сегодня сделано только у 12",
+   "piloted": "Иду Sao mu сегодня только у 12"
+  },
+  {
+   "input": "Hey gals...U all wanna meet 4 dinner at nìte?",
+   "direct": "Привет gals u все wanna встретиться 4 ужин у n te",
+   "piloted": "Привет gals хотеть встретиться ночью для ужин"
+  },
+  {
+   "input": "Jos ask if u wana meet up?",
+   "direct": "Jos спросить если u wana встретиться вверх",
+   "piloted": "Jos спросить если ты хотеть встретиться вверх"
+  },
+  {
+   "input": "Haiyoh... Maybe your hamster was jealous of million",
+   "direct": "Haiyoh может быть твой hamster ревную миллион",
+   "piloted": "Haiyoh может быть твой hamster ревную миллион"
+  },
+  {
+   "input": "is your hamster dead? Hey so tmr i meet you at 1pm orchard mrt?",
+   "direct": "Твой hamster мёртв привет так tmr я встретиться ты у 1 после полудня (pm) orchard mrt",
+   "piloted": "Твой hamster мёртв привет встретиться ты у 1 после полудня (pm) у orchard mrt"
+  },
+  {
+   "input": "ve booked the pilates and yoga lesson already... Haha",
+   "direct": "Ve книга pilates и yoga lesson уже haha",
+   "piloted": "Pilates и yoga lesson уже книга hahaha"
+  },
+  {
+   "input": "Yup... I havent been there before... You want to go for the yoga? I can call up to book",
+   "direct": "Yup я havent там до ты хотеть идти для yoga я can звонить вверх книга",
+   "piloted": "Yep у меня есть не там до ты хотеть идти для yoga я can звонить книга"
+  },
+  {
+   "input": "K... Must book a not huh? so going for yoga basic on sunday?",
+   "direct": "K должен книга не huh так иду для yoga basic на воскресенье",
+   "piloted": "Книга не huh иду для yoga basic на воскресенье"
+  },
+  {
+   "input": "Hey so this sat are we going for the intro pilates only? Or the kickboxing too?",
+   "direct": "Привет так это сидеть мы иду для intro pilates только или kickboxing тоже",
+   "piloted": "Привет так это сидеть мы иду только для intro pilates или тоже kickboxing"
+  },
+  {
+   "input": "Sat right? Okay thanks...",
+   "direct": "Сидеть направо ок спасибо",
+   "piloted": "Сидеть направо спасибо"
+  },
+  {
+   "input": "Yup... From what i remb... I think should be can book...",
+   "direct": "Yup от что я remb я думать стоит can книга",
+   "piloted": "Yep я думать стоит can книга"
+  },
+  {
+   "input": "m going to get specs. My membership is PX3748",
+   "direct": "M иду получить specs мой membership px 3748",
+   "piloted": "Получить specs мой membership px 3748"
+  },
+  {
+   "input": "We can go 4 e normal pilates after our intro...",
+   "direct": "Мы can идти 4 e normal pilates после наш intro",
+   "piloted": "Мы can идти 4 e normal pilates после наш intro"
+  },
+  {
+   "input": "Sun ah... Thk mayb can if dun have anythin on... Thk have to book e lesson... E pilates is at orchard mrt u noe hor...",
+   "direct": "Солнце ah thk mayb can если dun иметь anythin на thk иметь книга e lesson e pilates у orchard mrt u noe hor",
+   "piloted": "Солнышко спасибо может быть can если не иметь что-нибудь на спасибо иметь книга lesson pilates у orchard mrt ты знать hor"
+  },
+  {
+   "input": "Thk shld b can... Ya, i wana go 4 lessons... Haha, can go for one whole stretch...",
+   "direct": "Thk shld b can ya я wana идти 4 lessons haha can идти для 1 весь stretch",
+   "piloted": "Идти для 1 весь stretch для lessons"
+  },
+  {
+   "input": "Sounds gd... Haha... Can... Wah, u yan jiu so fast liao...",
+   "direct": "Звучит gd haha can wah u yan jiu так быстро liao",
+   "piloted": "Звучит хорошо haha ты так быстро"
+  },
+  {
+   "input": "Wah... Okie okie... Muz make use of e unlimited... Haha...",
+   "direct": "Wah okie okie muz делать использовать e unlimited haha",
+   "piloted": "Wah okie muz имеет unlimited data haha"
+  },
+  {
+   "input": "ll go yan jiu den msg u...",
+   "direct": "Ll идти yan jiu den msg u",
+   "piloted": "Идти yin jiu den сообщение ты"
+  },
+  {
+   "input": "K.. I yan jiu liao... Sat we can go 4 bugis vill one frm 10 to 3 den hop to parco 4 nb. Sun can go cine frm 1030 to 2, den hop to orc mrt 4 hip hop at 4...",
+   "direct": "K я yan jiu liao сидеть мы can идти 4 bugis vill 1 frm 10 3 den hop parco 4 nb солнце can идти cine frm 1030 2 den hop orc mrt 4 hip hop у 4",
+   "piloted": "K я yan jiu liao сидеть мы can идти 4 bugis vill 1 от 10 3 потом hop parco 4 nb солнце can идти cine от 1030 2 потом hop orc mrt 4 hip hop у 4"
+  },
+  {
+   "input": "ll go yan jiu too... We can skip ard oso, go cine den go mrt one, blah blah blah...",
+   "direct": "Ll идти yan jiu тоже мы can skip ard oso идти cine den идти mrt 1 blah blah blah",
+   "piloted": "Мы идти yan jiu тоже skip ard oso идти cinema потом mrt 1"
+  },
+  {
+   "input": "Nope... Juz off from work...",
+   "direct": "Nope juz выключено от работать",
+   "piloted": "Nope я выключено от работать"
+  },
+  {
+   "input": "Oh oh... Wasted... Den muz chiong on sat n sun liao...",
+   "direct": "Oh oh waste den muz chiong на сидеть n солнце liao",
+   "piloted": "Waste на сидеть и солнце"
+  },
+  {
+   "input": "Haha... Sounds crazy, dunno can tahan anot...",
+   "direct": "Haha звучит безумный dunno can tahan anot",
+   "piloted": "Haha звучит безумный don t знать can взять другой"
+  },
+  {
+   "input": "Hmmm.. Thk sure got time to hop ard... Ya, can go 4 free abt... Muz call u to discuss liao...",
+   "direct": "Hmmm thk конечно получил время hop ard ya can идти 4 свободен abt muz звонить u discuss liao",
+   "piloted": "Hmm ок иметь время hop наружу да can идти для свободен про то muz звонить ты discuss"
+  },
+  {
+   "input": "Oh... I was thkin of goin yogasana at 10 den no nd to go at 3 den can rush to parco 4 nb... Okie lor, u call me when ready...",
+   "direct": "Oh я thkin goin yogasana у 10 den нет nd идти у 3 den can rush parco 4 nb okie lor u позвони мне когда готов",
+   "piloted": "Oh dot dot я думаю иду yoga у 10 den нет и идти у 3 den can rush parco 4 nb okie lor позвони мне когда готов"
+  },
+  {
+   "input": "After my work ah... Den 6 plus lor... U workin oso rite... Den go orchard lor, no other place to go liao...",
+   "direct": "После мой работать ah den 6 плюс lor u workin oso rite den идти orchard lor нет другой место идти liao",
+   "piloted": "После работы на den 6 идти orchard нет другой место идти"
+  },
+  {
+   "input": "Aiyo... U always c our ex one... I dunno abt mei, she haven reply... First time u reply so fast... Y so lucky not workin huh, got bao by ur sugardad ah...gee..",
+   "direct": "Aiyo u всегда c наш ex 1 я dunno abt mei она haven ответить в первый раз u ответить так быстро y так везучий не workin huh получил bao у ur sugardad ah gee",
+   "piloted": null
+  },
+  {
+   "input": "s ex wat... No ah, waitin 4 u to treat, somebody shld b rich liao...So gd, den u dun have to work frm tmr onwards...",
+   "direct": "S ex wat нет ah waitin 4 u treat кто-то shld b rich liao так gd den u dun иметь работать frm tmr onwards",
+   "piloted": "S ex wat нет ah ждать для ты treat кто-то стоит rich liao так хорошо потом ты dont иметь работать от завтра onwards"
+  },
+  {
+   "input": "Oh oh... Den muz change plan liao... Go back have to yan jiu again...",
+   "direct": "Oh oh den muz изменить план liao идти обратно иметь yan jiu снова",
+   "piloted": "Den muz изменить план идти обратно иметь yan jiu снова"
+  },
+  {
+   "input": "s nt much lesson to go if we attend kb on sat...",
+   "direct": "S nt много lesson идти если мы attend kb на сидеть",
+   "piloted": "Маленький lesson ушёл если мы attend kb на суббота"
+  },
+  {
+   "input": "Den wat will e schedule b lk on sun?",
+   "direct": "Den wat e schedule b lk на солнце",
+   "piloted": "Schedule изменить перекрыть на солнце"
+  },
+  {
+   "input": "Eh den sat u book e kb liao huh...",
+   "direct": "Eh den сидеть u книга e kb liao huh",
+   "piloted": "Den сидеть u книга e kb liao huh"
+  },
+  {
+   "input": "Yup... Hey then one day on fri we can ask miwa and jiayin take leave go karaoke",
+   "direct": "Yup привет потом 1 день на fri мы can спросить miwa и jiayin взять уехать идти karaoke",
+   "piloted": "1 день на пятница спросить Miwa и Jiayin взять уехать идти karaoke"
+  },
+  {
+   "input": "Yup... Ok i go home look at the timings then i msg ü again... Xuhui going to learn on 2nd may too but her lesson is at 8am",
+   "direct": "Yup ок я иди домой смотреть у timings потом я msg снова xuhui иду учиться на 2 nd может тоже но её lesson у 8 до полудня (am)",
+   "piloted": "Yup dot dot ок я иди домой смотреть у timings потом я msg u снова xuhui иду учиться на 2 nd может её lesson у 8 до полудня (am)"
+  },
+  {
+   "input": "Hey i booked the kb on sat already... what other lessons are we going for ah? Keep your sat night free we need to meet and confirm our lodging",
+   "direct": "Привет я книга kb на сидеть уже что другой lessons мы иду для ah держать твой сидеть ночь свободен мы нужно встретиться и confirm наш lodging",
+   "piloted": "Привет я книга kb на сидеть уже что другой lessons мы иду для ah держать твой сидеть ночь свободен мы нужно встретиться и confirm наш lodging"
+  },
+  {
+   "input": "Hey... are you going to quit soon? Xuhui and i working till end of the month",
+   "direct": "Привет ты иду quit скоро xuhui и я работаю до (пока не) конец месяц",
+   "piloted": "Привет ты quit скоро xuhui и я работаю до (пока не) конец месяц"
+  },
+  {
+   "input": "s a kb lesson tonight",
+   "direct": "S kb lesson сегодня вечером",
+   "piloted": "S kb lesson сегодня вечером"
+  },
+  {
+   "input": "Hey so whats the plan this sat?",
+   "direct": "Привет так что план это сидеть",
+   "piloted": "Что план это суббота"
+  },
+  {
+   "input": "Hey i will be late ah... Meet you at 945+",
+   "direct": "Привет я поздно ah встретиться ты у 945",
+   "piloted": "Привет я поздно встретиться ты у 945"
+  },
+  {
+   "input": "Hey tmr meet at bugis 930 ?",
+   "direct": "Привет tmr встретиться у bugis 930",
+   "piloted": "Привет завтра встретиться у bugis у 930"
+  },
+  {
+   "input": "Ha... Then we must walk to everywhere... Cannot take tram. My cousin said can walk to vic market from our hotel",
+   "direct": "Ha потом мы должен идти пешком everywhere can не взять tram мой cousin сказал can идти пешком vic рынок от наш hotel",
+   "piloted": "Идти пешком vic рынок от наш hotel can не взять tram"
+  },
+  {
+   "input": "Haha... Yup hopefully  we will lose a few kg by mon. after hip hop can go orchard and weigh again",
+   "direct": "Haha yup hopefully мы терять мало килограмм у mon после hip hop can идти orchard и weigh снова",
+   "piloted": "Haha yup hopefully терять мало килограмм у понедельник после hip hop идти orchard и weigh снова"
+  },
+  {
+   "input": "ve booked the 2 lessons on sun liao...",
+   "direct": "Ve книга 2 lessons на солнце liao",
+   "piloted": "Мы книга 2 lessons на солнце liao"
+  },
+  {
+   "input": "Hmmm... Guess we can go 4 kb n power yoga... Haha, dunno we can tahan power yoga anot... Thk got lo oso, forgot liao...",
+   "direct": "Hmmm полагаю мы can идти 4 kb n электричество yoga haha dunno мы can tahan электричество yoga anot thk получил lo oso забыть liao",
+   "piloted": "Полагаю мы can идти 4 kb и электричество yoga haha может быть мы can остаться у электричество yoga thk получил lo oso забыть liao"
+  },
+  {
+   "input": "Oh... Okie lor...We go on sat...",
+   "direct": "Oh okie lor мы идти на сидеть",
+   "piloted": "Мы идти на суббота"
+  },
+  {
+   "input": "Oh... Haha... Den we shld had went today too... Gee, nvm la... Kaiez, i dun mind goin jazz oso... Scared hiphop open cant catch up...",
+   "direct": "Oh haha den мы shld имел пошёл сегодня тоже gee nvm la kaiez я dun разум против goin jazz oso напуган hiphop открыто cant поймать вверх",
+   "piloted": "Kaiez я dont разум против иду jazz eso напуган hiphop открыто cant поймать вверх"
+  },
+  {
+   "input": "ll quit yet... Hmmm, can go jazz ? Yogasana oso can... We can go meet em after our lessons den...",
+   "direct": "Ll quit ещё hmmm can идти jazz yogasana oso can мы can идти встретиться em после наш lessons den",
+   "piloted": "Ll quit ещё can идти jazz yogasana oso can идти встретиться их после lessons"
+  },
+  {
+   "input": "m still sleepin, haha... Okie, u go home liao den confirm w me lor...",
+   "direct": "M всё ещё sleepin haha okie u иди домой liao den confirm w меня lor",
+   "piloted": "Я до полудня (am) всё ещё спать haha ты иди домой confirm с меня"
+  },
+  {
+   "input": "m nt goin, got somethin on, unless they meetin 4 dinner lor... Haha, i wonder who will go tis time...",
+   "direct": "M nt goin получил somethin на если только не они meetin 4 ужин lor haha я интересно кто идти tis время",
+   "piloted": "Может быть не иду иметь что-то на если только не они встретиться для ужин я интересно кто идти это время"
+  },
+  {
+   "input": "m eatin too much n puttin on weight...Haha... So anythin special happened?",
+   "direct": "M eatin тоже много n puttin на weight haha так anythin особый случилось",
+   "piloted": "Есть тоже много gaining weight haha что-нибудь особый случилось"
+  },
+  {
+   "input": "Thk some of em find wtc too far... Weiyi not goin... E rest i dunno yet... R ur goin 4 dinner den i might b able to join...",
+   "direct": "Thk несколько em найти wtc тоже далеко weiyi не goin e отдых я dunno ещё r ur goin 4 ужин den я может быть b могу присоединиться",
+   "piloted": "Спасибо несколько их найти wtc тоже далеко weiyi не иду e отдых я dunno ещё r ты иду ужин потом я может быть могу присоединиться"
+  },
+  {
+   "input": "m eatin now lor, but goin back to work soon... E mountain deer show huh... I watch b4 liao, very nice...",
+   "direct": "M eatin сейчас lor но goin обратно работать скоро e гора deer показать huh я смотреть b 4 liao очень приятно",
+   "piloted": "Есть сейчас lor но иду обратно работать скоро гора deer показать я смотреть до liao очень приятно"
+  },
+  {
+   "input": "Goin to workout lor... Muz lose e fats...",
+   "direct": "Goin workout lor muz терять e fats",
+   "piloted": "Иду workout терять fat"
+  },
+  {
+   "input": "ve oredi booked slots 4 my weekends liao...",
+   "direct": "Ve oredi книга slots 4 мой выходные liao",
+   "piloted": "Книга slots для мой выходные"
+  },
+  {
+   "input": "I noe la... U wana pei bf oso rite... K lor, other days den...",
+   "direct": "Я noe la u wana pei bf oso rite k lor другой дни den",
+   "piloted": "Я знать la ты хотеть bf osa направо k lor другой дни чем"
+  },
+  {
+   "input": "U meet other fren dun wan meet me ah... Muz b a guy rite...",
+   "direct": "U встретиться другой fren dun wan встретиться меня ah muz b парень rite",
+   "piloted": "Встретиться другой друзья не хотеть встретиться меня парень направо"
+  },
+  {
+   "input": "Oh... Icic... K lor, den meet other day...",
+   "direct": "Oh icic k lor den встретиться другой день",
+   "piloted": "Oh я видеть встретиться другой день"
+  },
+  {
+   "input": "Haha... Where got so fast lose weight, thk muz go 4 a month den got effect... Gee,later we go aust put bk e weight.",
+   "direct": "Haha где получил так быстро терять weight thk muz идти 4 месяц den получил effect gee позже мы идти aust положить bk e weight",
+   "piloted": "Haha я потерял weight так быстро спасибо mum идти для месяц потом получил effect позже мы идти обратно старый weight"
+  },
+  {
+   "input": "U attend ur driving lesson how many times a wk n which day?",
+   "direct": "U attend ur ехать lesson сколько (штук) раз wk n который день",
+   "piloted": "Сколько (штук) раз неделя ты attend твой ехать lesson и на который день"
+  },
+  {
+   "input": "Ay wana meet on sat?ü wkg on sat?",
+   "direct": "Ay wana встретиться на сидеть wkg на сидеть",
+   "piloted": "Встретиться на суббота"
+  },
+  {
+   "input": "Shopping? Eh ger i toking abt syd leh...Haha",
+   "direct": "Магазин eh ger я toking abt syd leh haha",
+   "piloted": "Магазин говорить про sid leh haha"
+  },
+  {
+   "input": "s é only $140 ard...É rest all ard $180 at least...Which is é price 4 é 2 bedrm ($900)",
+   "direct": "S только 140 ard отдых все ard 180 хотя бы который цена 4 2 bedrm 900",
+   "piloted": "Цена 140 для 1 bedrm 180 для отдых хотя бы 900 для 2 bedrm"
+  },
+  {
+   "input": "Hmm...Bad news...Hype park plaza $700 studio taken...Only left 2 bedrm-$900...",
+   "direct": "Hmm плохо новости hype park plaza 700 studio взял только ушёл 2 bedrm 900",
+   "piloted": "Hype park plaza 700 studio взял только 2 bedrm у 900 ушёл"
+  },
+  {
+   "input": "Okay... I booked all already... Including the one at bugis.",
+   "direct": "Ок я книга все уже including 1 у bugis",
+   "piloted": "Все книга including 1 у bugis"
+  },
+  {
+   "input": "Yun ah.now ü wkg where?btw if ü go nus sc. Ü wana specialise in wad?",
+   "direct": "Yun ah сейчас wkg где btw если идти nus sc wana specialise в wad",
+   "piloted": "Yun ah сейчас где btw если ты идти nus sc ты хотеть specialise в wad"
+  },
+  {
+   "input": "Hey you still want to go for yogasana? Coz if we end at cine then can go bathe and hav the steam bath",
+   "direct": "Привет ты всё ещё хотеть идти для yogasana coz если мы конец у cine потом can идти bathe и hav steam bath",
+   "piloted": "Привет ты всё ещё хотеть yoga потом идти cinema и взять steam bath"
+  },
+  {
+   "input": "Hey we can go jazz power yoga hip hop kb and yogasana",
+   "direct": "Привет мы can идти jazz электричество yoga hip hop kb и yogasana",
+   "piloted": "Привет мы can идти jazz электричество yoga hip hop kb и yogasana"
+  },
+  {
+   "input": "Can meh? Thgt some will clash... Really ah, i dun mind... I dun seen to have lost any weight... Gee...",
+   "direct": "Can meh thgt несколько clash правда ah я dun разум против я dun видел иметь потерял любой weight gee",
+   "piloted": "Я не разум против у меня есть не потерял любой weight"
+  },
+  {
+   "input": "Oh... Lk tt den we take e one tt ends at cine lor... Dun wan yogasana oso can...",
+   "direct": "Oh lk tt den мы взять e 1 tt конец у cine lor dun wan yogasana oso can",
+   "piloted": "Lk сегодня вечером мы взять 1 то конец у cine don хотеть yoga pose can"
+  },
+  {
+   "input": "Wa... U so efficient... Gee... Thanx...",
+   "direct": "Wa u так efficient gee thanx",
+   "piloted": "Ты так efficient спасибо"
+  },
+  {
+   "input": "Hmmm.... Mayb can try e shoppin area one, but forgot e name of hotel...",
+   "direct": "Hmmm mayb can пробовать e shoppin area 1 но забыть e имя hotel",
+   "piloted": "Может быть пробовать магазин area 1 но забыть hotel имя"
+  },
+  {
+   "input": "s e best choice den we juz have to take it...",
+   "direct": "S e лучший choice den мы juz иметь взять",
+   "piloted": "S e лучший choice den мы juz иметь взять"
+  },
+  {
+   "input": "I only work from mon to thurs but Sat i cant leh... Booked liao... Which other day u free?",
+   "direct": "Я только работать от mon thurs но сидеть я cant leh книга liao который другой день u свободен",
+   "piloted": "Я работать mon thurs сидеть я can не уехать книга liao который другой день ты свободен"
+  },
+  {
+   "input": "Until 545 lor... Ya, can go 4 dinner together...",
+   "direct": "До 545 lor ya can идти 4 ужин вместе",
+   "piloted": "Can идти ужин вместе у 545"
+  },
+  {
+   "input": "Mon okie lor... Haha, best is cheap n gd food la, ex oso okie... Depends on whether wana eat western or chinese food... Den which u prefer...",
+   "direct": "Mon okie lor haha лучший cheap n gd еда la ex oso okie depends на whether wana есть western или chinese еда den который u prefer",
+   "piloted": "Mon okie lor haha лучший cheap и хорошо еда la ex oso okie depends на whether wana есть western или chinese еда den который ты prefer"
+  },
+  {
+   "input": "Chinatown got porridge, claypot rice, yam cake, fishhead beehoon... Either we eat cheap den go cafe n tok or go nydc or somethin...",
+   "direct": "Chinatown получил porridge claypot рис yam cake fishhead beehoon либо мы есть cheap den идти кафе n tok или идти nydc или somethin",
+   "piloted": "Chinatown имеет porridge claypot рис yam cake fishhead beehoon есть cheap у den идти кафе n tok или идти nydc или что-то"
+  },
+  {
+   "input": "My fri ah... Okie lor,goin 4 my drivin den go shoppin after tt...",
+   "direct": "Мой fri ah okie lor goin 4 мой drivin den идти shoppin после tt",
+   "piloted": "Мой друг ок иду ехать потом магазин после то"
+  },
+  {
+   "input": "Hey...Great deal...Farm tour 9am to 5pm $95/pax, $50 deposit by 16 May",
+   "direct": "Привет отлично сделка farm tour 9 до полудня (am) 5 после полудня (pm) 95 pax 50 залог у 16 может",
+   "piloted": "Farm tour от 9 до полудня (am) 5 после полудня (pm) 95 долларов per человек 50 долларов залог у 16 может"
+  },
+  {
+   "input": "haha but no money leh... Later got to go for tuition... Haha and looking for empty slots for driving lessons",
+   "direct": "Haha но нет деньги leh позже получил идти для tuition haha и смотрю для empty slots для ехать lessons",
+   "piloted": "Haha нет деньги leh позже идти для tuition и смотреть для empty slots для ехать lessons"
+  },
+  {
+   "input": "My tuition is at 330. Hm we go for the 1120 to 1205 one? Do you mind?",
+   "direct": "Мой tuition у 330 hm мы идти для 1120 1205 1 ты разум против",
+   "piloted": "Tuition 330 идти для 1120 1205 ты разум против"
+  },
+  {
+   "input": "Hey... What time is your driving on fri? We go for evaluation on fri?",
+   "direct": "Привет во сколько твой ехать на fri мы идти для evaluation на fri",
+   "piloted": "Во сколько твой ехать на пятница мы идти для evaluation на пятница"
+  },
+  {
+   "input": "m going to be late leh.",
+   "direct": "M иду поздно leh",
+   "piloted": "Я поздно"
+  },
+  {
+   "input": "Hey are we going for the lo lesson or gym?",
+   "direct": "Привет мы иду для lo lesson или gym",
+   "piloted": "Привет мы иду для lo lesson или gym"
+  },
+  {
+   "input": "Okay... We wait ah",
+   "direct": "Ок мы ждать ah",
+   "piloted": "Ждать"
+  },
+  {
+   "input": "Hey come online! Use msn... We are all there",
+   "direct": "Привет приходить online использовать msn мы все там",
+   "piloted": "Привет приходить online использовать msn мы все там"
+  },
+  {
+   "input": "Oh yah... We never cancel leh... Haha",
+   "direct": "Oh yah мы никогда отмена leh haha",
+   "piloted": "Мы никогда отмена leh haha"
+  },
+  {
+   "input": "K. Did you call me just now ah?",
+   "direct": "K ты позвони мне просто сейчас ah",
+   "piloted": "K ты позвони мне просто сейчас"
+  },
+  {
+   "input": "Okay lor... Wah... like that def they wont let us go... Haha... What did they say in the terms and conditions?",
+   "direct": "Ок lor wah нравится то def они wont давай нас идти haha что они сказать в terms и conditions",
+   "piloted": "Lor что они сказать в terms и conditions"
+  },
+  {
+   "input": "Okay lor... Will they still let us go a not ah? Coz they will not know until later. We drop our cards into the box right?",
+   "direct": "Ок lor они всё ещё давай нас идти не ah coz они не знать до позже мы бросить (уронить) наш карта в box направо",
+   "piloted": "Ок lor они всё ещё давай нас идти нет ah потому что они не знать до позже мы бросить (уронить) наш карта в box направо"
+  },
+  {
+   "input": "You want to go?",
+   "direct": "Ты хотеть идти",
+   "piloted": "Ты хотеть идти"
+  },
+  {
+   "input": "Kay... Since we are out already",
+   "direct": "Kay с тех пор мы наружу уже",
+   "piloted": "Kay мы наружу уже"
+  },
+  {
+   "input": "Haha okay... Today weekend leh...",
+   "direct": "Haha ок сегодня выходные leh",
+   "piloted": "Haha ок сегодня выходные"
+  },
+  {
+   "input": "Haha... They cant what... At the most tmr forfeit... haha so how?",
+   "direct": "Haha они cant что у больше всего tmr forfeit haha так как",
+   "piloted": "Haha они can не у больше всего завтра forfeit так как"
+  },
+  {
+   "input": "Hey... Why dont we just go watch x men and have lunch... Haha",
+   "direct": "Привет почему dont мы просто идти смотреть x мужчины и иметь обед haha",
+   "piloted": "Привет почему dont мы просто идти смотреть x мужчины и иметь обед haha"
+  },
+  {
+   "input": "Haha... Really oh no... How? Then will they deduct your lesson tmr?",
+   "direct": "Haha правда oh нет как потом они deduct твой lesson tmr",
+   "piloted": "Haha правда oh нет как потом они deduct твой lesson завтра"
+  },
+  {
+   "input": "m only reaching tp mrt",
+   "direct": "M только добраться tp mrt",
+   "piloted": "Я до полудня (am) только добраться mrt"
+  },
+  {
+   "input": "m goin to be late",
+   "direct": "M goin поздно",
+   "piloted": "Я поздно"
+  },
+  {
+   "input": "Ya! when are ü taking ure practical lessons? I start in june..",
+   "direct": "Ya когда беру ure practical lessons я начать в июнь",
+   "piloted": "Ya когда ты беру твой practical lessons я начать в июнь"
+  },
+  {
+   "input": "Hey... Very inconvenient for your sis a not huh?",
+   "direct": "Привет очень inconvenient для твой сестрёнка не huh",
+   "piloted": "Привет очень inconvenient для твой сестрёнка"
+  },
+  {
+   "input": "m at amk. Need to drink tea or coffee",
+   "direct": "M у amk нужно пить чай или кофе",
+   "piloted": "У amk нужно чай или кофе"
+  },
+  {
+   "input": "Hey you gave them your photo when you registered for driving ah? Tmr wanna meet at yck?",
+   "direct": "Привет ты дал их твой фото когда ты registered для ехать ah tmr wanna встретиться у yck",
+   "piloted": "Привет ты дал их твой фото когда ты registered для ехать да tmr встретиться у yck"
+  },
+  {
+   "input": "s on 21 may. Coz thought wanna go out with jiayin. But she isnt free",
+   "direct": "S на 21 может coz думал wanna идти наружу с jiayin но она isnt свободен",
+   "piloted": "На 21 может потому что думал wanna идти наружу с Jiayin но она isnt свободен"
+  },
+  {
+   "input": "Haha... dont be angry with yourself... Take it as a practice for the real thing. =)",
+   "direct": "Haha dont злой с себя взять как practice для настоящий вещь",
+   "piloted": "Haha не злой с себя взять как practice для настоящий вещь"
+  },
+  {
+   "input": "Haha... Hope ü can hear the receipt sound... Gd luck!",
+   "direct": "Haha надеюсь can слышать receipt звук gd удача",
+   "piloted": "Haha надеюсь ты can слышать receipt звук удачи"
+  },
+  {
+   "input": "Huh? 6 also cannot? Then only how many mistakes?",
+   "direct": "Huh 6 тоже can не потом только сколько (штук) ошибка",
+   "piloted": "Huh у 6 тоже can не потом сколько (штук) ошибка"
+  },
+  {
+   "input": "Nope... Think i will go for it on monday... Sorry i replied so late",
+   "direct": "Nope думать я идти для на понедельник извини я ответить так поздно",
+   "piloted": "Nope я идти на понедельник извини для поздно ответить"
+  },
+  {
+   "input": "Hey.. Something came up last min.. Think i wun be signing up tmr.. Hee",
+   "direct": "Привет что-то пришёл вверх последний min думать я wun знак вверх tmr hee",
+   "piloted": "Привет что-то пришёл вверх последний минута я не знак вверх завтра"
+  },
+  {
+   "input": "I am thinking of going down to reg for pract lessons.. Flung my advance.. Haha wat time u going?",
+   "direct": "Я до полудня (am) думаю иду вниз reg для pract lessons flung мой advance haha wat время u иду",
+   "piloted": "Думаю иду reg для practice lessons flung мой advance во сколько ты иду"
+  },
+  {
+   "input": "Hey gals.. Anyone of u going down to e driving centre tmr?",
+   "direct": "Привет gals кто-нибудь u иду вниз e ехать centre tmr",
+   "piloted": "Привет gals любой ты иду вниз e ехать centre завтра"
+  },
+  {
+   "input": "Nope i waiting in sch 4 daddy...",
+   "direct": "Nope я жду в sch 4 папа",
+   "piloted": "Nope я жду в sch 4 папа"
+  },
+  {
+   "input": "Dunno lei he neva say...",
+   "direct": "Dunno lei он neva сказать",
+   "piloted": "Dunno она никогда сказал"
+  },
+  {
+   "input": "Ü called dad oredi...",
+   "direct": "Звонил папа oredi",
+   "piloted": "Звонил папа oredi"
+  },
+  {
+   "input": "Me hungry buy some food good lei... But mum n yun dun wan juz buy a little bit...",
+   "direct": "Меня голодный купить несколько еда хорошо lei но mum n yun dun wan juz купить немного чуть",
+   "piloted": "Меня голодный купить несколько еда хорошо lei но mum и yun don хотеть просто купить немного чуть"
+  },
+  {
+   "input": "Dad went out oredi...",
+   "direct": "Папа пошёл наружу oredi",
+   "piloted": "Папа пошёл наружу oredi"
+  },
+  {
+   "input": "Ü still attending da talks?",
+   "direct": "Всё ещё attending da говорить",
+   "piloted": "Всё ещё attending говорить"
+  },
+  {
+   "input": "Then she buying today? Ü no need to c meh...",
+   "direct": "Потом она купить сегодня нет нужно c meh",
+   "piloted": "Потом она купить сегодня нет нужно сказать меня"
+  },
+  {
+   "input": "Nope... C ü then...",
+   "direct": "Nope c потом",
+   "piloted": "Nope c потом"
+  },
+  {
+   "input": "Is fujitsu s series lifebook good?",
+   "direct": "Fujitsu s series lifebook хорошо",
+   "piloted": "Fujitsu s series lifebook хорошо"
+  },
+  {
+   "input": "Is toshiba portege m100 gd?",
+   "direct": "Toshiba portege m 100 gd",
+   "piloted": "Там toshiba portege m 100 gd"
+  },
+  {
+   "input": "Yun buying... But school got offer 2000 plus only...",
+   "direct": "Yun купить но школа получил выключено 2000 плюс только",
+   "piloted": "Yun купить но школа получил выключено 2000 плюс только"
+  },
+  {
+   "input": "Got fujitsu, ibm, hp, toshiba... Got a lot of model how to say...",
+   "direct": "Получил fujitsu ibm hp toshiba получил много model как сказать",
+   "piloted": "Иметь fujitsu ibm hp toshiba много models"
+  },
+  {
+   "input": "How come i din c ü... Yup i cut my hair...",
+   "direct": "Как приходить я din c yup я порезать мой волосы",
+   "piloted": "Я не порезать мой волосы yup я порезать мой волосы"
+  },
+  {
+   "input": "No wonder... Cos i dun rem seeing a silver car... But i thk i saw a black one...",
+   "direct": "Нет интересно cos я dun rem вижусь silver машина но я thk я видел чёрный 1",
+   "piloted": "Нет интересно я не видеть silver машина но я думать я видел чёрный 1"
+  },
+  {
+   "input": "s naughty... Ü so free today? Can go jogging...",
+   "direct": "S naughty так свободен сегодня can идти jogging",
+   "piloted": "S naughty я свободен сегодня can идти jogging"
+  },
+  {
+   "input": "m not drivin... I neva develop da photos lei...",
+   "direct": "M не drivin я neva develop da фото lei",
+   "piloted": "Я никогда developed фото lei"
+  },
+  {
+   "input": "I wan but too early lei... Me outside now wun b home so early... Neva mind then...",
+   "direct": "Я wan но слишком рано lei меня снаружи сейчас wun b дом так рано neva разум против потом",
+   "piloted": "Я хотеть но слишком рано lei меня снаружи сейчас не дом так рано neva разум против потом"
+  },
+  {
+   "input": "Ü dun need to pick ur gf?",
+   "direct": "Dun нужно подобрать ur gf",
+   "piloted": "Нужно забрать твой девушка (его)"
+  },
+  {
+   "input": "m at home n ready...",
+   "direct": "M дома n готов",
+   "piloted": "Я до полудня (am) дома и готов"
+  },
+  {
+   "input": "Dunno lei... I thk mum lazy to go out... I neva ask her yet...",
+   "direct": "Dunno lei я thk mum lazy идти наружу я neva спросить её ещё",
+   "piloted": "Dunno дама я думать mum lazy идти наружу я никогда спросить её ещё"
+  },
+  {
+   "input": "Mum say we wan to go then go... Then she can shun bian watch da glass exhibition...",
+   "direct": "Mum сказать мы wan идти потом идти потом она can shun bian смотреть da glass exhibition",
+   "piloted": "Mum говорит мы хотеть идти потом идти она can видеть bian смотреть glass exhibition"
+  },
+  {
+   "input": "Dun need to use dial up juz open da browser n surf...",
+   "direct": "Dun нужно использовать dial вверх juz открыто da browser n surf",
+   "piloted": "Dun нужно использовать dial вверх просто открыто browser и surf"
+  },
+  {
+   "input": "When did i use soc... I use it only at home... Ü dunno how 2 type it in word ar...",
+   "direct": "Когда я использовать soc я использовать только дома dunno как 2 type в слово ar",
+   "piloted": "Я использовал soc только дома dont знать как type в слово ar"
+  },
+  {
+   "input": "Juz go google n search 4 qet...",
+   "direct": "Juz идти google n search 4 qet",
+   "piloted": "Идти google search для qet"
+  },
+  {
+   "input": "Huh means computational science... Y they like dat one push here n there...",
+   "direct": "Huh значит computational science y они нравится dat 1 push здесь n там",
+   "piloted": "Huh значит computational science они нравится то 1 push здесь и там"
+  },
+  {
+   "input": "I not at home now lei...",
+   "direct": "Я не дома сейчас lei",
+   "piloted": "Я до полудня (am) не дома сейчас lei"
+  },
+  {
+   "input": "Ü takin linear algebra today?",
+   "direct": "Takin linear algebra сегодня",
+   "piloted": "Взять linear algebra сегодня"
+  },
+  {
+   "input": "Ü bot notes oredi... Cos i juz rem i got...",
+   "direct": "Bot не oredi cos я juz rem я получил",
+   "piloted": "Bot не ore cos я просто rem я получил"
+  },
+  {
+   "input": "Wah lucky man... Then can save money... Hee...",
+   "direct": "Wah везучий мужик потом can сохранить деньги hee",
+   "piloted": "Wah везучий мужик потом can сохранить деньги hee"
+  },
+  {
+   "input": "Y so late but i need to go n get da laptop...",
+   "direct": "Y так поздно но мне нужно идти n получить da laptop",
+   "piloted": "Так поздно но мне нужно идти и получить laptop"
+  },
+  {
+   "input": "Where to get those?",
+   "direct": "Где получить те",
+   "piloted": "Где получить те"
+  },
+  {
+   "input": "Then cant get da laptop? My matric card wif ü lei...",
+   "direct": "Потом cant получить da laptop мой matric карта wif lei",
+   "piloted": "Can не получить laptop мой matric карта с ты"
+  },
+  {
+   "input": "I dunno they close oredi not... Ü v ma fan...",
+   "direct": "Я dunno они закрыть oredi не v мам fan",
+   "piloted": "Не знаю они закрыть oredi не fan"
+  },
+  {
+   "input": "Hi dis is yijue i would be happy to work wif ü all for gek1510...",
+   "direct": "Привет dis yijue я счастлив работать wif все для gek 1510",
+   "piloted": "Привет это Yijue я счастлив работать с ты все для gek 1510"
+  },
+  {
+   "input": "Ü comin to fetch us oredi...",
+   "direct": "Comin заехать за нас oredi",
+   "piloted": "Приходить подобрать нас вверх oredi"
+  },
+  {
+   "input": "Got smaller capacity one? Quite ex...",
+   "direct": "Получил маленький capacity 1 вполне ex",
+   "piloted": "Получил маленький capacity 1 вполне ex"
+  },
+  {
+   "input": "Wat ü doing now?",
+   "direct": "Wat делаю сейчас",
+   "piloted": "Что ты делаю сейчас"
+  },
+  {
+   "input": "m not at home in da aft wat...",
+   "direct": "M не дома в da aft wat",
+   "piloted": "Не дома в aft ждать"
+  },
+  {
+   "input": "Mum ask ü to buy food home...",
+   "direct": "Mum спросить купить еда дом",
+   "piloted": "Mum спросить ты купить еда дома"
+  },
+  {
+   "input": "Leave it wif me lar... Ü wan to carry meh so heavy... Is da num 98321561 familiar to ü?",
+   "direct": "Уехать wif меня lar wan carry meh так сильный (тяжёлый) da num 98321561 familiar",
+   "piloted": "Уехать с меня дружище я так сильный (тяжёлый) номер 98321561 familiar ты"
+  },
+  {
+   "input": "s my group mate... Lucky i havent reply... Wat time do ü need to leave...",
+   "direct": "S мой group mate везучий я havent ответить wat время нужно уехать",
+   "piloted": "Мой group mate везучий у меня есть не ответить во сколько тебе нужно? уехать"
+  },
+  {
+   "input": "m askin if ü leaving earlier or wat mah cos mayb ü haf to walk v far...",
+   "direct": "M askin если уезжаем раньше или wat mah cos mayb haf идти пешком v далеко",
+   "piloted": "Может быть ты иметь идти пешком далеко distance"
+  },
+  {
+   "input": "m stuck in da middle of da row on da right hand side of da lt...",
+   "direct": "M застряли в da middle da row на da направо рука сторона da lt",
+   "piloted": "Я до полудня (am) застряли в middle row на направо рука сторона lt"
+  },
+  {
+   "input": "Black shirt n blue jeans... I thk i c ü...",
+   "direct": "Чёрный shirt n blue jeans я thk я c",
+   "piloted": "Чёрный shirt и blue jeans я думать я до встречи"
+  },
+  {
+   "input": "Not directly behind... Abt 4 rows behind ü...",
+   "direct": "Не directly позади abt 4 rows позади",
+   "piloted": "Про 4 rows позади"
+  },
+  {
+   "input": "Ü go home liao? Ask dad to pick me up at 6...",
+   "direct": "Иди домой liao спросить папа забери меня у 6",
+   "piloted": "Иди домой спросить папа забрать у 6"
+  },
+  {
+   "input": "I wait 4 ü inside da car park...",
+   "direct": "Я ждать 4 внутри da машина park",
+   "piloted": "Я ждать 4 u внутри машина park"
+  },
+  {
+   "input": "Yup... How ü noe leh...",
+   "direct": "Yup как noe leh",
+   "piloted": "Yep как про нет давай меня проверить"
+  },
+  {
+   "input": "Oic... I saw him too but i tot he din c me... I found a group liao...",
+   "direct": "Oic я видел его тоже но я tot он din c меня я нашёл group liao",
+   "piloted": "Я видел его тоже но я думал он не видеть меня я нашёл group liao"
+  },
+  {
+   "input": "Aiyo a bit pai seh ü noe... Scared he dun rem who i am then die... Hee... But he become better lookin oredi leh...",
+   "direct": "Aiyo немного pai seh noe напуган он dun rem кто я до полудня (am) потом умереть hee но он стать лучше lookin oredi leh",
+   "piloted": "Aiyo немного напуган он забыть кто я до полудня (am) потом умер hee но он выглядит лучше сейчас"
+  },
+  {
+   "input": "How i noe... Did ü specify da domain as nusstu... Ü still in sch...",
+   "direct": "Как я noe specify da domain как nusstu всё ещё в sch",
+   "piloted": "Как я знать ты specify domain как nusstu ты всё ещё в sch"
+  },
+  {
+   "input": "When ü login dat time... Dad fetching ü home now?",
+   "direct": "Когда login dat время папа заехать за дом сейчас",
+   "piloted": "Когда ты log в то время папа заберу тебя для дом сейчас"
+  },
+  {
+   "input": "I come n pick ü up... Come out immediately aft ur lesson...",
+   "direct": "Я приходить n забрать приходить наружу immediately aft ur lesson",
+   "piloted": "Я приходить заберу тебя приходить наружу направо после твой lesson"
+  },
+  {
+   "input": "Eh ur laptop got no stock lei... He say mon muz come again to take a look c got a not...",
+   "direct": "Eh ur laptop получил нет stock lei он сказать mon muz приходить снова взять смотреть c получил не",
+   "piloted": "Laptop имеет нет stock он говорит mon muz иду обратно проверить получил note"
+  },
+  {
+   "input": "Ü ready then call me...",
+   "direct": "Готов потом позвони мне",
+   "piloted": "Готов потом позвони мне"
+  },
+  {
+   "input": "Ü still got lessons?  Ü in sch?",
+   "direct": "Всё ещё получил lessons в sch",
+   "piloted": "Ты всё ещё иметь занятие да ты в школа"
+  },
+  {
+   "input": "Shall i get my pouch?",
+   "direct": "Shall я получить мой pouch",
+   "piloted": "Shall я получить мой pouch"
+  },
+  {
+   "input": "m on da bus going home...",
+   "direct": "M на da bus иду дом",
+   "piloted": "M в автобусе иду дом"
+  },
+  {
+   "input": "m walking home oredi... Ü so late then reply... I oso saw a top dat i like but din buy... Where r ü now?",
+   "direct": "M идти пешком дом oredi так поздно потом ответить я oso видел наверху dat я нравится но din купить где r сейчас",
+   "piloted": "Я идти пешком дом я видел наверху я нравится но не купить ты где? сейчас"
+  },
+  {
+   "input": "ll take forever to come back...",
+   "direct": "Ll взять forever приходить обратно",
+   "piloted": "Взять forever приходить обратно"
+  },
+  {
+   "input": "R ü comin back for dinner?",
+   "direct": "R comin обратно для ужин",
+   "piloted": "R u comin обратно для ужин"
+  },
+  {
+   "input": "Eat at old airport road... But now 630 oredi... Got a lot of pple...",
+   "direct": "Есть у старый airport дорога но сейчас 630 oredi получил много pple",
+   "piloted": "Есть у старый airport дорога но сейчас у 630 oredi получил много pple"
+  },
+  {
+   "input": "Y bishan lei... I tot ü say lavender?",
+   "direct": "Y bishan lei я tot сказать lavender",
+   "piloted": "Bishan lei я думать lavender"
+  },
+  {
+   "input": "Free any day but i finish at 6 on mon n thurs...",
+   "direct": "Свободен любой день но я закончить у 6 на mon n thurs",
+   "piloted": "Свободен любой день но закончить у 6 на mon и thurs"
+  },
+  {
+   "input": "I prefer my free days... Tues, wed, fri oso can... Ü ask those workin lor...",
+   "direct": "Я prefer мой свободен дни tues wed fri oso can спросить те workin lor",
+   "piloted": "Я нравится мой свободен дни tues wed fri osa can ты спросить те работаю lor"
+  },
+  {
+   "input": "But we havent got da topic yet rite?",
+   "direct": "Но мы havent получил da topic ещё rite",
+   "piloted": "Мы иметь не получил topic ещё"
+  },
+  {
+   "input": "So can collect ur laptop?",
+   "direct": "Так can collect ur laptop",
+   "piloted": "Can ты collect твой laptop"
+  },
+  {
+   "input": "Ok good then i later come find ü... C lucky i told ü to go earlier... Later pple take finish ü no more again...",
+   "direct": "Ок хорошо потом я позже приходить найти c везучий я сказал идти раньше позже pple взять закончить нет больше снова",
+   "piloted": "Позже я приходить найти ты везучий я сказал ты идти раньше позже люди закончить ты нет больше снова"
+  },
+  {
+   "input": "Eat jap done oso aft ur lect wat... Ü got lect at 12 rite...",
+   "direct": "Есть jap сделано oso aft ur lect wat получил lect у 12 rite",
+   "piloted": "Есть jap сделано oso после твой lecture ты получил lecture у 12 направо"
+  },
+  {
+   "input": "So ü pay first lar... Then when is da stock comin...",
+   "direct": "Так заплатить первый lar потом когда da stock comin",
+   "piloted": "Заплатить первый потом когда stock иду"
+  },
+  {
+   "input": "Ü collecting ur laptop then going to configure da settings izzit?",
+   "direct": "Collecting ur laptop потом иду configure da settings izzit",
+   "piloted": "Collecting твой laptop потом иду configure settings"
+  },
+  {
+   "input": "Cos daddy arranging time c wat time fetch ü mah...",
+   "direct": "Cos папа arranging время c wat время заехать за mah",
+   "piloted": "Папа arranging время во сколько заехать за меня"
+  },
+  {
+   "input": "Juz now havent woke up so a bit blur blur... Can? Dad went out liao... I cant cum now oso...",
+   "direct": "Juz сейчас havent проснуться вверх так немного blur blur can папа пошёл наружу liao я cant cum сейчас oso",
+   "piloted": "Blurry не awake папа ушёл can не приходить сейчас"
+  },
+  {
+   "input": "So li hai... Me bored now da lecturer repeating last weeks stuff waste time...",
+   "direct": "Так li hai меня bored сейчас da lecturer repeating последний недели вещи waste время",
+   "piloted": "Так li hai я bored lecturer repeating последний неделя вещи waste время"
+  }
+ ]
+}

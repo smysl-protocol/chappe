@@ -1,0 +1,46 @@
+{
+ "pack_id": "history_chappe",
+ "version": "0.1",
+ "spec": "kb_pack_spec_v1",
+ "kb_format": "kb_spec v0.2",
+ "risk_class": "C",
+ "language": "ru",
+ "source_document": "history_chappe_source_v1.md (v1.1-clean, research 2026-07-31)",
+ "sources_registry": "packs/kb_sources.json",
+ "used_sources": [
+  "CHAPPE-S1",
+  "CHAPPE-S10",
+  "CHAPPE-S11",
+  "CHAPPE-S2",
+  "CHAPPE-S3",
+  "CHAPPE-S4",
+  "CHAPPE-S5",
+  "CHAPPE-S6",
+  "CHAPPE-S7",
+  "CHAPPE-S8",
+  "CHAPPE-S9"
+ ],
+ "bundle_file": "kb_history_ru.md",
+ "sha256": "fa0d79b856f4396e05bf9010024018b241c54f4bdf7b284de17c1f3344f1e923",
+ "sections": [
+  "Правила изложения об истории",
+  "Происхождение названий: Шаппи и Софи",
+  "Опыт 2–3 марта 1791 года",
+  "Клод Шапп",
+  "Софи-Франсуаза Шапп",
+  "Братья и семейная команда",
+  "Родители и дядя-астроном",
+  "Хронология и зоны неопределённости",
+  "Оглавление"
+ ],
+ "always_sections": [
+  "Правила изложения об истории"
+ ],
+ "priority_section": "Происхождение названий: Шаппи и Софи",
+ "priority_queries": [
+  "почему приложение называется шаппи",
+  "в честь кого назван ассистент",
+  "кто такая софи"
+ ],
+ "packed_at": "2026-08-02"
+}

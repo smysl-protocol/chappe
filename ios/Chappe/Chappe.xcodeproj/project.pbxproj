@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA10B10700000000000000B1 /* llama in Frameworks */ = {isa = PBXBuildFile; productRef = AA10B10700000000000000B2 /* llama */; };
+		AA10B10700000000000000D1 /* MapLibre in Frameworks */ = {isa = PBXBuildFile; productRef = AA10B10700000000000000D2 /* MapLibre */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC0F92C93013CAFC0018F664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0F92B33013CAFA0018F664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC0F92BA3013CAFA0018F664;
+			remoteInfo = Chappe;
+		};
+		BC0F92D33013CAFC0018F664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC0F92B33013CAFA0018F664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC0F92BA3013CAFA0018F664;
+			remoteInfo = Chappe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC0F92BB3013CAFA0018F664 /* Chappe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chappe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0F92C83013CAFC0018F664 /* ChappeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChappeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0F92D23013CAFC0018F664 /* ChappeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChappeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BC0F92BD3013CAFA0018F664 /* Chappe */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Chappe;
+			sourceTree = "<group>";
+		};
+		BC0F92CB3013CAFC0018F664 /* ChappeTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ChappeTests;
+			sourceTree = "<group>";
+		};
+		BC0F92D53013CAFC0018F664 /* ChappeUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ChappeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC0F92B83013CAFA0018F664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA10B10700000000000000B1 /* llama in Frameworks */,
+				AA10B10700000000000000D1 /* MapLibre in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0F92C53013CAFC0018F664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0F92CF3013CAFC0018F664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC0F92B23013CAFA0018F664 = {
+			isa = PBXGroup;
+			children = (
+				BC0F92BD3013CAFA0018F664 /* Chappe */,
+				BC0F92CB3013CAFC0018F664 /* ChappeTests */,
+				BC0F92D53013CAFC0018F664 /* ChappeUITests */,
+				BC0F92BC3013CAFA0018F664 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC0F92BC3013CAFA0018F664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC0F92BB3013CAFA0018F664 /* Chappe.app */,
+				BC0F92C83013CAFC0018F664 /* ChappeTests.xctest */,
+				BC0F92D23013CAFC0018F664 /* ChappeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC0F92BA3013CAFA0018F664 /* Chappe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0F92DC3013CAFC0018F664 /* Build configuration list for PBXNativeTarget "Chappe" */;
+			buildPhases = (
+				AA10B10700000000000000C1 /* Check llama.xcframework */,
+				BC0F92B73013CAFA0018F664 /* Sources */,
+				BC0F92B83013CAFA0018F664 /* Frameworks */,
+				BC0F92B93013CAFA0018F664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BC0F92BD3013CAFA0018F664 /* Chappe */,
+			);
+			name = Chappe;
+			packageProductDependencies = (
+				AA10B10700000000000000B2 /* llama */,
+				AA10B10700000000000000D2 /* MapLibre */,
+			);
+			productName = Chappe;
+			productReference = BC0F92BB3013CAFA0018F664 /* Chappe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC0F92C73013CAFC0018F664 /* ChappeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0F92DF3013CAFC0018F664 /* Build configuration list for PBXNativeTarget "ChappeTests" */;
+			buildPhases = (
+				BC0F92C43013CAFC0018F664 /* Sources */,
+				BC0F92C53013CAFC0018F664 /* Frameworks */,
+				BC0F92C63013CAFC0018F664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC0F92CA3013CAFC0018F664 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BC0F92CB3013CAFC0018F664 /* ChappeTests */,
+			);
+			name = ChappeTests;
+			packageProductDependencies = (
+			);
+			productName = ChappeTests;
+			productReference = BC0F92C83013CAFC0018F664 /* ChappeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC0F92D13013CAFC0018F664 /* ChappeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC0F92E23013CAFC0018F664 /* Build configuration list for PBXNativeTarget "ChappeUITests" */;
+			buildPhases = (
+				BC0F92CE3013CAFC0018F664 /* Sources */,
+				BC0F92CF3013CAFC0018F664 /* Frameworks */,
+				BC0F92D03013CAFC0018F664 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC0F92D43013CAFC0018F664 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BC0F92D53013CAFC0018F664 /* ChappeUITests */,
+			);
+			name = ChappeUITests;
+			packageProductDependencies = (
+			);
+			productName = ChappeUITests;
+			productReference = BC0F92D23013CAFC0018F664 /* ChappeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC0F92B33013CAFA0018F664 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2650;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					BC0F92BA3013CAFA0018F664 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					BC0F92C73013CAFC0018F664 = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = BC0F92BA3013CAFA0018F664;
+					};
+					BC0F92D13013CAFC0018F664 = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = BC0F92BA3013CAFA0018F664;
+					};
+				};
+			};
+			buildConfigurationList = BC0F92B63013CAFA0018F664 /* Build configuration list for PBXProject "Chappe" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC0F92B23013CAFA0018F664;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AA10B10700000000000000B3 /* XCLocalSwiftPackageReference "../LlamaKit" */,
+				AA10B10700000000000000D3 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BC0F92BC3013CAFA0018F664 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC0F92BA3013CAFA0018F664 /* Chappe */,
+				BC0F92C73013CAFC0018F664 /* ChappeTests */,
+				BC0F92D13013CAFC0018F664 /* ChappeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC0F92B93013CAFA0018F664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0F92C63013CAFC0018F664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0F92D03013CAFC0018F664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA10B10700000000000000C1 /* Check llama.xcframework */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/../LlamaKit/llama.xcframework/Info.plist",
+			);
+			name = "Check llama.xcframework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# llama.xcframework не лежит в git (260 МБ) — его качает скрипт.\n# Без этой проверки Xcode падает с невнятным Missing package product.\nif [ ! -d \"$SRCROOT/../LlamaKit/llama.xcframework\" ]; then\n  echo \"error: llama.xcframework отсутствует — run scripts/fetch_llama_xcframework.sh\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC0F92B73013CAFA0018F664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0F92C43013CAFC0018F664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC0F92CE3013CAFC0018F664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC0F92CA3013CAFC0018F664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC0F92BA3013CAFA0018F664 /* Chappe */;
+			targetProxy = BC0F92C93013CAFC0018F664 /* PBXContainerItemProxy */;
+		};
+		BC0F92D43013CAFC0018F664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC0F92BA3013CAFA0018F664 /* Chappe */;
+			targetProxy = BC0F92D33013CAFC0018F664 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BC0F92DA3013CAFC0018F664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC0F92DB3013CAFC0018F664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC0F92DD3013CAFC0018F664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Chappe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Chappe;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Connects to nearby LoRa devices for off-grid messaging";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan a contact QR code. Nothing is recorded.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Connects to the development LLM server on your Mac over local Wi-Fi";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Shows your place on the offline map and measures distances. Nothing leaves this phone unless you choose to share your position with a contact - and you can stop sharing at any time";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Dictate messages by voice. Audio is processed entirely on this device and never leaves it";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Converts your dictation to text on this device only - offline recognition, nothing is sent to any server";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIFileSharingEnabled = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chappe.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC0F92DE3013CAFC0018F664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Chappe.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Chappe;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Connects to nearby LoRa devices for off-grid messaging";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Scan a contact QR code. Nothing is recorded.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Connects to the development LLM server on your Mac over local Wi-Fi";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Shows your place on the offline map and measures distances. Nothing leaves this phone unless you choose to share your position with a contact - and you can stop sharing at any time";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Dictate messages by voice. Audio is processed entirely on this device and never leaves it";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Converts your dictation to text on this device only - offline recognition, nothing is sent to any server";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIFileSharingEnabled = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chappe.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC0F92E03013CAFC0018F664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chappe.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chappe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chappe";
+			};
+			name = Debug;
+		};
+		BC0F92E13013CAFC0018F664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chappe.app.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chappe.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chappe";
+			};
+			name = Release;
+		};
+		BC0F92E33013CAFC0018F664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chappe.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chappe;
+			};
+			name = Debug;
+		};
+		BC0F92E43013CAFC0018F664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chappe.app.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Chappe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC0F92B63013CAFA0018F664 /* Build configuration list for PBXProject "Chappe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0F92DA3013CAFC0018F664 /* Debug */,
+				BC0F92DB3013CAFC0018F664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0F92DC3013CAFC0018F664 /* Build configuration list for PBXNativeTarget "Chappe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0F92DD3013CAFC0018F664 /* Debug */,
+				BC0F92DE3013CAFC0018F664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0F92DF3013CAFC0018F664 /* Build configuration list for PBXNativeTarget "ChappeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0F92E03013CAFC0018F664 /* Debug */,
+				BC0F92E13013CAFC0018F664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC0F92E23013CAFC0018F664 /* Build configuration list for PBXNativeTarget "ChappeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0F92E33013CAFC0018F664 /* Debug */,
+				BC0F92E43013CAFC0018F664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		AA10B10700000000000000B3 /* XCLocalSwiftPackageReference "../LlamaKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../LlamaKit;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA10B10700000000000000D3 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maplibre/maplibre-gl-native-distribution";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 7.0.0;
+				minimumVersion = 6.28.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA10B10700000000000000B2 /* llama */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = llama;
+		};
+		AA10B10700000000000000D2 /* MapLibre */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA10B10700000000000000D3 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = MapLibre;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BC0F92B33013CAFA0018F664 /* Project object */;
+}

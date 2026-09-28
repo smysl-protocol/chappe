@@ -1,0 +1,8 @@
+{
+  "region": "SG_923",
+  "modemPreset": "LongFast",
+  "payloadLimit": 200,
+  "airtimeBudgetSecondsPerHour": 36,
+  "presetBytesPerSecond": 190,
+  "peripheralName": ""
+}

@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "properties": {
+    "retrieve": {"type": "boolean"},
+    "query": {"type": "string"}
+  },
+  "required": ["retrieve"],
+  "additionalProperties": false
+}

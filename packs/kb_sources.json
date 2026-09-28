@@ -1,0 +1,156 @@
+{
+ "comment": "Реестр источников паков знаний. В КОНТЕКСТ МОДЕЛИ НЕ ПОПАДАЕТ: в секциях паков — только ID. Слито из chappe_sources_registry.yaml 02.08.2026.",
+ "sources": [
+  {
+   "id": "CHAPPE-S1",
+   "title": "Ernest Jacquez. Claude Chappe: notice biographique. Paris, 1893",
+   "type": "historical_biography",
+   "level": "B",
+   "contains_primary": true,
+   "url": "https://cnum.cnam.fr/pgi/redir.php?ident=8VI101&onglet=c",
+   "verified_at": "2026-07-31",
+   "note": "Содержит ошибку: год смерти Ж.-Б. Шаппа указан 1779 вместо 1769."
+  },
+  {
+   "id": "CHAPPE-S2",
+   "title": "Onze communautés villageoises du Haut-Maine entre 1780 et 1799",
+   "type": "archival_study",
+   "level": "B",
+   "url": "https://ide72.fr/wp-content/uploads/2022/06/synthese16.pdf",
+   "verified_at": "2026-07-31"
+  },
+  {
+   "id": "CHAPPE-S3",
+   "title": "Assemblée nationale, база Sycomore: Ignace, Urbain, Jean Chappe",
+   "type": "official_database",
+   "level": "A-B",
+   "url": "https://www2.assemblee-nationale.fr/sycomore/fiche/14565",
+   "verified_at": "2026-07-31"
+  },
+  {
+   "id": "CHAPPE-S4",
+   "title": "Musée de La Poste. Postes, télégraphes et téléphones",
+   "type": "museum_publication",
+   "level": "B",
+   "url": "https://museedelaposte.fr/system/files/fp_postes-telegraphes-telephones.pdf",
+   "verified_at": "2026-07-31"
+  },
+  {
+   "id": "CHAPPE-S5",
+   "title": "Association Mont Saint-Quentin Télégraphe de Chappe — Famille Chappe",
+   "type": "association_publication",
+   "level": "B-C",
+   "url": "https://www.telegraphe-chappe.eu/telegraphe/famille_chappe.php",
+   "verified_at": "2026-07-31"
+  },
+  {
+   "id": "CHAPPE-S6",
+   "title": "Association Mont Saint-Quentin Télégraphe de Chappe. Hier et Aujourd'hui, №20",
+   "type": "association_bulletin",
+   "level": "C",
+   "url": "https://telegraphe-chappe.eu/hier_aujourdhui/N20.pdf",
+   "verified_at": "2026-07-31"
+  },
+  {
+   "id": "CHAPPE-S7",
+   "title": "Archives départementales du Calvados, фонд Chappe d'Auteroche",
+   "type": "archival_inventory",
+   "level": "A",
+   "url": "https://archives.calvados.fr/ark:/52329/pnt1qbgh26mj",
+   "verified_at": "2026-07-31",
+   "note": "Уровень A только для факта существования дела. Само дело не просмотрено."
+  },
+  {
+   "id": "CHAPPE-S8",
+   "title": "Académie des sciences. Éloge de M. l'abbé Chappe",
+   "type": "academic_eulogy",
+   "level": "A-B",
+   "url": "https://www.academie-sciences.fr/pdf/eloges/chappe_p163_vol3567.pdf",
+   "verified_at": "2026-07-31"
+  },
+  {
+   "id": "CHAPPE-S9",
+   "title": "Académie des sciences, исторический список астрономов",
+   "type": "academic_reference",
+   "level": "A-B",
+   "url": "https://www.academie-sciences.fr/pdf/dossiers/ama/astronomes.pdf",
+   "verified_at": "2026-07-31"
+  },
+  {
+   "id": "CHAPPE-S10",
+   "title": "FranceArchives, национальный агрегатор архивных описей",
+   "type": "archival_aggregator",
+   "level": "A",
+   "url": "https://francearchives.gouv.fr/",
+   "verified_at": "2026-07-31",
+   "note": "Поисковые сущности: Claude Chappe, Ignace Chappe, Chappe d'Auteroche, télégraphe, Cornilleau."
+  },
+  {
+   "id": "CHAPPE-S11",
+   "title": "Вторичные генеалогические базы (Geneanet, GeneaWiki, Wikipedia и аналогичные)",
+   "type": "secondary_genealogy",
+   "level": "C-D",
+   "url": null,
+   "verified_at": "2026-07-31",
+   "note": "Только для предварительного поиска. Не имеют приоритета над первичными актами."
+  },
+  {
+   "id": "PROJ-S1",
+   "title": "RM_Master_Context_v3_0.json — мастер-контекст проекта (миссия, позиционирование, доменность кодека, классы будущих устройств, порядок фаз)",
+   "type": "internal_master_context",
+   "level": "A",
+   "url": null,
+   "verified_at": "2026-08-06",
+   "note": "Внутренний источник истины (docs/). Фазы — порядок шагов, не календарь: дат в документе нет."
+  },
+  {
+   "id": "PROJ-S2",
+   "title": "SECURITY.md — модель угроз Chappe (05.08.2026)",
+   "type": "internal_threat_model",
+   "level": "A",
+   "url": null,
+   "verified_at": "2026-08-06"
+  },
+  {
+   "id": "PROJ-S3",
+   "title": "docs/llm_architecture.md — LLM-слой: сменная модель и движок за LLMProvider (25.07.2026)",
+   "type": "internal_spec",
+   "level": "A",
+   "url": null,
+   "verified_at": "2026-08-06"
+  },
+  {
+   "id": "PROJ-S4",
+   "title": "docs/reports/live_corpus_2026-08-05.md — замер кодека на живом корпусе; решение владельца о доменности (05.08.2026)",
+   "type": "internal_measurement",
+   "level": "A",
+   "url": null,
+   "verified_at": "2026-08-06",
+   "note": "Приватный отчёт: в публичный экспорт не уходит (publication_manifest.md), ссылка — только по ID."
+  },
+  {
+   "id": "PROJ-S5",
+   "title": "docs/relay_privacy.md — что видит сервер доставки, поля кадра поимённо (03.08.2026)",
+   "type": "internal_analysis",
+   "level": "A",
+   "url": null,
+   "verified_at": "2026-08-06"
+  },
+  {
+   "id": "PROJ-S6",
+   "title": "docs/publication_manifest.md — решение владельца о выборочной публикации кода (05.08.2026)",
+   "type": "internal_decision",
+   "level": "A",
+   "url": null,
+   "verified_at": "2026-08-06"
+  },
+  {
+   "id": "PROJ-S7",
+   "title": "docs/transport_manager.md — менеджер доставки: два канала, режимы, независимость путей (26.07.2026)",
+   "type": "internal_spec",
+   "level": "A",
+   "url": null,
+   "verified_at": "2026-08-06"
+  }
+ ]
+}

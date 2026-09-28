@@ -1,0 +1,794 @@
+[
+ {
+  "corpus": "nus_sms",
+  "input": "is your hamster dead? Hey so tmr i meet you at 1pm orchard mrt?",
+  "pivot": "is your hamster dead hey so tmr i meet you at 1 pm_marker orchard mrt",
+  "units": [
+   [
+    "code",
+    297
+   ],
+   [
+    "code",
+    308
+   ],
+   [
+    "lit",
+    "hamster"
+   ],
+   [
+    "code",
+    563
+   ],
+   [
+    "code",
+    440
+   ],
+   [
+    "code",
+    320
+   ],
+   [
+    "lit",
+    "tmr"
+   ],
+   [
+    "code",
+    289
+   ],
+   [
+    "code",
+    663
+   ],
+   [
+    "code",
+    288
+   ],
+   [
+    "code",
+    334
+   ],
+   [
+    "num",
+    1
+   ],
+   [
+    "code",
+    840
+   ],
+   [
+    "lit",
+    "orchard mrt"
+   ],
+   [
+    "code",
+    281
+   ]
+  ],
+  "blob_hex": "0f458760000781ed92ccfc9956d677ec00039b6483d7210bd7a001e3bec00b8e4cf03d26806c9264c0",
+  "rendered": "Твой hamster мёртв привет так tmr я встретиться ты у 1 после полудня orchard mrt?",
+  "lost": [
+   [
+    "time",
+    "('clock', 60)"
+   ]
+  ]
+ },
+ {
+  "corpus": "nus_sms",
+  "input": "Yup... Ok i go home look at the timings then i msg ü again... Xuhui going to learn on 2nd may too but her lesson is at 8am",
+  "pivot": "yup ok i go home look at the timings then i msg again xuhui going to learn on 2 nd may too but her lesson is at 8 am_marker",
+  "units": [
+   [
+    "lit",
+    "yup"
+   ],
+   [
+    "code",
+    519
+   ],
+   [
+    "code",
+    289
+   ],
+   [
+    "code",
+    544
+   ],
+   [
+    "code",
+    363
+   ],
+   [
+    "code",
+    334
+   ],
+   [
+    "code",
+    290
+   ],
+   [
+    "lit",
+    "timings"
+   ],
+   [
+    "code",
+    370
+   ],
+   [
+    "code",
+    289
+   ],
+   [
+    "lit",
+    "msg"
+   ],
+   [
+    "code",
+    441
+   ],
+   [
+    "lit",
+    "xuhui"
+   ],
+   [
+    "code",
+    357
+   ],
+   [
+    "code",
+    291
+   ],
+   [
+    "code",
+    1134
+   ],
+   [
+    "code",
+    306
+   ],
+   [
+    "num",
+    2
+   ],
+   [
+    "lit",
+    "nd"
+   ],
+   [
+    "code",
+    529
+   ],
+   [
+    "code",
+    385
+   ],
+   [
+    "code",
+    318
+   ],
+   [
+    "code",
+    339
+   ],
+   [
+    "lit",
+    "lesson"
+   ],
+   [
+    "code",
+    297
+   ],
+   [
+    "code",
+    334
+   ],
+   [
+    "num",
+    8
+   ],
+   [
+    "code",
+    934
+   ]
+  ],
+  "blob_hex": "1cec0003e1bb6e291e429ac293b000079a1d90c5aa59e0fb0003d92eab5fb00005f9dd06e865e5f242eebd02ec00028b4633a5ba8aec0006d6fcb2c71230bd7a08e990",
+  "rendered": "Yup ок я иди домой смотреть у timings потом я msg снова xuhui иду учиться на 2 nd может тоже, но её lesson у 8 до полудня",
+  "lost": [
+   [
+    "time",
+    "('clock', 480)"
+   ],
+   [
+    "places",
+    "дом"
+   ],
+   [
+    "entities",
+    "дом"
+   ],
+   [
+    "entities",
+    "иду"
+   ]
+  ]
+ },
+ {
+  "corpus": "nus_sms",
+  "input": "Hey...Great deal...Farm tour 9am to 5pm $95/pax, $50 deposit by 16 May",
+  "pivot": "hey great deal farm tour 9 am_marker to 5 pm_marker 95 pax 50 deposit by 16 may",
+  "units": [
+   [
+    "code",
+    440
+   ],
+   [
+    "code",
+    457
+   ],
+   [
+    "code",
+    768
+   ],
+   [
+    "code",
+    1708
+   ],
+   [
+    "lit",
+    "tour"
+   ],
+   [
+    "num",
+    9
+   ],
+   [
+    "code",
+    934
+   ],
+   [
+    "code",
+    291
+   ],
+   [
+    "num",
+    5
+   ],
+   [
+    "code",
+    840
+   ],
+   [
+    "num",
+    95
+   ],
+   [
+    "lit",
+    "pax"
+   ],
+   [
+    "num",
+    50
+   ],
+   [
+    "code",
+    1526
+   ],
+   [
+    "code",
+    381
+   ],
+   [
+    "num",
+    16
+   ],
+   [
+    "code",
+    529
+   ]
+  ],
+  "blob_hex": "11b5ae7df3ffe1d800049a3dd275e809e992f5e805e3bebd5fec0003daf7cf5e8032fd028fd7a010c660",
+  "rendered": "Привет отлично сделка ферма tour 9 до полудня 5 после полудня 95 pax 50 залог у 16 может",
+  "lost": [
+   [
+    "time",
+    "('clock', 540)"
+   ],
+   [
+    "time",
+    "('clock', 300)"
+   ],
+   [
+    "names",
+    "may"
+   ]
+  ]
+ },
+ {
+  "corpus": "nus_sms",
+  "input": "I need... Coz i never go before",
+  "pivot": "i need coz i never go before",
+  "units": [
+   [
+    "code",
+    439
+   ],
+   [
+    "lit",
+    "coz"
+   ],
+   [
+    "code",
+    289
+   ],
+   [
+    "code",
+    391
+   ],
+   [
+    "code",
+    328
+   ],
+   [
+    "code",
+    444
+   ]
+  ],
+  "blob_hex": "06b57b0003cf1fec7517fb68",
+  "rendered": "Мне нужно coz я никогда идти до",
+  "lost": [
+   [
+    "negations",
+    "('neg', 'идт')"
+   ],
+   [
+    "entities",
+    "до"
+   ],
+   [
+    "entities",
+    "нужн"
+   ]
+  ]
+ },
+ {
+  "corpus": "nus_sms",
+  "input": "Yup... Ok i go home look at the timings then i msg ü again... Xuhui going to learn on 2nd may too but her lesson is at 8am",
+  "pivot": "yup ok i go home look at the timings then i msg again xuhui going to learn on 2 nd may too but her lesson is at 8 am_marker",
+  "units": [
+   [
+    "lit",
+    "yup"
+   ],
+   [
+    "code",
+    519
+   ],
+   [
+    "code",
+    289
+   ],
+   [
+    "code",
+    544
+   ],
+   [
+    "code",
+    363
+   ],
+   [
+    "code",
+    334
+   ],
+   [
+    "code",
+    290
+   ],
+   [
+    "lit",
+    "timings"
+   ],
+   [
+    "code",
+    370
+   ],
+   [
+    "code",
+    289
+   ],
+   [
+    "lit",
+    "msg"
+   ],
+   [
+    "code",
+    441
+   ],
+   [
+    "lit",
+    "xuhui"
+   ],
+   [
+    "code",
+    357
+   ],
+   [
+    "code",
+    291
+   ],
+   [
+    "code",
+    1134
+   ],
+   [
+    "code",
+    306
+   ],
+   [
+    "num",
+    2
+   ],
+   [
+    "lit",
+    "nd"
+   ],
+   [
+    "code",
+    529
+   ],
+   [
+    "code",
+    385
+   ],
+   [
+    "code",
+    318
+   ],
+   [
+    "code",
+    339
+   ],
+   [
+    "lit",
+    "lesson"
+   ],
+   [
+    "code",
+    297
+   ],
+   [
+    "code",
+    334
+   ],
+   [
+    "num",
+    8
+   ],
+   [
+    "code",
+    934
+   ]
+  ],
+  "blob_hex": "1cec0003e1bb6e291e429ac293b000079a1d90c5aa59e0fb0003d92eab5fb00005f9dd06e865e5f242eebd02ec00028b4633a5ba8aec0006d6fcb2c71230bd7a08e990",
+  "rendered": "Yup ок я иди домой смотреть у timings потом я msg снова xuhui иду учиться на 2 nd может тоже, но её lesson у 8 до полудня",
+  "lost": [
+   [
+    "time",
+    "('clock', 480)"
+   ],
+   [
+    "places",
+    "дом"
+   ],
+   [
+    "entities",
+    "дом"
+   ],
+   [
+    "entities",
+    "иду"
+   ]
+  ]
+ },
+ {
+  "corpus": "nus_sms",
+  "input": "m still sleepin, haha... Okie, u go home liao den confirm w me lor...",
+  "pivot": "m still sleepin haha okie u go home liao den confirm w me lor",
+  "units": [
+   [
+    "lit",
+    "m"
+   ],
+   [
+    "code",
+    427
+   ],
+   [
+    "lit",
+    "sleepin haha okie u"
+   ],
+   [
+    "code",
+    544
+   ],
+   [
+    "lit",
+    "liao den confirm w"
+   ],
+   [
+    "code",
+    301
+   ],
+   [
+    "lit",
+    "lor"
+   ]
+  ],
+  "blob_hex": "07ec0001d964f60013975befed862040f40f023f785f06ec85d80012d70bd18343f1033c7169864d80dea7b00003d71c80",
+  "rendered": "M всё ещё sleepin haha okie u иди домой liao den confirm w меня lor",
+  "lost": [
+   [
+    "places",
+    "дом"
+   ],
+   [
+    "entities",
+    "дом"
+   ],
+   [
+    "entities",
+    "всё"
+   ]
+  ]
+ },
+ {
+  "corpus": "tatoeba_ru",
+  "input": "Том теперь слаб, но ум у него ясный.",
+  "pivot": "tom is weak but his mind is clear",
+  "units": [
+   [
+    "lit",
+    "tom"
+   ],
+   [
+    "code",
+    297
+   ],
+   [
+    "code",
+    1648
+   ],
+   [
+    "code",
+    318
+   ],
+   [
+    "code",
+    354
+   ],
+   [
+    "code",
+    565
+   ],
+   [
+    "code",
+    297
+   ],
+   [
+    "code",
+    907
+   ]
+  ],
+  "blob_hex": "08ec00039a3d88ff74ea5995d1e7e0",
+  "rendered": "Tom слабый, но его разум против ясно",
+  "lost": [
+   [
+    "entities",
+    "тепе"
+   ]
+  ]
+ },
+ {
+  "corpus": "tatoeba_ru",
+  "input": "Я тогда об этом не подумал.",
+  "pivot": "i didn't think about that then",
+  "units": [
+   [
+    "code",
+    289
+   ],
+   [
+    "code",
+    348
+   ],
+   [
+    "code",
+    312
+   ],
+   [
+    "code",
+    345
+   ],
+   [
+    "code",
+    332
+   ],
+   [
+    "code",
+    295
+   ],
+   [
+    "code",
+    370
+   ]
+  ],
+  "blob_hex": "071c99a48419f3c0",
+  "rendered": "Я не думать про то потом",
+  "lost": [
+   [
+    "entities",
+    "поду"
+   ],
+   [
+    "entities",
+    "этом"
+   ],
+   [
+    "entities",
+    "тогд"
+   ]
+  ]
+ },
+ {
+  "corpus": "tatoeba_ru",
+  "input": "Она всё время про вас говорит.",
+  "pivot": "she always talks about you",
+  "units": [
+   [
+    "code",
+    327
+   ],
+   [
+    "code",
+    465
+   ],
+   [
+    "code",
+    450
+   ],
+   [
+    "code",
+    332
+   ],
+   [
+    "code",
+    288
+   ]
+  ],
+  "blob_hex": "057ebbee0830",
+  "rendered": "Она всегда говорить про ты",
+  "lost": [
+   [
+    "entities",
+    "врем"
+   ]
+  ]
+ },
+ {
+  "corpus": "tatoeba_ru",
+  "input": "Заказать яблоки зелёные",
+  "pivot": "order green apples",
+  "units": [
+   [
+    "code",
+    1103
+   ],
+   [
+    "code",
+    1383
+   ],
+   [
+    "lit",
+    "apples"
+   ]
+  ],
+  "blob_hex": "03f14fd63d80067b6edd6fca",
+  "rendered": "Заказ зелёный apples",
+  "lost": [
+   [
+    "entities",
+    "зелё"
+   ],
+   [
+    "entities",
+    "ябло"
+   ]
+  ]
+ },
+ {
+  "corpus": "tatoeba_ru",
+  "input": "Гетта сезон три",
+  "pivot": "getta season 3",
+  "units": [
+   [
+    "lit",
+    "getta"
+   ],
+   [
+    "code",
+    1240
+   ],
+   [
+    "num",
+    3
+   ]
+  ],
+  "blob_hex": "03ec0005d4fcd33deb2ebd03",
+  "rendered": "Getta сезон 3",
+  "lost": [
+   [
+    "entities",
+    "гетт"
+   ]
+  ]
+ },
+ {
+  "corpus": "tatoeba_ru",
+  "input": "Хочу посмотреть Ростов папа на телевизоре",
+  "pivot": "want to watch rostov on tv dad",
+  "units": [
+   [
+    "code",
+    344
+   ],
+   [
+    "code",
+    291
+   ],
+   [
+    "code",
+    700
+   ],
+   [
+    "lit",
+    "rostov"
+   ],
+   [
+    "code",
+    306
+   ],
+   [
+    "lit",
+    "tv"
+   ],
+   [
+    "code",
+    525
+   ]
+  ],
+  "blob_hex": "078f2ed7f600069239668fe1776000029be31780",
+  "rendered": "Хотеть смотреть rostov на tv папа",
+  "lost": [
+   [
+    "names",
+    "ростов"
+   ],
+   [
+    "entities",
+    "посм"
+   ],
+   [
+    "entities",
+    "рост"
+   ],
+   [
+    "entities",
+    "теле"
+   ],
+   [
+    "entities",
+    "хочу"
+   ]
+  ]
+ }
+]
