@@ -828,7 +828,8 @@ final class DeliveryManager: ObservableObject {
             TransportDiary.note("[гео] позиция принята кодеком 7 (рев B)")
             eventCounter += 1
             if header.flags & Envelope.flagAckRequest != 0 {
-                pendingAcks.add(header.msgID, now: Date())
+                pendingAcks.add(header.msgID, contactID: contactID,
+                                now: Date())
             }
             return
         }
@@ -1247,7 +1248,7 @@ final class DeliveryManager: ObservableObject {
         // прогон 08.08: сосед повторял одно сообщение 20 минут, а
         // «доставлено» появлялось только через релей)
         if header.flags & Envelope.flagAckRequest != 0 {
-            pendingAcks.add(header.msgID, now: Date())
+            pendingAcks.add(header.msgID, contactID: senderID, now: Date())
         }
     }
 
@@ -1284,11 +1285,15 @@ final class DeliveryManager: ObservableObject {
     /// Чистая функция — под замком.
     nonisolated static func serviceChannels(radioReady: Bool,
                                             nearbyReady: Bool,
+                                            relayReady: Bool,
                                             loraAllowed: Bool,
                                             bleAllowed: Bool)
-    -> (radio: Bool, nearby: Bool) {
+    -> (radio: Bool, nearby: Bool, relay: Bool) {
+        // relayReady = RelayTransport.active: разрешение галки wifi уже
+        // внутри (поле 29.09 — enabled выводится из TransportMode)
         (radio: radioReady && loraAllowed,
-         nearby: nearbyReady && bleAllowed)
+         nearby: nearbyReady && bleAllowed,
+         relay: relayReady)
     }
 
     /// Сдать накопленные подтверждения (вызывается тиком насоса).
@@ -1298,9 +1303,10 @@ final class DeliveryManager: ObservableObject {
     private func flushAcks(now: Date = Date()) {
         let channels = Self.serviceChannels(
             radioReady: radioReady, nearbyReady: nearbyReady,
+            relayReady: RelayTransport.shared.active,
             loraAllowed: TransportMode.loraAllowed,
             bleAllowed: TransportMode.bleAllowed)
-        for id in pendingAcks.takeDue(now: now) {
+        for (id, contactID) in pendingAcks.takeDueWithContacts(now: now) {
             let packet = AckMessage(msgID: Envelope.newMsgID(),
                                     ackMsgID: id).encode()
             // в канал — только если радио реально сконфигурировано:
@@ -1308,6 +1314,13 @@ final class DeliveryManager: ObservableObject {
             if channels.radio { link.send(packet, toHost: peerHost) }
             if channels.nearby {
                 NearbyTransport.shared.send(packet) { _ in }
+            }
+            // Поле 29.09: в форс-«только интернет» подтверждению
+            // доставки некуда было уйти — доставленное вечно висело
+            // «ждём собеседника». Релей кладёт ack в ящик пары.
+            if channels.relay, let contactID {
+                RelayTransport.shared.sendService(packet,
+                                                  contactID: contactID)
             }
         }
     }
@@ -1402,10 +1415,12 @@ final class DeliveryManager: ObservableObject {
         // с учётом ручной маски (галка глушит и служебные пакеты)
         let channels = Self.serviceChannels(
             radioReady: transportKind == "mesh", nearbyReady: nearbyReady,
+            relayReady: RelayTransport.shared.active,
             loraAllowed: TransportMode.loraAllowed,
             bleAllowed: TransportMode.bleAllowed)
         guard sendOverride != nil
-                || channels.radio || channels.nearby else { return }
+                || channels.radio || channels.nearby || channels.relay
+        else { return }
         let unreceipted = HumanChatStore.loadLog(contactID: contactID)
             .filter { $0.kind == .incoming && $0.wireMsgID != nil
                       && $0.readAt == nil }
@@ -1451,6 +1466,15 @@ final class DeliveryManager: ObservableObject {
             if channels.nearby {
                 NearbyTransport.shared.send(packet) { ok in stamp(ok) }
             }
+            // Поле 29.09: «прочитано» тоже обязано уметь релей — иначе
+            // в форс-«только интернет» вторая отметка не зеленеет
+            // (contactID здесь nil только у демо-чата — ему релей ни к чему)
+            if channels.relay, let contactID {
+                RelayTransport.shared.sendService(packet,
+                                                  contactID: contactID) {
+                    ok in stamp(ok)
+                }
+            }
         }
     }
 
@@ -1474,27 +1498,46 @@ final class DeliveryManager: ObservableObject {
 nonisolated struct AckAggregator: Sendable {
     static let quietWindow: TimeInterval = 3
     static let maxHold: TimeInterval = 10
-    private(set) var pending: [UInt16] = []
+    private var entries: [(id: UInt16, contactID: String?)] = []
     private var firstAt: Date?
     private var lastAt: Date?
 
-    mutating func add(_ id: UInt16, now: Date) {
-        if !pending.contains(id) { pending.append(id) }
+    /// Совместимость замков (NearbyFieldFixTests): голые msgID копилки.
+    var pending: [UInt16] { entries.map(\.id) }
+
+    /// contactID — чей это ack: релейный путь кладёт подтверждение в
+    /// ящик ПАРЫ этого контакта (nil — контакт неизвестен, релей мимо).
+    mutating func add(_ id: UInt16, contactID: String? = nil, now: Date) {
+        if let index = entries.firstIndex(where: { $0.id == id }) {
+            // повтор того же msgID: контакт мог доопределиться
+            if entries[index].contactID == nil {
+                entries[index].contactID = contactID
+            }
+        } else {
+            entries.append((id, contactID))
+        }
         if firstAt == nil { firstAt = now }
         lastAt = now
     }
 
-    /// Что пора отправить; пусто — рано (тишина не наступила).
-    mutating func takeDue(now: Date) -> [UInt16] {
+    /// Пары (msgID, contactID) к отправке; пусто — рано (тишина не
+    /// наступила). Копилка очищается.
+    mutating func takeDueWithContacts(now: Date)
+    -> [(id: UInt16, contactID: String?)] {
         guard let first = firstAt, let last = lastAt,
               now.timeIntervalSince(last) >= Self.quietWindow
                 || now.timeIntervalSince(first) >= Self.maxHold
         else { return [] }
-        let out = pending
-        pending = []
+        let out = entries
+        entries = []
         firstAt = nil
         lastAt = nil
         return out
+    }
+
+    /// Старый вид — голые msgID (radio/nearby им и живут).
+    mutating func takeDue(now: Date) -> [UInt16] {
+        takeDueWithContacts(now: now).map(\.id)
     }
 }
 

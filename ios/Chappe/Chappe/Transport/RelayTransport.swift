@@ -222,6 +222,56 @@ final class RelayTransport: ObservableObject {
         }
     }
 
+    /// Адрес служебного кадра (ack/квитанция) для контакта: ящик ПАРЫ
+    /// на текущую эпоху — исходный отправитель слушает пары всех своих
+    /// контактов. nil — пары ещё нет (рукопожатие не принято) или ключи
+    /// недоступны.
+    nonisolated static func serviceTarget(peerPub: Data, myPriv:
+        Curve25519.KeyAgreement.PrivateKey, now: Date = Date())
+    -> (dstHex: String, boxPublic: Data)? {
+        guard let key = try? Curve25519.KeyAgreement.PublicKey(
+                rawRepresentation: peerPub),
+              let pairKey = try? MailboxID.pairKey(myPrivate: myPriv,
+                                                   peerPublic: key)
+        else { return nil }
+        let epoch = MailboxID.epoch(pairKey: pairKey, at: now)
+        let dst = MailboxID.dst(recipientPub: peerPub, pairKey: pairKey,
+                                epoch: epoch)
+        let boxPublic = RelayBoxKey.derive(recipientPub: peerPub,
+                                           pairKey: pairKey, epoch: epoch)
+            .publicKey.rawRepresentation
+        return (Self.hex(dst), boxPublic)
+    }
+
+    /// Служебный пакет (v1 ack/отметка) в ящик пары контакта. Тихий
+    /// провал — служебный кадр вправе потеряться: отправитель повторит
+    /// сообщение (ack уйдёт снова), чат повторит отметку при открытии.
+    /// confirm(true) — только после 200 релея (замок А3: штамп по
+    /// подтверждению канала).
+    func sendService(_ packet: [UInt8], contactID: String,
+                     confirm: @escaping @Sendable (Bool) -> Void = { _ in }) {
+        guard active, let client,
+              let contact = ContactStore.load()
+                  .first(where: { $0.id == contactID }),
+              let peerPub = contact.publicKey,
+              let myPriv = Identity.privateKey(),
+              let target = Self.serviceTarget(
+                  peerPub: peerPub.rawRepresentation, myPriv: myPriv)
+        else { confirm(false); return }
+        let frame = WirePadding.pad(packet)
+        Task {
+            let outcome = await client.put(frame: frame,
+                                           dstHex: target.dstHex,
+                                           boxPublic: target.boxPublic)
+            if case .stored = outcome {
+                TransportDiary.note("[relay] служебный кадр в ящике пары")
+                confirm(true)
+            } else {
+                confirm(false)
+            }
+        }
+    }
+
     // MARK: Приём — опрос своих ящиков
 
     /// Все действующие псевдонимы по каждому контакту. Окно эпох

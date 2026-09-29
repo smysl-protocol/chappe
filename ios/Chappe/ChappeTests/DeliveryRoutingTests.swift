@@ -437,21 +437,35 @@ struct DeliveryRoutingTests {
     @Test("маска транспортов глушит служебные каналы (ack/квитанции)")
     func serviceChannelsHonorManualMask() {
         let both = DeliveryManager.serviceChannels(
-            radioReady: true, nearbyReady: true,
+            radioReady: true, nearbyReady: true, relayReady: true,
             loraAllowed: true, bleAllowed: true)
-        #expect(both.radio && both.nearby)
+        #expect(both.radio && both.nearby && both.relay)
 
         let bleOff = DeliveryManager.serviceChannels(
-            radioReady: true, nearbyReady: true,
+            radioReady: true, nearbyReady: true, relayReady: true,
             loraAllowed: true, bleAllowed: false)
         #expect(bleOff.radio && !bleOff.nearby, Comment(rawValue:
                 "снятая галка «Рядом» обязана глушить BLE и для ack — "
                 + "иначе тумблер «не работает» на ощупь (поле 13.08)"))
 
         let loraOff = DeliveryManager.serviceChannels(
-            radioReady: true, nearbyReady: true,
+            radioReady: true, nearbyReady: true, relayReady: true,
             loraAllowed: false, bleAllowed: true)
         #expect(!loraOff.radio && loraOff.nearby)
+
+        // Поле 29.09: в форс-«только интернет» ack ОБЯЗАН уметь релей —
+        // иначе доставленное вечно висит «ждём собеседника» (relayReady
+        // уже включает разрешение галки wifi через active)
+        let relayOnly = DeliveryManager.serviceChannels(
+            radioReady: false, nearbyReady: false, relayReady: true,
+            loraAllowed: false, bleAllowed: false)
+        #expect(relayOnly.relay && !relayOnly.radio && !relayOnly.nearby,
+                Comment(rawValue: "подтверждение доставки обязано ходить "
+                + "релеем, когда это единственный живой путь"))
+        let relayDead = DeliveryManager.serviceChannels(
+            radioReady: true, nearbyReady: true, relayReady: false,
+            loraAllowed: true, bleAllowed: true)
+        #expect(!relayDead.relay, "мёртвый релей ack не получает")
     }
 
     // п.3(1): «прочитано» на ПРИХОД при спящем телефоне — чат, забытый
