@@ -88,7 +88,7 @@ struct ChappeApp: App {
         // проверка пути «рядом» без интернета (фаза 1, 07.08): гасит
         // релей на запуск, чтобы сообщение ушло только прямым путём
         if args.contains("--relay-off") {
-            RelayTransport.shared.enabled = false
+            RelayTransport.setEnabled(false)
         }
         if args.contains("--probe-speech") {
             // пульс диктовки (тел 2, сборка 11): дословный статус
@@ -146,7 +146,7 @@ struct ChappeApp: App {
             }
         }
         if args.contains("--relay-on") {
-            RelayTransport.shared.enabled = true
+            RelayTransport.setEnabled(true)
         }
         if let host = value(after: "--net-probe") {
             // проба: доходит ли TCP до peer:47474 (диагноз AP-изоляции)

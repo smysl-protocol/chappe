@@ -643,7 +643,9 @@ struct DevSettingsView: View {
                 .listRowBackground(RMDesign.surface1)
 
                 Section {
-                    Toggle("Включена", isOn: $relay.enabled)
+                    Toggle("Включена", isOn: Binding(
+                        get: { relay.enabled },
+                        set: { RelayTransport.setEnabled($0) }))
                     TextField("Адрес релея", text: $relay.urlString)
                         .autocorrectionDisabled()
                         .textInputAutocapitalization(.never)

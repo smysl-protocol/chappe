@@ -159,7 +159,7 @@ struct ContentView: View {
             if let index = args.firstIndex(of: "--relay-url"),
                args.indices.contains(index + 1) {
                 RelayTransport.shared.urlString = args[index + 1]
-                RelayTransport.shared.enabled = true
+                RelayTransport.setEnabled(true)
             }
             var devContactID: String?
             if let index = args.firstIndex(of: "--add-contact"),

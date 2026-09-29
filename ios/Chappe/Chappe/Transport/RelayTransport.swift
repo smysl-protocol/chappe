@@ -43,8 +43,25 @@ final class RelayTransport: ObservableObject {
     /// домен chappe.app проекту не принадлежит.
     static let retiredDefaultURL = "https://relay.chappe.app"
 
-    @Published var enabled: Bool {
-        didSet { UserDefaults.standard.set(enabled, forKey: Self.enabledKey) }
+    /// Включённость релея ВЫВОДИТСЯ из режима транспортов — единственный
+    /// источник истины (поле 29.09: собственный ключ relay_enabled залипал
+    /// в false, синкаясь с галками только в UI-обработчике, и молча глушил
+    /// опрос с отправкой при стоящей галке wifi; залипание закладывалось
+    /// ещё полевой «пустой маской» 13.08). Легаси-ключ игнорируется.
+    var enabled: Bool { TransportMode.wifiAllowed }
+
+    /// Dev-хуки (--relay-on/off, тумблер Dev) управляют релеем ЧЕРЕЗ
+    /// источник истины, не мимо него: «выключить» = ручной режим без
+    /// wifi; «включить» = вернуть wifi в маску (в авто он и так разрешён).
+    static func setEnabled(_ on: Bool) {
+        if on {
+            if TransportMode.isManual {
+                TransportMode.manualMask.insert("wifi")
+            }
+        } else {
+            TransportMode.isManual = true
+            TransportMode.manualMask.remove("wifi")
+        }
     }
     @Published var urlString: String {
         didSet { UserDefaults.standard.set(urlString, forKey: Self.urlKey) }
@@ -73,8 +90,6 @@ final class RelayTransport: ObservableObject {
     }
 
     private init() {
-        enabled = UserDefaults.standard.object(forKey: Self.enabledKey)
-            as? Bool ?? true
         let stored = UserDefaults.standard.string(forKey: Self.urlKey)
         // миграция отставного дефолта: chappe.app не наш домен
         urlString = (stored == nil || stored == Self.retiredDefaultURL)

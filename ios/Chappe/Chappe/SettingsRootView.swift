@@ -65,7 +65,8 @@ struct SettingsRootView: View {
         if bleOn { mask.insert("ble") }
         if loraOn { mask.insert("lora") }
         TransportMode.manualMask = mask
-        relay.enabled = TransportMode.wifiAllowed
+        // relay.enabled теперь производное от TransportMode (поле 29.09) —
+        // отдельного присваивания нет и быть не может
         // Галка «Рядом» глушит BLE-эфир НЕМЕДЛЕННО (поле 13.08,
         // build 19): раньше маска резала только насос отправки, а
         // приём/реклама/ack жили — тумблер «не работал» на ощупь
