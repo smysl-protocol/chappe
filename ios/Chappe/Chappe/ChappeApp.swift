@@ -13,6 +13,9 @@ import AVFoundation
 @main
 struct ChappeApp: App {
     @Environment(\.scenePhase) private var scenePhase
+    /// APNs-делегат (SwiftUI-каркас своего не имеет): токен и фоновые
+    /// пробуждения content-available (relay_push_spec §6)
+    @UIApplicationDelegateAdaptor(PushDelegate.self) private var pushDelegate
 
     var body: some Scene {
         WindowGroup {
@@ -27,6 +30,11 @@ struct ChappeApp: App {
                     // реклама и ack жили вопреки тумблеру)
                     NearbyTransport.shared.setActive(
                         phase == .active && TransportMode.bleAllowed)
+                    // активация = свежий токен APNs + полный пакет
+                    // подписок на релей (идемпотентно, §4.3)
+                    if phase == .active {
+                        PushRegistrar.shared.onActivate()
+                    }
                 }
                 .task {
                     // Пульс запуска (стенд 11.08): состояние на старте

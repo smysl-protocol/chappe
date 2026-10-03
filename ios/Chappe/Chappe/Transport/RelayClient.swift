@@ -210,6 +210,45 @@ nonisolated struct RelayClient: Sendable {
     /// DELETE = подтверждение получения (at-least-once: строка ящика
     /// умирает только здесь). Свой свежий челлендж — старый уже потрачен.
     @discardableResult
+    /// Регистрация пуш-подписок (relay_push_spec §4.2).
+    /// Возвращает accepted или nil при любом сбое (тихо: активация
+    /// повторит; пуш — ускоритель, не участник контракта доставки).
+    func pushRegister(tokenHex: String, env: String, challengeID: String,
+                      subs: [PushRegistrar.Sub]) async -> Int? {
+        let body: [String: Any] = [
+            "token": tokenHex, "env": env, "challenge_id": challengeID,
+            "subs": subs.map { [
+                "dst": $0.dstHex, "boxPub": $0.boxPubHex,
+                "sig": $0.sigHex, "expires_at": $0.expiresAt,
+            ] },
+        ]
+        var request = URLRequest(url: baseURL
+            .appendingPathComponent("push")
+            .appendingPathComponent("register"))
+        request.httpMethod = "POST"
+        request.setValue("application/json",
+                         forHTTPHeaderField: "Content-Type")
+        request.httpBody = try? JSONSerialization.data(withJSONObject: body)
+        guard let (data, response) = try? await Self.session.data(for: request),
+              (response as? HTTPURLResponse)?.statusCode == 200,
+              let json = try? JSONSerialization.jsonObject(with: data)
+                  as? [String: Any] else { return nil }
+        return json["accepted"] as? Int
+    }
+
+    /// Снятие токена и всех подписок («Начать заново»).
+    func pushUnregister(tokenHex: String) async {
+        var request = URLRequest(url: baseURL
+            .appendingPathComponent("push")
+            .appendingPathComponent("unregister"))
+        request.httpMethod = "POST"
+        request.setValue("application/json",
+                         forHTTPHeaderField: "Content-Type")
+        request.httpBody = try? JSONSerialization.data(
+            withJSONObject: ["token": tokenHex])
+        _ = try? await Self.session.data(for: request)
+    }
+
     func delete(dstHex: String, frameID: Int64,
                 key: Curve25519.Signing.PrivateKey) async -> Bool {
         guard let ch = await challenge(dstHex: dstHex),
@@ -244,7 +283,7 @@ nonisolated struct RelayClient: Sendable {
         let frames: [F]
     }
 
-    private func challenge(dstHex: String)
+    func challenge(dstHex: String)
     async -> (id: String, nonce: Data, issuedAt: Int64)? {
         let url = baseURL.appendingPathComponent("box")
             .appendingPathComponent(dstHex)

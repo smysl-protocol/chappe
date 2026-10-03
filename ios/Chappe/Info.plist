@@ -15,6 +15,7 @@
 	<array>
 		<string>location</string>
 		<string>bluetooth-central</string>
+		<string>remote-notification</string>
 	</array>
 	<key>UIFileSharingEnabled</key>
 	<true/>

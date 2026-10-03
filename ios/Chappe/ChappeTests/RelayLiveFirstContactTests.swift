@@ -70,3 +70,42 @@ struct RelayLiveFirstContactTests {
                 + "ящика дерайвится по-разному"))
     }
 }
+
+
+extension RelayLiveFirstContactTests {
+
+    /// Живой прогон пуш-регистрации (гейт тот же /tmp/rm_relay_live):
+    /// свежие ключи, продуктовый пакет подписок → боевой релей обязан
+    /// принять ВСЕ и молча снять по unregister.
+    @Test("пуш-подписки: боевой релей принимает полный пакет")
+    func pushRegisterRoundtripAgainstLiveRelay() async throws {
+        guard live else { return }
+
+        let myPriv = Curve25519.KeyAgreement.PrivateKey()
+        let myPub = myPriv.publicKey.rawRepresentation
+        let peer = Curve25519.KeyAgreement.PrivateKey()
+        let contact = Contact(
+            id: "LIVEPUSH", name: "п",
+            publicKeyBase64: peer.publicKey.rawRepresentation
+                .base64EncodedString(),
+            addedAt: Date())
+        let client = try #require(RelayClient(
+            urlString: RelayTransport.defaultURL))
+        let token = Data((0..<32).map { _ in UInt8.random(in: 0...255) })
+        let tokenHex = token.map { String(format: "%02x", $0) }.joined()
+
+        let anyDst = RelayTransport.hex(
+            FirstContactMailbox.acceptedDsts(myPub: myPub).first!.dst)
+        let ch = try #require(await client.challenge(dstHex: anyDst))
+        let subs = PushRegistrar.buildSubs(
+            contacts: [contact], myPriv: myPriv,
+            token: token, nonce: ch.nonce, now: Date())
+        let accepted = await client.pushRegister(
+            tokenHex: tokenHex, env: "prod",
+            challengeID: ch.id, subs: subs)
+        #expect(accepted == subs.count, Comment(rawValue:
+                "боевой релей отверг часть подписок "
+                + "(\(accepted ?? -1)/\(subs.count)) — формат разошёлся"))
+        await client.pushUnregister(tokenHex: tokenHex)
+    }
+}

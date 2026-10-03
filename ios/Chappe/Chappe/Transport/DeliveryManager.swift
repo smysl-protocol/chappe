@@ -1361,6 +1361,18 @@ final class DeliveryManager: ObservableObject {
     /// чат записывается сюда, насос ретраит каждый тик, пока все
     /// входящие чата не заквитированы (стамп — по подтверждению).
     private(set) var receiptDebtors: Set<String> = []
+    /// Отметки в полёте: wire-id → когда послана (шторм 29.09: между
+    /// отправкой и confirm любой пинок ретрая слал ту же отметку снова).
+    var receiptInflight: [Int: Date] = [:]
+
+    /// Повтор неподтверждённой отметки — не раньше этого срока.
+    static let receiptRetryAfter: TimeInterval = 10
+
+    /// Пора ли слать отметку: не в полёте, либо полёт протух.
+    nonisolated static func receiptDue(inflightAt: Date?, now: Date) -> Bool {
+        inflightAt.map { now.timeIntervalSince($0)
+            >= receiptRetryAfter } ?? true
+    }
 
     /// Полный сброс (начать заново): должников больше нет.
     func clearReceiptDebtors() { receiptDebtors.removeAll() }
@@ -1433,6 +1445,11 @@ final class DeliveryManager: ObservableObject {
         }
         for entry in unreceipted {
             guard let wire = entry.wireMsgID else { continue }
+            // In-flight-гейт (шторм 29.09): отметка уже в полёте и
+            // полёт не протух — не дублируем, ждём confirm канала
+            guard Self.receiptDue(inflightAt: receiptInflight[wire],
+                                  now: Date()) else { continue }
+            receiptInflight[wire] = Date()
             let packet = Envelope.encodeHeader(
                 msgClass: Envelope.classRead, flags: 0,
                 msgID: Envelope.newMsgID()) + Envelope.le16(UInt16(wire))
@@ -1446,8 +1463,13 @@ final class DeliveryManager: ObservableObject {
             // выход), дубликаты безопасны.
             let entryID = entry.id
             let stamp: @Sendable (Bool) -> Void = { [weak self] ok in
-                guard ok else { return }
                 Task { @MainActor in
+                    // канал отчитался: полёт закончен в обе стороны —
+                    // провал снимает гейт сразу (потеря ретраится
+                    // немедленно, замок lostReceiptRetriedByPump),
+                    // гейт держит только «послано, ответа ещё нет»
+                    self?.receiptInflight.removeValue(forKey: wire)
+                    guard ok else { return }
                     self?.markEntry(entryID: entryID, contactID: contactID) {
                         if $0.readAt == nil { $0.readAt = Date() }
                     }

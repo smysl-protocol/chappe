@@ -106,9 +106,17 @@ final class RelayTransport: ObservableObject {
         }
         monitor.start(queue: DispatchQueue(label: "chappe.relay.path"))
         pollTask = Task { [weak self] in
+            // Квантовый сон (поле 29.09): интервал пересчитывается на
+            // каждом кванте — фон→актив укорачивает ожидание сразу,
+            // хвост 12-секундного сна не держит активный такт
+            var elapsed: TimeInterval = 0
             while !Task.isCancelled {
+                try? await Task.sleep(for: .seconds(1))
+                elapsed += 1
                 let active = UIApplication.shared.applicationState == .active
-                try? await Task.sleep(for: Self.pollInterval(appActive: active))
+                guard Self.pollDue(elapsed: elapsed, appActive: active)
+                else { continue }
+                elapsed = 0
                 await self?.pollInbox()
                 await self?.pollStoredOutcomes()
             }
@@ -133,6 +141,14 @@ final class RelayTransport: ObservableObject {
     /// секундами. Фон — прежние 12 с (APNs и фоновая политика — позже).
     nonisolated static func pollInterval(appActive: Bool) -> Duration {
         appActive ? .seconds(3) : .seconds(12)
+    }
+
+    /// Квантовый сон опроса (поле 29.09): готовность решается на каждом
+    /// кванте, поэтому переход фон→актив укорачивает ожидание сразу —
+    /// хвост 12-секундного фонового сна больше не держит активный такт.
+    nonisolated static func pollDue(elapsed: TimeInterval,
+                                    appActive: Bool) -> Bool {
+        elapsed >= (appActive ? 3 : 12)
     }
 
     // MARK: Отправка (зовётся насосом DeliveryManager)
